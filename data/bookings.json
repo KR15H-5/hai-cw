@@ -1,0 +1,258 @@
+[
+  {
+    "reference": "BK12345",
+    "user_id": "test_user",
+    "user_name": "Test User",
+    "movie_key": "joker2",
+    "movie_title": "Joker: Folie a Deux",
+    "time": "14:00",
+    "tickets": 2,
+    "seats": [
+      [
+        "A",
+        1
+      ],
+      [
+        "A",
+        2
+      ]
+    ],
+    "total": 25.0,
+    "booking_id": 1,
+    "timestamp": "2025-11-30T19:54:47.582724"
+  },
+  {
+    "reference": "BK67890",
+    "user_id": "test_user",
+    "user_name": "Test User",
+    "movie_key": "dune2",
+    "movie_title": "Dune: Part Two",
+    "time": "16:30",
+    "tickets": 3,
+    "seats": [
+      [
+        "B",
+        5
+      ],
+      [
+        "B",
+        6
+      ],
+      [
+        "B",
+        7
+      ]
+    ],
+    "total": 37.5,
+    "booking_id": 2,
+    "timestamp": "2025-11-30T19:54:47.582909"
+  },
+  {
+    "reference": "BK57784",
+    "user_id": "integration_test_user",
+    "user_name": "Integration Test",
+    "movie_key": "joker2",
+    "movie_title": "Joker: Folie a Deux",
+    "time": "14:00",
+    "tickets": 2,
+    "seats": [
+      [
+        "A",
+        3
+      ],
+      [
+        "A",
+        4
+      ]
+    ],
+    "total": 25.0,
+    "booking_id": 3,
+    "timestamp": "2025-11-30T19:54:47.583384"
+  },
+  {
+    "reference": "BK14433",
+    "user_id": "test_user_txn",
+    "user_name": "TestUser",
+    "movie_key": "joker2",
+    "movie_title": "Joker: Folie a Deux",
+    "time": "14:00",
+    "tickets": 2,
+    "seats": [
+      [
+        "C",
+        1
+      ],
+      [
+        "C",
+        2
+      ]
+    ],
+    "total": 25.0,
+    "booking_id": 4,
+    "timestamp": "2025-11-30T20:48:35.694741"
+  },
+  {
+    "reference": "BK36350",
+    "user_id": "integration_test_user",
+    "user_name": "IntegrationTest",
+    "movie_key": "paddington3",
+    "movie_title": "Paddington in Peru",
+    "time": "14:00",
+    "tickets": 2,
+    "seats": [
+      [
+        "D",
+        1
+      ],
+      [
+        "D",
+        2
+      ]
+    ],
+    "total": 20.0,
+    "booking_id": 5,
+    "timestamp": "2025-11-30T20:48:35.714745"
+  },
+  {
+    "reference": "BK19111",
+    "user_id": "user_001",
+    "user_name": "Krish",
+    "movie_key": "paddington3",
+    "movie_title": "Paddington in Peru",
+    "time": "14:00",
+    "tickets": 5,
+    "seats": [
+      [
+        "A",
+        1
+      ],
+      [
+        "A",
+        2
+      ],
+      [
+        "A",
+        3
+      ],
+      [
+        "A",
+        4
+      ],
+      [
+        "A",
+        5
+      ]
+    ],
+    "total": 50.0,
+    "booking_id": 6,
+    "timestamp": "2025-11-30T21:18:18.801010"
+  },
+  {
+    "reference": "BK75921",
+    "user_id": "user_001",
+    "user_name": "Krish",
+    "movie_key": "dune2",
+    "movie_title": "Dune: Part Two",
+    "time": "19:45",
+    "tickets": 2,
+    "seats": [
+      [
+        "E",
+        1
+      ],
+      [
+        "E",
+        2
+      ]
+    ],
+    "total": 25.0,
+    "booking_id": 7,
+    "timestamp": "2025-11-30T21:20:44.662011"
+  },
+  {
+    "reference": "BK43987",
+    "user_id": "user_001",
+    "user_name": "Krish",
+    "movie_key": "paddington3",
+    "movie_title": "Paddington in Peru",
+    "time": "14:00",
+    "tickets": 2,
+    "seats": [
+      [
+        "B",
+        1
+      ],
+      [
+        "B",
+        2
+      ]
+    ],
+    "total": 20.0,
+    "booking_id": 8,
+    "timestamp": "2025-11-30T21:21:56.627679"
+  },
+  {
+    "reference": "BK19121",
+    "user_id": "user_001",
+    "user_name": "Krish",
+    "movie_key": "dune2",
+    "movie_title": "Dune: Part Two",
+    "time": "16:30",
+    "tickets": 3,
+    "seats": [
+      [
+        "C",
+        1
+      ],
+      [
+        "C",
+        2
+      ],
+      [
+        "C",
+        3
+      ]
+    ],
+    "total": 37.5,
+    "booking_id": 9,
+    "timestamp": "2025-11-30T23:16:38.891007"
+  },
+  {
+    "reference": "BK90878",
+    "user_id": "user_001",
+    "user_name": "Krish",
+    "movie_key": "paddington3",
+    "movie_title": "Paddington in Peru",
+    "time": "11:00",
+    "tickets": 6,
+    "seats": [
+      [
+        "D",
+        1
+      ],
+      [
+        "D",
+        2
+      ],
+      [
+        "D",
+        3
+      ],
+      [
+        "D",
+        4
+      ],
+      [
+        "D",
+        5
+      ],
+      [
+        "D",
+        6
+      ]
+    ],
+    "total": 60.0,
+    "booking_id": 10,
+    "timestamp": "2025-12-01T12:06:27.797564"
+  }
+]

@@ -1,0 +1,61 @@
+{
+  "joker2": {
+    "title": "Joker: Folie a Deux",
+    "genre": "thriller",
+    "rating": "15",
+    "duration": "138 mins",
+    "description": "Failed comedian Arthur Fleck meets the love of his life, Harley Quinn, while in Arkham State Hospital.",
+    "director": "Todd Phillips",
+    "cast": [
+      "Joaquin Phoenix",
+      "Lady Gaga"
+    ],
+    "times": [
+      "14:00",
+      "17:30",
+      "20:00"
+    ],
+    "price": 12.5,
+    "release_year": 2024
+  },
+  "dune2": {
+    "title": "Dune: Part Two",
+    "genre": "sci-fi",
+    "rating": "12A",
+    "duration": "166 mins",
+    "description": "Paul Atreides unites with Chani and the Fremen while seeking revenge against those who destroyed his family.",
+    "director": "Denis Villeneuve",
+    "cast": [
+      "Timoth\u00e9e Chalamet",
+      "Zendaya",
+      "Rebecca Ferguson"
+    ],
+    "times": [
+      "13:00",
+      "16:30",
+      "19:45"
+    ],
+    "price": 12.5,
+    "release_year": 2024
+  },
+  "paddington3": {
+    "title": "Paddington in Peru",
+    "genre": "family",
+    "rating": "PG",
+    "duration": "106 mins",
+    "description": "Paddington returns to Peru to visit his beloved Aunt Lucy at the Home for Retired Bears.",
+    "director": "Dougal Wilson",
+    "cast": [
+      "Ben Whishaw",
+      "Hugh Bonneville",
+      "Emily Mortimer"
+    ],
+    "times": [
+      "11:00",
+      "14:00",
+      "16:30"
+    ],
+    "price": 10.0,
+    "release_year": 2024
+  }
+}

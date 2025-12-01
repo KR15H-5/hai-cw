@@ -1,0 +1,505 @@
+{
+  "test_user_1": {
+    "user_id": "test_user_1",
+    "name": "TestUser",
+    "preferences": {},
+    "conversation_history": [],
+    "booking_state": {
+      "stage": null,
+      "movie": null,
+      "time": null,
+      "tickets": null,
+      "seats": []
+    },
+    "last_mentioned_movie": null,
+    "awaiting_confirmation": false,
+    "session_start": "2025-11-30T20:48:35.684571",
+    "last_active": "2025-11-30T20:48:35.684573"
+  },
+  "test_user_ctx": {
+    "user_id": "test_user_ctx",
+    "name": "Bob",
+    "preferences": {
+      "language": "en"
+    },
+    "conversation_history": [
+      {
+        "timestamp": "2025-11-30T20:48:35.685541",
+        "user": "hello",
+        "bot": "Hi there!"
+      }
+    ],
+    "booking_state": {
+      "stage": null,
+      "movie": null,
+      "time": null,
+      "tickets": null,
+      "seats": []
+    },
+    "last_mentioned_movie": null,
+    "awaiting_confirmation": false,
+    "session_start": "2025-11-30T20:48:35.684975",
+    "last_active": "2025-11-30T20:48:35.685664"
+  },
+  "integration_test_user": {
+    "user_id": "integration_test_user",
+    "name": "IntegrationTest",
+    "preferences": {},
+    "conversation_history": [],
+    "booking_state": {
+      "stage": null,
+      "movie": null,
+      "time": null,
+      "tickets": null,
+      "seats": []
+    },
+    "last_mentioned_movie": null,
+    "awaiting_confirmation": false,
+    "session_start": "2025-11-30T20:48:35.712488",
+    "last_active": "2025-11-30T20:48:35.714907"
+  },
+  "conv_test_user": {
+    "user_id": "conv_test_user",
+    "name": "Testuser",
+    "preferences": {},
+    "conversation_history": [
+      {
+        "timestamp": "2025-11-30T21:16:53.139273",
+        "user": "My name is TestUser",
+        "bot": "Good evening. Thanks for choosing CineBook!\nPleasure to meet you, Testuser! How may I assist you?\n\nYou can:\n- Ask about movies\n- Book tickets\n- Type 'help' for more options"
+      },
+      {
+        "timestamp": "2025-11-30T21:16:53.139518",
+        "user": "what is my name",
+        "bot": "Your name is Testuser."
+      },
+      {
+        "timestamp": "2025-11-30T21:16:53.139755",
+        "user": "how are you",
+        "bot": "Doing fantastic! Ready to help you book movies! Ready to help you book some great movies!"
+      },
+      {
+        "timestamp": "2025-11-30T21:16:53.139991",
+        "user": "thanks",
+        "bot": "Happy to help!"
+      },
+      {
+        "timestamp": "2025-11-30T21:16:53.184272",
+        "user": "help",
+        "bot": "\u26a0\ufe0f  I'm not sure what you mean. Type 'help' for options or 'show movies' to see what's playing."
+      }
+    ],
+    "booking_state": {
+      "stage": null,
+      "movie": null,
+      "time": null,
+      "tickets": null,
+      "seats": []
+    },
+    "last_mentioned_movie": null,
+    "awaiting_confirmation": false,
+    "session_start": "2025-11-30T21:16:53.138454",
+    "last_active": "2025-11-30T21:16:53.184282"
+  },
+  "debug_user": {
+    "user_id": "debug_user",
+    "name": "Testuser",
+    "preferences": {},
+    "conversation_history": [
+      {
+        "timestamp": "2025-11-30T20:59:19.550476",
+        "user": "My name is TestUser",
+        "bot": "You haven't told me your name yet."
+      },
+      {
+        "timestamp": "2025-11-30T20:59:19.596640",
+        "user": "I am TestUser",
+        "bot": "\u26a0\ufe0f  I'm not sure what you mean. Type 'help' for options or 'show movies' to see what's playing."
+      },
+      {
+        "timestamp": "2025-11-30T20:59:19.597841",
+        "user": "Call me TestUser",
+        "bot": "Good evening. Thanks for choosing CineBook!\nWelcome, Testuser! How can I help you today?\n\nYou can:\n- Ask about movies\n- Book tickets\n- Type 'help' for more options"
+      },
+      {
+        "timestamp": "2025-11-30T20:59:19.598810",
+        "user": "TestUser",
+        "bot": "\u26a0\ufe0f  I'm not sure what you mean. Type 'help' for options or 'show movies' to see what's playing."
+      },
+      {
+        "timestamp": "2025-11-30T21:01:23.535441",
+        "user": "My name is TestUser",
+        "bot": "Your name is Testuser."
+      },
+      {
+        "timestamp": "2025-11-30T21:01:23.575734",
+        "user": "I am TestUser",
+        "bot": "\u26a0\ufe0f  I'm not sure what you mean. Type 'help' for options or 'show movies' to see what's playing."
+      },
+      {
+        "timestamp": "2025-11-30T21:01:23.576759",
+        "user": "Call me TestUser",
+        "bot": "Good evening. CineBook here, ready to help you book amazing movies!\nHello, Testuser! Great to meet you! What can I do for you?\n\nYou can:\n- Ask about movies\n- Book tickets\n- Type 'help' for more options"
+      },
+      {
+        "timestamp": "2025-11-30T21:01:23.577570",
+        "user": "TestUser",
+        "bot": "\u26a0\ufe0f  I'm not sure what you mean. Type 'help' for options or 'show movies' to see what's playing."
+      },
+      {
+        "timestamp": "2025-11-30T21:02:52.430974",
+        "user": "My name is TestUser",
+        "bot": "Your name is Testuser."
+      },
+      {
+        "timestamp": "2025-11-30T21:02:52.474023",
+        "user": "TestUser",
+        "bot": "\u26a0\ufe0f  I'm not sure what you mean. Type 'help' for options or 'show movies' to see what's playing."
+      }
+    ],
+    "booking_state": {
+      "stage": null,
+      "movie": null,
+      "time": null,
+      "tickets": null,
+      "seats": []
+    },
+    "last_mentioned_movie": null,
+    "awaiting_confirmation": false,
+    "session_start": "2025-11-30T20:59:19.541668",
+    "last_active": "2025-11-30T21:02:52.474031"
+  },
+  "test_bot_user": {
+    "user_id": "test_bot_user",
+    "name": null,
+    "preferences": {},
+    "conversation_history": [],
+    "booking_state": {
+      "stage": null,
+      "movie": null,
+      "time": null,
+      "tickets": null,
+      "seats": []
+    },
+    "last_mentioned_movie": null,
+    "awaiting_confirmation": false,
+    "session_start": "2025-11-30T21:16:53.134725",
+    "last_active": "2025-11-30T21:16:53.134738"
+  },
+  "browse_test_user": {
+    "user_id": "browse_test_user",
+    "name": null,
+    "preferences": {},
+    "conversation_history": [
+      {
+        "timestamp": "2025-11-30T21:16:53.186362",
+        "user": "show movies",
+        "bot": "Currently showing:\n\n1. Joker: Folie a Deux (15)\n   Genre: Thriller, Duration: 138 mins\n   Price: \u00a312.50\n2. Dune: Part Two (12A)\n   Genre: Sci-fi, Duration: 166 mins\n   Price: \u00a312.50\n3. Paddington in Peru (PG)\n   Genre: Family, Duration: 106 mins\n   Price: \u00a310.00\n\nWhat would you like to know more about?"
+      },
+      {
+        "timestamp": "2025-11-30T21:16:53.187702",
+        "user": "tell me about Dune",
+        "bot": "\nHere's what I know about Dune: Part Two:\n\n\ud83c\udfac Title: Dune: Part Two\n\ud83c\udfad Genre: Sci-fi\n\u2b50 Rating: 12A\n\u23f1\ufe0f  Duration: 166 mins\n\ud83c\udfa5 Director: Denis Villeneuve\n\ud83d\udc65 Cast: Timoth\u00e9e Chalamet, Zendaya, Rebecca Ferguson\n\n\ud83d\udcd6 Description: Paul Atreides unites with Chani and the Fremen while seeking revenge against those who destroyed his family.\n\n\ud83d\udd50 Showtimes: 13:00, 16:30, 19:45\n\ud83d\udcb7 Price: \u00a312.50 per ticket\n\nWould you like to book tickets for this movie?"
+      },
+      {
+        "timestamp": "2025-11-30T21:16:53.188099",
+        "user": "no",
+        "bot": "Okay. What can I do for you?"
+      },
+      {
+        "timestamp": "2025-11-30T21:16:53.188299",
+        "user": "how much are tickets",
+        "bot": "Most tickets are \u00a312.50, but family films like Paddington are \u00a310.00."
+      },
+      {
+        "timestamp": "2025-11-30T21:16:53.188500",
+        "user": "what is the price of paddington",
+        "bot": "Tickets for Paddington in Peru cost \u00a310.00 each."
+      },
+      {
+        "timestamp": "2025-11-30T21:16:53.189348",
+        "user": "when is paddington showing",
+        "bot": "I'm CineBook, your intelligent movie booking assistant!"
+      }
+    ],
+    "booking_state": {
+      "stage": null,
+      "movie": null,
+      "time": null,
+      "tickets": null,
+      "seats": []
+    },
+    "last_mentioned_movie": "dune2",
+    "awaiting_confirmation": false,
+    "session_start": "2025-11-30T21:16:53.186085",
+    "last_active": "2025-11-30T21:16:53.189350"
+  },
+  "user_001": {
+    "user_id": "user_001",
+    "name": "Krish",
+    "preferences": {},
+    "conversation_history": [
+      {
+        "timestamp": "2025-11-30T23:16:38.895322",
+        "user": "yes",
+        "bot": "\n============================================================\n                  BOOKING CONFIRMED!\n============================================================\n\n\u2705 Booking confirmed! Your reference is BK19121.\n\ud83d\udc64 Customer: Krish\n\n\ud83c\udfac Movie: Dune: Part Two\n\ud83d\udd50 Time: 16:30 on Sunday, November 30\n\ud83d\udcba Seats: C1, C2, C3\n\ud83c\udf9f\ufe0f  Tickets: 3\n\ud83d\udcb7 Total: \u00a337.50\n\n============================================================\n\n\ud83d\udce7 Confirmation email sent!\n\ud83d\udcf1 Please show this reference at the cinema.\n\ud83c\udf7f Enjoy your movie!\n\nWhat brings you here today?"
+      },
+      {
+        "timestamp": "2025-11-30T23:18:08.277442",
+        "user": "what is your refund policy",
+        "bot": "Tickets can be refunded up to 2 hours before the showing. Contact us at bookings@cinebook.com"
+      },
+      {
+        "timestamp": "2025-11-30T23:18:19.046443",
+        "user": "do you have discounts",
+        "bot": "Yes! We have free parking available for all customers in our underground car park."
+      },
+      {
+        "timestamp": "2025-11-30T23:19:16.741285",
+        "user": "do you have 3d movies",
+        "bot": "Currently all our showings are in 2D, but we're planning to add 3D screens soon!"
+      },
+      {
+        "timestamp": "2025-11-30T23:20:31.811037",
+        "user": "this show was bad",
+        "bot": "\u26a0\ufe0f  I'm not sure what you mean. Type 'help' for options or 'show movies' to see what's playing."
+      },
+      {
+        "timestamp": "2025-11-30T23:20:33.733730",
+        "user": "help",
+        "bot": "\u26a0\ufe0f  I'm not sure what you mean. Type 'help' for options or 'show movies' to see what's playing."
+      },
+      {
+        "timestamp": "2025-11-30T23:20:36.110579",
+        "user": "cancle",
+        "bot": "\u26a0\ufe0f  I'm not sure what you mean. Type 'help' for options or 'show movies' to see what's playing."
+      },
+      {
+        "timestamp": "2025-11-30T23:20:37.565734",
+        "user": "cancel",
+        "bot": "Currently, bookings cannot be cancelled through the chatbot. Please contact the cinema at 0115-123-4567."
+      },
+      {
+        "timestamp": "2025-11-30T23:20:42.036132",
+        "user": "hello",
+        "bot": "Hello again, Krish! What would you like to do today?"
+      },
+      {
+        "timestamp": "2025-11-30T23:22:22.378091",
+        "user": "what is my namehelp",
+        "bot": "Your name is Krish."
+      },
+      {
+        "timestamp": "2025-11-30T23:22:26.670512",
+        "user": "help",
+        "bot": "\u26a0\ufe0f  I'm not sure what you mean. Type 'help' for options or 'show movies' to see what's playing."
+      },
+      {
+        "timestamp": "2025-11-30T23:22:31.533472",
+        "user": "show movies",
+        "bot": "Currently showing:\n\n1. Joker: Folie a Deux (15)\n   Genre: Thriller, Duration: 138 mins\n   Price: \u00a312.50\n2. Dune: Part Two (12A)\n   Genre: Sci-fi, Duration: 166 mins\n   Price: \u00a312.50\n3. Paddington in Peru (PG)\n   Genre: Family, Duration: 106 mins\n   Price: \u00a310.00\n\nWhat would you like to know more about?"
+      },
+      {
+        "timestamp": "2025-11-30T23:25:17.814182",
+        "user": "what can you do",
+        "bot": "I can help you browse movies, book tickets, check showtimes, view your bookings, and answer questions about our cinema."
+      },
+      {
+        "timestamp": "2025-11-30T23:25:23.298039",
+        "user": "commands",
+        "bot": "\u26a0\ufe0f  I'm not sure what you mean. Type 'help' for options or 'show movies' to see what's playing."
+      },
+      {
+        "timestamp": "2025-11-30T23:25:26.047850",
+        "user": "help",
+        "bot": "\u26a0\ufe0f  I'm not sure what you mean. Type 'help' for options or 'show movies' to see what's playing."
+      },
+      {
+        "timestamp": "2025-12-01T12:04:46.747070",
+        "user": "cancel",
+        "bot": "Currently, bookings cannot be cancelled through the chatbot. Please contact the cinema at 0115-123-4567."
+      },
+      {
+        "timestamp": "2025-12-01T12:04:52.559053",
+        "user": "what is my name",
+        "bot": "Your name is Krish."
+      },
+      {
+        "timestamp": "2025-12-01T12:04:56.040084",
+        "user": "how are you",
+        "bot": "I'm great, thanks for asking! Ready to help you book some great movies!"
+      },
+      {
+        "timestamp": "2025-12-01T12:05:00.842816",
+        "user": "what can you do",
+        "bot": "I can help you browse movies, book tickets, check showtimes, view your bookings, and answer questions about our cinema."
+      },
+      {
+        "timestamp": "2025-12-01T12:05:05.868406",
+        "user": "undo",
+        "bot": "\u26a0\ufe0f  I'm not sure what you mean. Type 'help' for options or 'show movies' to see what's playing."
+      },
+      {
+        "timestamp": "2025-12-01T12:05:14.946000",
+        "user": "how much is dune",
+        "bot": "Tickets for Dune: Part Two cost \u00a312.50 each."
+      },
+      {
+        "timestamp": "2025-12-01T12:05:21.233856",
+        "user": "this is great",
+        "bot": "I'm CineBook, your intelligent movie booking assistant!"
+      },
+      {
+        "timestamp": "2025-12-01T12:05:28.607170",
+        "user": "who are you",
+        "bot": "We offer student discounts (20% off with valid ID) and family deals (4 tickets for \u00a340)."
+      },
+      {
+        "timestamp": "2025-12-01T12:05:37.362996",
+        "user": "lets book tickets",
+        "bot": "Which movie would you like to book?\n\nCurrently showing:\n\n1. Joker: Folie a Deux (15)\n   Genre: Thriller, Duration: 138 mins\n   Price: \u00a312.50\n2. Dune: Part Two (12A)\n   Genre: Sci-fi, Duration: 166 mins\n   Price: \u00a312.50\n3. Paddington in Peru (PG)\n   Genre: Family, Duration: 106 mins\n   Price: \u00a310.00\n\nWhat would you like to know more about?"
+      },
+      {
+        "timestamp": "2025-12-01T12:05:40.344030",
+        "user": "paddington",
+        "bot": "\nLet me tell you about Paddington in Peru:\n\n\ud83c\udfac Title: Paddington in Peru\n\ud83c\udfad Genre: Family\n\u2b50 Rating: PG\n\u23f1\ufe0f  Duration: 106 mins\n\ud83c\udfa5 Director: Dougal Wilson\n\ud83d\udc65 Cast: Ben Whishaw, Hugh Bonneville, Emily Mortimer\n\n\ud83d\udcd6 Description: Paddington returns to Peru to visit his beloved Aunt Lucy at the Home for Retired Bears.\n\n\ud83d\udd50 Showtimes: 11:00, 14:00, 16:30\n\ud83d\udcb7 Price: \u00a310.00 per ticket\n\nWould you like to book tickets for this movie?"
+      },
+      {
+        "timestamp": "2025-12-01T12:05:42.490144",
+        "user": "11",
+        "bot": "Would you like to book this movie? (yes/no)"
+      },
+      {
+        "timestamp": "2025-12-01T12:05:49.231707",
+        "user": "yup",
+        "bot": "Would you like to book this movie? (yes/no)"
+      },
+      {
+        "timestamp": "2025-12-01T12:05:51.477503",
+        "user": "yes",
+        "bot": "Wonderful! I'll help you book Paddington in Peru.\n\nAvailable times: 11:00, 14:00, 16:30\n\nWhich time slot would you like?"
+      },
+      {
+        "timestamp": "2025-12-01T12:05:54.799950",
+        "user": "11:00",
+        "bot": "Perfect! 11:00 showing selected.\n\nHow many tickets would you like? (1-10)"
+      },
+      {
+        "timestamp": "2025-12-01T12:06:06.778132",
+        "user": "6",
+        "bot": "\n       SCREEN\n\n     1  2  3  4  5  6  7  8  9 10\nA   \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705 \nB   \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705 \nC   \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705 \nD   \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705 \nE   \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705 \n\n\u2705 = Available  \u274c = Taken\n\nYou're booking 6 ticket(s).\nWhich seats would you like?\nFormat: A1, B5, C3"
+      },
+      {
+        "timestamp": "2025-12-01T12:06:12.027860",
+        "user": "d1, d2, d3",
+        "bot": "\u26a0\ufe0f  Selected 3 but need 6."
+      },
+      {
+        "timestamp": "2025-12-01T12:06:18.363228",
+        "user": "d4, d5, d6",
+        "bot": "\u26a0\ufe0f  Selected 3 but need 6."
+      },
+      {
+        "timestamp": "2025-12-01T12:06:26.278494",
+        "user": "d1, d2, d3, d4, d5, d6",
+        "bot": "\n============================================================\n                    BOOKING SUMMARY\n============================================================\n\n\ud83c\udfac Movie: Paddington in Peru\n\ud83d\udd50 Time: 11:00\n\ud83d\udcc5 Date: Monday, December 01, 2025\n\ud83c\udf9f\ufe0f  Tickets: 6\n\ud83d\udcba Seats: D1, D2, D3, D4, D5, D6\n\ud83d\udcb7 Price: \u00a310.00 x 6 = \u00a360.00\n\n============================================================\n\nReady to confirm?\n\nType 'yes' to confirm or 'no' to cancel."
+      },
+      {
+        "timestamp": "2025-12-01T12:06:27.799578",
+        "user": "yes",
+        "bot": "\n============================================================\n                  BOOKING CONFIRMED!\n============================================================\n\n\u2705 All set! Here's your booking reference: BK90878.\n\ud83d\udc64 Customer: Krish\n\n\ud83c\udfac Movie: Paddington in Peru\n\ud83d\udd50 Time: 11:00 on Monday, December 01\n\ud83d\udcba Seats: D1, D2, D3, D4, D5, D6\n\ud83c\udf9f\ufe0f  Tickets: 6\n\ud83d\udcb7 Total: \u00a360.00\n\n============================================================\n\n\ud83d\udce7 Confirmation email sent!\n\ud83d\udcf1 Please show this reference at the cinema.\n\ud83c\udf7f Enjoy your movie!\n\nHow may I assist you?"
+      },
+      {
+        "timestamp": "2025-12-01T12:07:00.290950",
+        "user": "i want to change my name",
+        "bot": "Your name is Krish."
+      },
+      {
+        "timestamp": "2025-12-01T12:08:01.720624",
+        "user": "what else can you do",
+        "bot": "I can help you browse movies, book tickets, check showtimes, view your bookings, and answer questions about our cinema."
+      },
+      {
+        "timestamp": "2025-12-01T15:27:37.491133",
+        "user": "hello",
+        "bot": "Hello again, Krish! What would you like to do today?"
+      },
+      {
+        "timestamp": "2025-12-01T15:27:47.940322",
+        "user": "how are you",
+        "bot": "I'm wonderful! How can I help you today? Ready to help you book some great movies!"
+      },
+      {
+        "timestamp": "2025-12-01T15:27:55.960346",
+        "user": "why are u sad",
+        "bot": "We offer student discounts (20% off with valid ID) and family deals (4 tickets for \u00a340)."
+      },
+      {
+        "timestamp": "2025-12-01T15:28:08.560206",
+        "user": "what is my name",
+        "bot": "Your name is Krish."
+      },
+      {
+        "timestamp": "2025-12-01T15:28:11.194835",
+        "user": "help",
+        "bot": "\u2139\ufe0f  Available commands:\n\n\ud83d\udcfd\ufe0f  'show movies' - See what's playing\n\u2139\ufe0f  'tell me about [movie]' - Get movie information  \n\ud83c\udf9f\ufe0f  'book [movie]' - Book tickets\n\u2753 'what is my name' - I'll tell you your name\n\ud83d\udccb 'my bookings' - View booking history\n\u2753 'help' - Show this message\n\ud83d\udc4b 'quit' - Exit\n\nYou can also type naturally! Just tell me what you want."
+      },
+      {
+        "timestamp": "2025-12-01T15:28:22.397644",
+        "user": "tell me about dune",
+        "bot": "\nGreat choice! Here's the info on Dune: Part Two:\n\n\ud83c\udfac Title: Dune: Part Two\n\ud83c\udfad Genre: Sci-fi\n\u2b50 Rating: 12A\n\u23f1\ufe0f  Duration: 166 mins\n\ud83c\udfa5 Director: Denis Villeneuve\n\ud83d\udc65 Cast: Timoth\u00e9e Chalamet, Zendaya, Rebecca Ferguson\n\n\ud83d\udcd6 Description: Paul Atreides unites with Chani and the Fremen while seeking revenge against those who destroyed his family.\n\n\ud83d\udd50 Showtimes: 13:00, 16:30, 19:45\n\ud83d\udcb7 Price: \u00a312.50 per ticket\n\nWould you like to book tickets for this movie?"
+      },
+      {
+        "timestamp": "2025-12-01T15:28:35.083639",
+        "user": "my bookings",
+        "bot": "Wonderful! I'll help you book Dune: Part Two.\n\nAvailable times: 13:00, 16:30, 19:45\n\nWhat time would you prefer?"
+      },
+      {
+        "timestamp": "2025-12-01T15:28:46.365826",
+        "user": "help",
+        "bot": "\u26a0\ufe0f  That time isn't available. Choose from: 13:00, 16:30, 19:45"
+      },
+      {
+        "timestamp": "2025-12-01T15:28:50.936412",
+        "user": "cancel",
+        "bot": "\u274c Alright, booking cancelled.\n\nWhat brings you here today?"
+      },
+      {
+        "timestamp": "2025-12-01T15:28:53.516144",
+        "user": "help",
+        "bot": "\u2139\ufe0f  Available commands:\n\n\ud83d\udcfd\ufe0f  'show movies' - See what's playing\n\u2139\ufe0f  'tell me about [movie]' - Get movie information  \n\ud83c\udf9f\ufe0f  'book [movie]' - Book tickets\n\u2753 'what is my name' - I'll tell you your name\n\ud83d\udccb 'my bookings' - View booking history\n\u2753 'help' - Show this message\n\ud83d\udc4b 'quit' - Exit\n\nYou can also type naturally! Just tell me what you want."
+      },
+      {
+        "timestamp": "2025-12-01T15:28:59.876879",
+        "user": "show me my past bookings",
+        "bot": "Which movie would you like to book?\n\nCurrently showing:\n\n1. Joker: Folie a Deux (15)\n   Genre: Thriller, Duration: 138 mins\n   Price: \u00a312.50\n2. Dune: Part Two (12A)\n   Genre: Sci-fi, Duration: 166 mins\n   Price: \u00a312.50\n3. Paddington in Peru (PG)\n   Genre: Family, Duration: 106 mins\n   Price: \u00a310.00\n\nWhat would you like to know more about?"
+      },
+      {
+        "timestamp": "2025-12-01T15:29:09.486460",
+        "user": "what is my name",
+        "bot": "Your name is Krish."
+      },
+      {
+        "timestamp": "2025-12-01T15:29:13.750841",
+        "user": "can i change my name",
+        "bot": "Your name is Krish."
+      },
+      {
+        "timestamp": "2025-12-01T15:29:18.927460",
+        "user": "log out",
+        "bot": "\u26a0\ufe0f  I'm not sure what you mean. Type 'help' for options or 'show movies' to see what's playing."
+      }
+    ],
+    "booking_state": {
+      "stage": null,
+      "movie": null,
+      "time": null,
+      "tickets": null,
+      "seats": []
+    },
+    "last_mentioned_movie": "dune2",
+    "awaiting_confirmation": false,
+    "session_start": "2025-11-30T21:17:14.585653",
+    "last_active": "2025-12-01T15:29:18.927472"
+  }
+}
