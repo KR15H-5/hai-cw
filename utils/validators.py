@@ -33,12 +33,32 @@ class Validator:
     
     @staticmethod
     def validate_time(time, available_times):
-        """Validate showtime"""
-        time_clean = time.replace(' ', '').replace(':', '')
+        """Validate showtime - accepts multiple formats"""
+        # Clean input - remove spaces, fix common typos
+        time_clean = time.replace(' ', '').replace(';', ':').lower()
         
+        # Handle different input formats
+        if ':' not in time_clean:
+            if time_clean.isdigit():
+                # User entered "11" or "1100"
+                if len(time_clean) == 2:  # "11" → "1100"
+                    time_clean = time_clean + "00"
+                elif len(time_clean) == 3:  # "930" → "0930"
+                    time_clean = "0" + time_clean
+        
+        # Remove colons for comparison
+        time_normalized = time_clean.replace(':', '')
+        
+        # Try to match against available times
         for available in available_times:
-            available_clean = available.replace(':', '')
-            if time_clean == available_clean or time == available:
+            available_normalized = available.replace(':', '').lower()
+            
+            # Match "1100" against "11:00"
+            if time_normalized == available_normalized:
+                return True, available
+            
+            # Also check if user typed exact format
+            if time.strip() == available:
                 return True, available
         
         return False, None

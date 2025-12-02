@@ -13,34 +13,41 @@ class IntentRules:
 
         if text_lower == 'help':
             return 'help'
+        # if self._is_change_name(text_lower):
+        #     return 'change_name'
         
-        # Check each rule
-        if self._is_ask_name(text_lower):
-            return 'ask_name'
+        # if self._is_ask_name(text_lower):
+        #     return 'ask_name'
         
-        if self._is_small_talk_positive(text_lower):
-            return 'small_talk_positive'
+        # if self._is_small_talk_positive(text_lower):
+        #     return 'small_talk_positive'
         
-        if self._is_book_intent(text_lower):
-            return 'book_tickets'
+        # if self._is_book_intent(text_lower):
+        #     return 'book_tickets'
         
-        if self._is_price_query(text_lower):
-            return 'ask_price'
+        # if self._is_price_query(text_lower):
+        #     return 'ask_price'
         
-        if self._is_thanks(text_lower):
-            return 'small_talk_thanks'
+        # if self._is_thanks(text_lower):
+        #     return 'small_talk_thanks'
         
-        if self._is_greeting(text_lower):
-            return 'greeting'
+        # if self._is_greeting(text_lower):
+        #     return 'greeting'
         
-        if self._is_show_movies(text_lower):
-            return 'show_movies'
+        # if self._is_show_movies(text_lower):
+        #     return 'show_movies'
         
         return None
     
     def _is_ask_name(self, text):
         """Check if asking about name"""
+        if 'your' in text or 'you' in text:
+            return False
         return 'name' in text and ('my' in text or 'what' in text or 'whats' in text)
+
+    def _is_change_name(self, text):
+        """Check if wanting to change name"""
+        return ('change' in text or 'update' in text) and 'name' in text
     
     def _is_small_talk_positive(self, text):
         """Check if asking how are you"""

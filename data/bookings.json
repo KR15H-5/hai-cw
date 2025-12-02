@@ -254,5 +254,157 @@
     "total": 60.0,
     "booking_id": 10,
     "timestamp": "2025-12-01T12:06:27.797564"
+  },
+  {
+    "reference": "BK88365",
+    "user_id": "user_001",
+    "user_name": "Krish",
+    "movie_key": "joker2",
+    "movie_title": "Joker: Folie a Deux",
+    "time": "14:00",
+    "tickets": 3,
+    "seats": [
+      [
+        "D",
+        1
+      ],
+      [
+        "D",
+        3
+      ],
+      [
+        "D",
+        4
+      ]
+    ],
+    "total": 37.5,
+    "booking_id": 11,
+    "timestamp": "2025-12-01T16:00:29.286970"
+  },
+  {
+    "reference": "BK34544",
+    "user_id": "user_001",
+    "user_name": "Krish",
+    "movie_key": "paddington3",
+    "movie_title": "Paddington in Peru",
+    "time": "11:00",
+    "tickets": 3,
+    "seats": [
+      [
+        "B",
+        1
+      ],
+      [
+        "B",
+        2
+      ],
+      [
+        "B",
+        3
+      ]
+    ],
+    "total": 30.0,
+    "booking_id": 12,
+    "timestamp": "2025-12-01T16:21:56.634585"
+  },
+  {
+    "reference": "BK63467",
+    "user_id": "user_001",
+    "user_name": "Krish",
+    "movie_key": "paddington3",
+    "movie_title": "Paddington in Peru",
+    "time": "11:00",
+    "tickets": 2,
+    "seats": [
+      [
+        "D",
+        7
+      ],
+      [
+        "D",
+        8
+      ]
+    ],
+    "total": 20.0,
+    "booking_id": 13,
+    "timestamp": "2025-12-01T16:30:12.033575"
+  },
+  {
+    "reference": "BK13524",
+    "user_id": "user_001",
+    "user_name": "Krish",
+    "movie_key": "mission_impossible",
+    "movie_title": "Mission: Impossible - The Final Reckoning",
+    "time": "17:45",
+    "tickets": 3,
+    "seats": [
+      [
+        "A",
+        1
+      ],
+      [
+        "A",
+        2
+      ],
+      [
+        "A",
+        3
+      ]
+    ],
+    "total": 42.0,
+    "booking_id": 14,
+    "timestamp": "2025-12-01T16:36:10.569140"
+  },
+  {
+    "reference": "BK29048",
+    "user_id": "user_001",
+    "user_name": "Krish",
+    "movie_key": "superman",
+    "movie_title": "Superman",
+    "time": "14:30",
+    "tickets": 3,
+    "seats": [
+      [
+        "E",
+        3
+      ],
+      [
+        "E",
+        4
+      ],
+      [
+        "E",
+        6
+      ]
+    ],
+    "total": 40.5,
+    "booking_id": 15,
+    "timestamp": "2025-12-01T16:51:59.667013"
+  },
+  {
+    "reference": "BK61868",
+    "user_id": "user_001",
+    "user_name": "Krish",
+    "movie_key": "superman",
+    "movie_title": "Superman",
+    "time": "11:00",
+    "tickets": 3,
+    "seats": [
+      [
+        "C",
+        1
+      ],
+      [
+        "C",
+        2
+      ],
+      [
+        "C",
+        3
+      ]
+    ],
+    "total": 40.5,
+    "booking_id": 16,
+    "timestamp": "2025-12-02T15:00:36.866293"
   }
 ]

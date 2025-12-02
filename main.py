@@ -1,8 +1,4 @@
 #!/usr/bin/env python3
-"""
-CineBook - Movie Booking Chatbot
-Main entry point
-"""
 
 from core import MovieBot
 
@@ -11,9 +7,9 @@ def print_banner():
     banner = """
 ╔════════════════════════════════════════════════════════╗
 ║                                                        ║
-║              🎬 CINEBOOK ASSISTANT 🎬                  ║
+║                SAVOY CINEMA ASSISTANT!                 ║
 ║                                                        ║
-║         Your Intelligent Movie Booking Bot             ║
+║                Your NLP Movie Booking Bot              ║
 ║                                                        ║
 ╚════════════════════════════════════════════════════════╝
 """

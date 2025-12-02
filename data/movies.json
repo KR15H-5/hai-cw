@@ -1,61 +1,105 @@
 {
-  "joker2": {
-    "title": "Joker: Folie a Deux",
-    "genre": "thriller",
-    "rating": "15",
-    "duration": "138 mins",
-    "description": "Failed comedian Arthur Fleck meets the love of his life, Harley Quinn, while in Arkham State Hospital.",
-    "director": "Todd Phillips",
+  "captain_america": {
+    "title": "Captain America: Brave New World",
+    "genre": "action",
+    "rating": "12A",
+    "duration": "118 mins",
+    "description": "Sam Wilson officially takes up the mantle of Captain America and finds himself in the middle of an international incident involving a mysterious island.",
+    "director": "Julius Onah",
     "cast": [
-      "Joaquin Phoenix",
-      "Lady Gaga"
+      "Anthony Mackie",
+      "Harrison Ford",
+      "Danny Ramirez"
+    ],
+    "times": [
+      "12:00",
+      "15:00",
+      "18:00",
+      "21:00"
+    ],
+    "price": 13.5,
+    "release_year": 2025
+  },
+  "thunderbolts": {
+    "title": "Thunderbolts",
+    "genre": "action",
+    "rating": "12A",
+    "duration": "127 mins",
+    "description": "A group of supervillains are recruited by the government to go on dangerous black ops missions in exchange for clemency.",
+    "director": "Jake Schreier",
+    "cast": [
+      "Florence Pugh",
+      "Sebastian Stan",
+      "David Harbour"
+    ],
+    "times": [
+      "13:30",
+      "16:30",
+      "19:30"
+    ],
+    "price": 13.5,
+    "release_year": 2025
+  },
+  "mission_impossible": {
+    "title": "Mission: Impossible - The Final Reckoning",
+    "genre": "action",
+    "rating": "12A",
+    "duration": "163 mins",
+    "description": "Ethan Hunt and the IMF team embark on their most dangerous mission yet in what could be their final adventure.",
+    "director": "Christopher McQuarrie",
+    "cast": [
+      "Tom Cruise",
+      "Hayley Atwell",
+      "Ving Rhames"
     ],
     "times": [
       "14:00",
-      "17:30",
-      "20:00"
+      "17:45",
+      "21:00"
     ],
-    "price": 12.5,
-    "release_year": 2024
+    "price": 14.0,
+    "release_year": 2025
   },
-  "dune2": {
-    "title": "Dune: Part Two",
-    "genre": "sci-fi",
+  "superman": {
+    "title": "Superman",
+    "genre": "superhero",
     "rating": "12A",
-    "duration": "166 mins",
-    "description": "Paul Atreides unites with Chani and the Fremen while seeking revenge against those who destroyed his family.",
-    "director": "Denis Villeneuve",
+    "duration": "140 mins",
+    "description": "Clark Kent embraces his Kryptonian heritage and becomes Superman, Earth's greatest protector and symbol of hope.",
+    "director": "James Gunn",
     "cast": [
-      "Timoth\u00e9e Chalamet",
-      "Zendaya",
-      "Rebecca Ferguson"
-    ],
-    "times": [
-      "13:00",
-      "16:30",
-      "19:45"
-    ],
-    "price": 12.5,
-    "release_year": 2024
-  },
-  "paddington3": {
-    "title": "Paddington in Peru",
-    "genre": "family",
-    "rating": "PG",
-    "duration": "106 mins",
-    "description": "Paddington returns to Peru to visit his beloved Aunt Lucy at the Home for Retired Bears.",
-    "director": "Dougal Wilson",
-    "cast": [
-      "Ben Whishaw",
-      "Hugh Bonneville",
-      "Emily Mortimer"
+      "David Corenswet",
+      "Rachel Brosnahan",
+      "Nicholas Hoult"
     ],
     "times": [
       "11:00",
-      "14:00",
-      "16:30"
+      "14:30",
+      "18:00",
+      "21:15"
     ],
-    "price": 10.0,
-    "release_year": 2024
+    "price": 13.5,
+    "release_year": 2025
+  },
+  "fantastic_four": {
+    "title": "The Fantastic Four: First Steps",
+    "genre": "superhero",
+    "rating": "12A",
+    "duration": "135 mins",
+    "description": "Marvel's First Family embark on a retro-futuristic adventure as they face their greatest challenge yet and discover what it truly means to be a family.",
+    "director": "Matt Shakman",
+    "cast": [
+      "Pedro Pascal",
+      "Vanessa Kirby",
+      "Joseph Quinn",
+      "Ebon Moss-Bachrach"
+    ],
+    "times": [
+      "12:30",
+      "15:45",
+      "19:00"
+    ],
+    "price": 13.5,
+    "release_year": 2025
   }
 }

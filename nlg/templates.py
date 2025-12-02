@@ -5,10 +5,10 @@ class Templates:
     """
     
     WELCOME = [
-        "{greeting}. Welcome to CineBook!",
-        "{greeting}! Welcome to CineBook, your movie booking assistant!",
-        "{greeting}. Thanks for choosing CineBook!",
-        "{greeting}. CineBook here, ready to help you book amazing movies!"
+        "{greeting}. Welcome to SavoyBot!",
+        "{greeting}! Welcome to SavoyBot, your movie booking assistant!",
+        "{greeting}. Thanks for choosing SavoyBot!",
+        "{greeting}. SavoyBot here, ready to help you book amazing movies!"
     ]
     
     ASK_NAME = [

@@ -21,7 +21,6 @@ class MovieBot:
         self.user_id = user_id
         self.session = Session(user_id)
         
-        # Initialize all components
         self.db = DatabaseManager()
         self.context = ContextManager(user_id)
         self.intent_matcher = IntentMatcher()
@@ -31,6 +30,11 @@ class MovieBot:
         self.text_processor = TextProcessor()
         
         self.last_question_was_name = False
+        
+        booking_state = self.context.get_booking_state()
+        if booking_state.get('stage') and not booking_state.get('movie'):
+            print("⚠️  Detected corrupt booking state, cleaning...")
+            self.context.reset_booking()
     
     def greet(self):
         """Initial greeting"""
@@ -311,6 +315,8 @@ class MovieBot:
         elif intent == 'give_name':
             return self._handle_give_name(user_input)
         
+        elif intent == 'change_name':
+            return self._handle_change_name()
         elif intent == 'ask_name':
             return self._handle_ask_name()
         
@@ -468,9 +474,16 @@ class MovieBot:
         query_lower = query.lower()
         
         keywords = {
-            'joker': 'joker2',
-            'dune': 'dune2',
-            'paddington': 'paddington3'
+            'captain america': 'captain_america',
+            'captain': 'captain_america',
+            'thunderbolts': 'thunderbolts',
+            'mission impossible': 'mission_impossible',
+            'mission': 'mission_impossible',
+            'tom cruise': 'mission_impossible',
+            'superman': 'superman',
+            'fantastic four': 'fantastic_four',
+            'fantastic': 'fantastic_four',
+            'ff': 'fantastic_four'
         }
         
         for keyword, movie_key in keywords.items():
@@ -482,6 +495,10 @@ class MovieBot:
             return results[0][0]
         
         return None
+    def _handle_change_name(self):
+        """Handle user wanting to change their name"""
+        self.last_question_was_name = True
+        return "Sure! What would you like me to call you?"
 
 if __name__ == "__main__":
     print("✅ MovieBot module loaded successfully!")

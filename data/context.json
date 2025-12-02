@@ -240,254 +240,254 @@
     "preferences": {},
     "conversation_history": [
       {
-        "timestamp": "2025-11-30T23:16:38.895322",
+        "timestamp": "2025-12-01T16:29:51.796693",
+        "user": "d1,d2",
+        "bot": "\u26a0\ufe0f  Selected 0 but need 2.\nProblems: D1 (taken), D2 (taken)"
+      },
+      {
+        "timestamp": "2025-12-01T16:30:02.378575",
+        "user": "d6, d6",
+        "bot": "\u26a0\ufe0f  Selected 0 but need 2.\nProblems: D6 (taken), D6 (taken)"
+      },
+      {
+        "timestamp": "2025-12-01T16:30:06.974922",
+        "user": "d7, d7",
+        "bot": "\u26a0\ufe0f  Selected 1 but need 2.\nProblems: D7 (duplicate)"
+      },
+      {
+        "timestamp": "2025-12-01T16:30:10.186265",
+        "user": "d7, d8",
+        "bot": "\n============================================================\n                    BOOKING SUMMARY\n============================================================\n\n\ud83c\udfac Movie: Paddington in Peru\n\ud83d\udd50 Time: 11:00\n\ud83d\udcc5 Date: Monday, December 01, 2025\n\ud83c\udf9f\ufe0f  Tickets: 2\n\ud83d\udcba Seats: D7, D8\n\ud83d\udcb7 Price: \u00a310.00 x 2 = \u00a320.00\n\n============================================================\n\nDoes this look good to you?\n\nType 'yes' to confirm or 'no' to cancel."
+      },
+      {
+        "timestamp": "2025-12-01T16:30:12.035758",
         "user": "yes",
-        "bot": "\n============================================================\n                  BOOKING CONFIRMED!\n============================================================\n\n\u2705 Booking confirmed! Your reference is BK19121.\n\ud83d\udc64 Customer: Krish\n\n\ud83c\udfac Movie: Dune: Part Two\n\ud83d\udd50 Time: 16:30 on Sunday, November 30\n\ud83d\udcba Seats: C1, C2, C3\n\ud83c\udf9f\ufe0f  Tickets: 3\n\ud83d\udcb7 Total: \u00a337.50\n\n============================================================\n\n\ud83d\udce7 Confirmation email sent!\n\ud83d\udcf1 Please show this reference at the cinema.\n\ud83c\udf7f Enjoy your movie!\n\nWhat brings you here today?"
+        "bot": "\n============================================================\n                  BOOKING CONFIRMED!\n============================================================\n\n\u2705 Done! Your booking reference is BK63467.\n\ud83d\udc64 Customer: Krish\n\n\ud83c\udfac Movie: Paddington in Peru\n\ud83d\udd50 Time: 11:00 on Monday, December 01\n\ud83d\udcba Seats: D7, D8\n\ud83c\udf9f\ufe0f  Tickets: 2\n\ud83d\udcb7 Total: \u00a320.00\n\n============================================================\n\n\ud83d\udce7 Confirmation email sent!\n\ud83d\udcf1 Please show this reference at the cinema.\n\ud83c\udf7f Enjoy your movie!\n\nHow can I help you today?"
       },
       {
-        "timestamp": "2025-11-30T23:18:08.277442",
-        "user": "what is your refund policy",
-        "bot": "Tickets can be refunded up to 2 hours before the showing. Contact us at bookings@cinebook.com"
+        "timestamp": "2025-12-01T16:35:23.052609",
+        "user": "hello!",
+        "bot": "Hello again, Krish! How may I assist you?"
       },
       {
-        "timestamp": "2025-11-30T23:18:19.046443",
-        "user": "do you have discounts",
-        "bot": "Yes! We have free parking available for all customers in our underground car park."
+        "timestamp": "2025-12-01T16:35:26.065028",
+        "user": "how are you",
+        "bot": "Doing fantastic! Ready to help you book movies! Ready to help you book some great movies!"
       },
       {
-        "timestamp": "2025-11-30T23:19:16.741285",
-        "user": "do you have 3d movies",
-        "bot": "Currently all our showings are in 2D, but we're planning to add 3D screens soon!"
-      },
-      {
-        "timestamp": "2025-11-30T23:20:31.811037",
-        "user": "this show was bad",
-        "bot": "\u26a0\ufe0f  I'm not sure what you mean. Type 'help' for options or 'show movies' to see what's playing."
-      },
-      {
-        "timestamp": "2025-11-30T23:20:33.733730",
-        "user": "help",
-        "bot": "\u26a0\ufe0f  I'm not sure what you mean. Type 'help' for options or 'show movies' to see what's playing."
-      },
-      {
-        "timestamp": "2025-11-30T23:20:36.110579",
-        "user": "cancle",
-        "bot": "\u26a0\ufe0f  I'm not sure what you mean. Type 'help' for options or 'show movies' to see what's playing."
-      },
-      {
-        "timestamp": "2025-11-30T23:20:37.565734",
-        "user": "cancel",
-        "bot": "Currently, bookings cannot be cancelled through the chatbot. Please contact the cinema at 0115-123-4567."
-      },
-      {
-        "timestamp": "2025-11-30T23:20:42.036132",
-        "user": "hello",
-        "bot": "Hello again, Krish! What would you like to do today?"
-      },
-      {
-        "timestamp": "2025-11-30T23:22:22.378091",
-        "user": "what is my namehelp",
-        "bot": "Your name is Krish."
-      },
-      {
-        "timestamp": "2025-11-30T23:22:26.670512",
-        "user": "help",
-        "bot": "\u26a0\ufe0f  I'm not sure what you mean. Type 'help' for options or 'show movies' to see what's playing."
-      },
-      {
-        "timestamp": "2025-11-30T23:22:31.533472",
-        "user": "show movies",
-        "bot": "Currently showing:\n\n1. Joker: Folie a Deux (15)\n   Genre: Thriller, Duration: 138 mins\n   Price: \u00a312.50\n2. Dune: Part Two (12A)\n   Genre: Sci-fi, Duration: 166 mins\n   Price: \u00a312.50\n3. Paddington in Peru (PG)\n   Genre: Family, Duration: 106 mins\n   Price: \u00a310.00\n\nWhat would you like to know more about?"
-      },
-      {
-        "timestamp": "2025-11-30T23:25:17.814182",
-        "user": "what can you do",
-        "bot": "I can help you browse movies, book tickets, check showtimes, view your bookings, and answer questions about our cinema."
-      },
-      {
-        "timestamp": "2025-11-30T23:25:23.298039",
-        "user": "commands",
-        "bot": "\u26a0\ufe0f  I'm not sure what you mean. Type 'help' for options or 'show movies' to see what's playing."
-      },
-      {
-        "timestamp": "2025-11-30T23:25:26.047850",
-        "user": "help",
-        "bot": "\u26a0\ufe0f  I'm not sure what you mean. Type 'help' for options or 'show movies' to see what's playing."
-      },
-      {
-        "timestamp": "2025-12-01T12:04:46.747070",
-        "user": "cancel",
-        "bot": "Currently, bookings cannot be cancelled through the chatbot. Please contact the cinema at 0115-123-4567."
-      },
-      {
-        "timestamp": "2025-12-01T12:04:52.559053",
+        "timestamp": "2025-12-01T16:35:28.340926",
         "user": "what is my name",
         "bot": "Your name is Krish."
       },
       {
-        "timestamp": "2025-12-01T12:04:56.040084",
-        "user": "how are you",
-        "bot": "I'm great, thanks for asking! Ready to help you book some great movies!"
+        "timestamp": "2025-12-01T16:35:35.958951",
+        "user": "i wnat to bookt ciekts",
+        "bot": "You're talking to CineBook, your movie booking assistant!"
       },
       {
-        "timestamp": "2025-12-01T12:05:00.842816",
-        "user": "what can you do",
-        "bot": "I can help you browse movies, book tickets, check showtimes, view your bookings, and answer questions about our cinema."
+        "timestamp": "2025-12-01T16:35:40.541110",
+        "user": "i want to book tickets",
+        "bot": "Which movie would you like to book?\n\nCurrently showing:\n\n1. Captain America: Brave New World (12A)\n   Genre: Action, Duration: 118 mins\n   Price: \u00a313.50\n2. Thunderbolts (12A)\n   Genre: Action, Duration: 127 mins\n   Price: \u00a313.50\n3. Mission: Impossible - The Final Reckoning (12A)\n   Genre: Action, Duration: 163 mins\n   Price: \u00a314.00\n4. Superman (12A)\n   Genre: Superhero, Duration: 140 mins\n   Price: \u00a313.50\n5. The Fantastic Four: First Steps (12A)\n   Genre: Superhero, Duration: 135 mins\n   Price: \u00a313.50\n\nWhat would you like to know more about?"
       },
       {
-        "timestamp": "2025-12-01T12:05:05.868406",
-        "user": "undo",
+        "timestamp": "2025-12-01T16:35:47.244154",
+        "user": "mission impossible",
+        "bot": "\nLet me tell you about Mission: Impossible - The Final Reckoning:\n\n\ud83c\udfac Title: Mission: Impossible - The Final Reckoning\n\ud83c\udfad Genre: Action\n\u2b50 Rating: 12A\n\u23f1\ufe0f  Duration: 163 mins\n\ud83c\udfa5 Director: Christopher McQuarrie\n\ud83d\udc65 Cast: Tom Cruise, Hayley Atwell, Ving Rhames\n\n\ud83d\udcd6 Description: Ethan Hunt and the IMF team embark on their most dangerous mission yet in what could be their final adventure.\n\n\ud83d\udd50 Showtimes: 14:00, 17:45, 21:00\n\ud83d\udcb7 Price: \u00a314.00 per ticket\n\nWould you like to book tickets for this movie?"
+      },
+      {
+        "timestamp": "2025-12-01T16:35:50.151687",
+        "user": "yes",
+        "bot": "Excellent choice! Booking Mission: Impossible - The Final Reckoning.\n\nAvailable times: 14:00, 17:45, 21:00\n\nWhich showtime works for you?"
+      },
+      {
+        "timestamp": "2025-12-01T16:35:53.424099",
+        "user": "545",
+        "bot": "\u26a0\ufe0f  That time isn't available. Choose from: 14:00, 17:45, 21:00"
+      },
+      {
+        "timestamp": "2025-12-01T16:35:55.929207",
+        "user": "1745",
+        "bot": "Perfect! 17:45 showing selected.\n\nHow many seats should I reserve? (1-10)"
+      },
+      {
+        "timestamp": "2025-12-01T16:35:57.379683",
+        "user": "3",
+        "bot": "\n       SCREEN\n\n     1  2  3  4  5  6  7  8  9 10\nA   \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705 \nB   \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705 \nC   \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705 \nD   \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705 \nE   \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705 \n\n\u2705 = Available  \u274c = Taken\n\nYou're booking 3 ticket(s).\nPlease select your 3 seat(s).\nFormat: A1, B5, C3"
+      },
+      {
+        "timestamp": "2025-12-01T16:36:01.411040",
+        "user": "a1,a1,a1,",
+        "bot": "\u26a0\ufe0f  Selected 1 but need 3.\nProblems: A1 (duplicate), A1 (duplicate)"
+      },
+      {
+        "timestamp": "2025-12-01T16:36:06.147691",
+        "user": "a1, a2,a3",
+        "bot": "\n============================================================\n                    BOOKING SUMMARY\n============================================================\n\n\ud83c\udfac Movie: Mission: Impossible - The Final Reckoning\n\ud83d\udd50 Time: 17:45\n\ud83d\udcc5 Date: Monday, December 01, 2025\n\ud83c\udf9f\ufe0f  Tickets: 3\n\ud83d\udcba Seats: A1, A2, A3\n\ud83d\udcb7 Price: \u00a314.00 x 3 = \u00a342.00\n\n============================================================\n\nReady to confirm?\n\nType 'yes' to confirm or 'no' to cancel."
+      },
+      {
+        "timestamp": "2025-12-01T16:36:10.571184",
+        "user": "yes",
+        "bot": "\n============================================================\n                  BOOKING CONFIRMED!\n============================================================\n\n\u2705 Booking confirmed! Your reference is BK13524.\n\ud83d\udc64 Customer: Krish\n\n\ud83c\udfac Movie: Mission: Impossible - The Final Reckoning\n\ud83d\udd50 Time: 17:45 on Monday, December 01\n\ud83d\udcba Seats: A1, A2, A3\n\ud83c\udf9f\ufe0f  Tickets: 3\n\ud83d\udcb7 Total: \u00a342.00\n\n============================================================\n\n\ud83d\udce7 Confirmation email sent!\n\ud83d\udcf1 Please show this reference at the cinema.\n\ud83c\udf7f Enjoy your movie!\n\nWhat brings you here today?"
+      },
+      {
+        "timestamp": "2025-12-01T16:51:27.513224",
+        "user": "book superman",
+        "bot": "Wonderful! I'll help you book Superman.\n\nAvailable times: 11:00, 14:30, 18:00, 21:15\n\nWhen would you like to watch?"
+      },
+      {
+        "timestamp": "2025-12-01T16:51:31.647350",
+        "user": "14:30",
+        "bot": "Perfect! 14:30 showing selected.\n\nHow many tickets do you need? (1-10)"
+      },
+      {
+        "timestamp": "2025-12-01T16:51:33.200818",
+        "user": "yes",
+        "bot": "\u26a0\ufe0f  Please enter a valid number of tickets (1-10)."
+      },
+      {
+        "timestamp": "2025-12-01T16:51:34.174921",
+        "user": "3",
+        "bot": "\n       SCREEN\n\n     1  2  3  4  5  6  7  8  9 10\nA   \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705 \nB   \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705 \nC   \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705 \nD   \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705 \nE   \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705 \n\n\u2705 = Available  \u274c = Taken\n\nYou're booking 3 ticket(s).\nWhich seats would you like?\nFormat: A1, B5, C3"
+      },
+      {
+        "timestamp": "2025-12-01T16:51:35.838117",
+        "user": "33",
+        "bot": "\u26a0\ufe0f  Invalid format. Use format like: A1, B5, C3"
+      },
+      {
+        "timestamp": "2025-12-01T16:51:39.029993",
+        "user": "t5",
+        "bot": "\u26a0\ufe0f  Invalid format. Use format like: A1, B5, C3"
+      },
+      {
+        "timestamp": "2025-12-01T16:51:41.913648",
+        "user": "r4",
+        "bot": "\u26a0\ufe0f  Invalid format. Use format like: A1, B5, C3"
+      },
+      {
+        "timestamp": "2025-12-01T16:51:43.308132",
+        "user": "e3",
+        "bot": "\u26a0\ufe0f  Selected 1 but need 3."
+      },
+      {
+        "timestamp": "2025-12-01T16:51:47.247018",
+        "user": "e3,ee2,e2",
+        "bot": "\u26a0\ufe0f  Selected 2 but need 3.\nProblems: E2 (duplicate)"
+      },
+      {
+        "timestamp": "2025-12-01T16:51:57.892618",
+        "user": ",e3,e4,e6",
+        "bot": "\n============================================================\n                    BOOKING SUMMARY\n============================================================\n\n\ud83c\udfac Movie: Superman\n\ud83d\udd50 Time: 14:30\n\ud83d\udcc5 Date: Monday, December 01, 2025\n\ud83c\udf9f\ufe0f  Tickets: 3\n\ud83d\udcba Seats: E3, E4, E6\n\ud83d\udcb7 Price: \u00a313.50 x 3 = \u00a340.50\n\n============================================================\n\nShall I confirm this booking?\n\nType 'yes' to confirm or 'no' to cancel."
+      },
+      {
+        "timestamp": "2025-12-01T16:51:59.671569",
+        "user": "yes",
+        "bot": "\n============================================================\n                  BOOKING CONFIRMED!\n============================================================\n\n\u2705 Done! Your booking reference is BK29048.\n\ud83d\udc64 Customer: Krish\n\n\ud83c\udfac Movie: Superman\n\ud83d\udd50 Time: 14:30 on Monday, December 01\n\ud83d\udcba Seats: E3, E4, E6\n\ud83c\udf9f\ufe0f  Tickets: 3\n\ud83d\udcb7 Total: \u00a340.50\n\n============================================================\n\n\ud83d\udce7 Confirmation email sent!\n\ud83d\udcf1 Please show this reference at the cinema.\n\ud83c\udf7f Enjoy your movie!\n\nHow can I help you today?"
+      },
+      {
+        "timestamp": "2025-12-02T14:58:30.135775",
+        "user": "cancel",
         "bot": "\u26a0\ufe0f  I'm not sure what you mean. Type 'help' for options or 'show movies' to see what's playing."
       },
       {
-        "timestamp": "2025-12-01T12:05:14.946000",
-        "user": "how much is dune",
-        "bot": "Tickets for Dune: Part Two cost \u00a312.50 each."
+        "timestamp": "2025-12-02T14:58:58.711591",
+        "user": "what is your name",
+        "bot": "I'm SavoyBot, your intelligent movie booking assistant!"
       },
       {
-        "timestamp": "2025-12-01T12:05:21.233856",
-        "user": "this is great",
-        "bot": "I'm CineBook, your intelligent movie booking assistant!"
+        "timestamp": "2025-12-02T14:59:02.679961",
+        "user": "name",
+        "bot": "Sure! What would you like me to call you?"
       },
       {
-        "timestamp": "2025-12-01T12:05:28.607170",
-        "user": "who are you",
-        "bot": "We offer student discounts (20% off with valid ID) and family deals (4 tickets for \u00a340)."
+        "timestamp": "2025-12-02T14:59:05.783168",
+        "user": "what is my anme",
+        "bot": "Good afternoon. Welcome to SavoyBot!\nNice to meet you, What! How may I assist you?\n\nYou can:\n- Ask about movies\n- Book tickets\n- Type 'help' for more options"
       },
       {
-        "timestamp": "2025-12-01T12:05:37.362996",
-        "user": "lets book tickets",
-        "bot": "Which movie would you like to book?\n\nCurrently showing:\n\n1. Joker: Folie a Deux (15)\n   Genre: Thriller, Duration: 138 mins\n   Price: \u00a312.50\n2. Dune: Part Two (12A)\n   Genre: Sci-fi, Duration: 166 mins\n   Price: \u00a312.50\n3. Paddington in Peru (PG)\n   Genre: Family, Duration: 106 mins\n   Price: \u00a310.00\n\nWhat would you like to know more about?"
+        "timestamp": "2025-12-02T14:59:10.867163",
+        "user": "what is my name",
+        "bot": "Your name is What."
       },
       {
-        "timestamp": "2025-12-01T12:05:40.344030",
-        "user": "paddington",
-        "bot": "\nLet me tell you about Paddington in Peru:\n\n\ud83c\udfac Title: Paddington in Peru\n\ud83c\udfad Genre: Family\n\u2b50 Rating: PG\n\u23f1\ufe0f  Duration: 106 mins\n\ud83c\udfa5 Director: Dougal Wilson\n\ud83d\udc65 Cast: Ben Whishaw, Hugh Bonneville, Emily Mortimer\n\n\ud83d\udcd6 Description: Paddington returns to Peru to visit his beloved Aunt Lucy at the Home for Retired Bears.\n\n\ud83d\udd50 Showtimes: 11:00, 14:00, 16:30\n\ud83d\udcb7 Price: \u00a310.00 per ticket\n\nWould you like to book tickets for this movie?"
+        "timestamp": "2025-12-02T14:59:14.773827",
+        "user": "change my name",
+        "bot": "Sure! What would you like me to call you?"
       },
       {
-        "timestamp": "2025-12-01T12:05:42.490144",
+        "timestamp": "2025-12-02T14:59:16.521457",
+        "user": "krish",
+        "bot": "Good afternoon. SavoyBot here, ready to help you book amazing movies!\nHi Krish! So glad you're here! How may I assist you?\n\nYou can:\n- Ask about movies\n- Book tickets\n- Type 'help' for more options"
+      },
+      {
+        "timestamp": "2025-12-02T14:59:20.510214",
+        "user": "what is my name",
+        "bot": "Your name is Krish."
+      },
+      {
+        "timestamp": "2025-12-02T14:59:26.994964",
+        "user": "how much are tickets",
+        "bot": "Most tickets are \u00a312.50, but family films like Paddington are \u00a310.00."
+      },
+      {
+        "timestamp": "2025-12-02T15:00:00.472368",
+        "user": "i want to book tickets",
+        "bot": "Which movie would you like to book?\n\nCurrently showing:\n\n1. Captain America: Brave New World (12A)\n   Genre: Action, Duration: 118 mins\n   Price: \u00a313.50\n2. Thunderbolts (12A)\n   Genre: Action, Duration: 127 mins\n   Price: \u00a313.50\n3. Mission: Impossible - The Final Reckoning (12A)\n   Genre: Action, Duration: 163 mins\n   Price: \u00a314.00\n4. Superman (12A)\n   Genre: Superhero, Duration: 140 mins\n   Price: \u00a313.50\n5. The Fantastic Four: First Steps (12A)\n   Genre: Superhero, Duration: 135 mins\n   Price: \u00a313.50\n\nWhat would you like to know more about?"
+      },
+      {
+        "timestamp": "2025-12-02T15:00:03.771254",
+        "user": "superman",
+        "bot": "\nHere's what I know about Superman:\n\n\ud83c\udfac Title: Superman\n\ud83c\udfad Genre: Superhero\n\u2b50 Rating: 12A\n\u23f1\ufe0f  Duration: 140 mins\n\ud83c\udfa5 Director: James Gunn\n\ud83d\udc65 Cast: David Corenswet, Rachel Brosnahan, Nicholas Hoult\n\n\ud83d\udcd6 Description: Clark Kent embraces his Kryptonian heritage and becomes Superman, Earth's greatest protector and symbol of hope.\n\n\ud83d\udd50 Showtimes: 11:00, 14:30, 18:00, 21:15\n\ud83d\udcb7 Price: \u00a313.50 per ticket\n\nWould you like to book tickets for this movie?"
+      },
+      {
+        "timestamp": "2025-12-02T15:00:05.422830",
         "user": "11",
         "bot": "Would you like to book this movie? (yes/no)"
       },
       {
-        "timestamp": "2025-12-01T12:05:49.231707",
-        "user": "yup",
-        "bot": "Would you like to book this movie? (yes/no)"
-      },
-      {
-        "timestamp": "2025-12-01T12:05:51.477503",
+        "timestamp": "2025-12-02T15:00:09.045452",
         "user": "yes",
-        "bot": "Wonderful! I'll help you book Paddington in Peru.\n\nAvailable times: 11:00, 14:00, 16:30\n\nWhich time slot would you like?"
+        "bot": "Perfect! Let's get you tickets for Superman.\n\nAvailable times: 11:00, 14:30, 18:00, 21:15\n\nWhich time slot would you like?"
       },
       {
-        "timestamp": "2025-12-01T12:05:54.799950",
-        "user": "11:00",
-        "bot": "Perfect! 11:00 showing selected.\n\nHow many tickets would you like? (1-10)"
+        "timestamp": "2025-12-02T15:00:10.620229",
+        "user": "11",
+        "bot": "Perfect! 11:00 showing selected.\n\nFor how many people? (1-10)"
       },
       {
-        "timestamp": "2025-12-01T12:06:06.778132",
-        "user": "6",
-        "bot": "\n       SCREEN\n\n     1  2  3  4  5  6  7  8  9 10\nA   \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705 \nB   \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705 \nC   \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705 \nD   \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705 \nE   \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705 \n\n\u2705 = Available  \u274c = Taken\n\nYou're booking 6 ticket(s).\nWhich seats would you like?\nFormat: A1, B5, C3"
+        "timestamp": "2025-12-02T15:00:11.755581",
+        "user": "3",
+        "bot": "\n       SCREEN\n\n     1  2  3  4  5  6  7  8  9 10\nA   \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705 \nB   \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705 \nC   \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705 \nD   \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705 \nE   \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705 \n\n\u2705 = Available  \u274c = Taken\n\nYou're booking 3 ticket(s).\nWhich seats would you like?\nFormat: A1, B5, C3"
       },
       {
-        "timestamp": "2025-12-01T12:06:12.027860",
-        "user": "d1, d2, d3",
-        "bot": "\u26a0\ufe0f  Selected 3 but need 6."
+        "timestamp": "2025-12-02T15:00:14.386588",
+        "user": "c1, c2",
+        "bot": "\u26a0\ufe0f  Selected 2 but need 3."
       },
       {
-        "timestamp": "2025-12-01T12:06:18.363228",
-        "user": "d4, d5, d6",
-        "bot": "\u26a0\ufe0f  Selected 3 but need 6."
+        "timestamp": "2025-12-02T15:00:18.935455",
+        "user": "cq,c2",
+        "bot": "\u26a0\ufe0f  Selected 1 but need 3."
       },
       {
-        "timestamp": "2025-12-01T12:06:26.278494",
-        "user": "d1, d2, d3, d4, d5, d6",
-        "bot": "\n============================================================\n                    BOOKING SUMMARY\n============================================================\n\n\ud83c\udfac Movie: Paddington in Peru\n\ud83d\udd50 Time: 11:00\n\ud83d\udcc5 Date: Monday, December 01, 2025\n\ud83c\udf9f\ufe0f  Tickets: 6\n\ud83d\udcba Seats: D1, D2, D3, D4, D5, D6\n\ud83d\udcb7 Price: \u00a310.00 x 6 = \u00a360.00\n\n============================================================\n\nReady to confirm?\n\nType 'yes' to confirm or 'no' to cancel."
+        "timestamp": "2025-12-02T15:00:22.248847",
+        "user": "c2,cq,c2",
+        "bot": "\u26a0\ufe0f  Selected 1 but need 3.\nProblems: C2 (duplicate)"
       },
       {
-        "timestamp": "2025-12-01T12:06:27.799578",
+        "timestamp": "2025-12-02T15:00:26.680187",
+        "user": "cq, c2, c3",
+        "bot": "\u26a0\ufe0f  Selected 2 but need 3."
+      },
+      {
+        "timestamp": "2025-12-02T15:00:29.980763",
+        "user": "c1, c2, c3",
+        "bot": "\n============================================================\n                    BOOKING SUMMARY\n============================================================\n\n\ud83c\udfac Movie: Superman\n\ud83d\udd50 Time: 11:00\n\ud83d\udcc5 Date: Tuesday, December 02, 2025\n\ud83c\udf9f\ufe0f  Tickets: 3\n\ud83d\udcba Seats: C1, C2, C3\n\ud83d\udcb7 Price: \u00a313.50 x 3 = \u00a340.50\n\n============================================================\n\nEverything look good?\n\nType 'yes' to confirm or 'no' to cancel."
+      },
+      {
+        "timestamp": "2025-12-02T15:00:36.870907",
         "user": "yes",
-        "bot": "\n============================================================\n                  BOOKING CONFIRMED!\n============================================================\n\n\u2705 All set! Here's your booking reference: BK90878.\n\ud83d\udc64 Customer: Krish\n\n\ud83c\udfac Movie: Paddington in Peru\n\ud83d\udd50 Time: 11:00 on Monday, December 01\n\ud83d\udcba Seats: D1, D2, D3, D4, D5, D6\n\ud83c\udf9f\ufe0f  Tickets: 6\n\ud83d\udcb7 Total: \u00a360.00\n\n============================================================\n\n\ud83d\udce7 Confirmation email sent!\n\ud83d\udcf1 Please show this reference at the cinema.\n\ud83c\udf7f Enjoy your movie!\n\nHow may I assist you?"
-      },
-      {
-        "timestamp": "2025-12-01T12:07:00.290950",
-        "user": "i want to change my name",
-        "bot": "Your name is Krish."
-      },
-      {
-        "timestamp": "2025-12-01T12:08:01.720624",
-        "user": "what else can you do",
-        "bot": "I can help you browse movies, book tickets, check showtimes, view your bookings, and answer questions about our cinema."
-      },
-      {
-        "timestamp": "2025-12-01T15:27:37.491133",
-        "user": "hello",
-        "bot": "Hello again, Krish! What would you like to do today?"
-      },
-      {
-        "timestamp": "2025-12-01T15:27:47.940322",
-        "user": "how are you",
-        "bot": "I'm wonderful! How can I help you today? Ready to help you book some great movies!"
-      },
-      {
-        "timestamp": "2025-12-01T15:27:55.960346",
-        "user": "why are u sad",
-        "bot": "We offer student discounts (20% off with valid ID) and family deals (4 tickets for \u00a340)."
-      },
-      {
-        "timestamp": "2025-12-01T15:28:08.560206",
-        "user": "what is my name",
-        "bot": "Your name is Krish."
-      },
-      {
-        "timestamp": "2025-12-01T15:28:11.194835",
-        "user": "help",
-        "bot": "\u2139\ufe0f  Available commands:\n\n\ud83d\udcfd\ufe0f  'show movies' - See what's playing\n\u2139\ufe0f  'tell me about [movie]' - Get movie information  \n\ud83c\udf9f\ufe0f  'book [movie]' - Book tickets\n\u2753 'what is my name' - I'll tell you your name\n\ud83d\udccb 'my bookings' - View booking history\n\u2753 'help' - Show this message\n\ud83d\udc4b 'quit' - Exit\n\nYou can also type naturally! Just tell me what you want."
-      },
-      {
-        "timestamp": "2025-12-01T15:28:22.397644",
-        "user": "tell me about dune",
-        "bot": "\nGreat choice! Here's the info on Dune: Part Two:\n\n\ud83c\udfac Title: Dune: Part Two\n\ud83c\udfad Genre: Sci-fi\n\u2b50 Rating: 12A\n\u23f1\ufe0f  Duration: 166 mins\n\ud83c\udfa5 Director: Denis Villeneuve\n\ud83d\udc65 Cast: Timoth\u00e9e Chalamet, Zendaya, Rebecca Ferguson\n\n\ud83d\udcd6 Description: Paul Atreides unites with Chani and the Fremen while seeking revenge against those who destroyed his family.\n\n\ud83d\udd50 Showtimes: 13:00, 16:30, 19:45\n\ud83d\udcb7 Price: \u00a312.50 per ticket\n\nWould you like to book tickets for this movie?"
-      },
-      {
-        "timestamp": "2025-12-01T15:28:35.083639",
-        "user": "my bookings",
-        "bot": "Wonderful! I'll help you book Dune: Part Two.\n\nAvailable times: 13:00, 16:30, 19:45\n\nWhat time would you prefer?"
-      },
-      {
-        "timestamp": "2025-12-01T15:28:46.365826",
-        "user": "help",
-        "bot": "\u26a0\ufe0f  That time isn't available. Choose from: 13:00, 16:30, 19:45"
-      },
-      {
-        "timestamp": "2025-12-01T15:28:50.936412",
-        "user": "cancel",
-        "bot": "\u274c Alright, booking cancelled.\n\nWhat brings you here today?"
-      },
-      {
-        "timestamp": "2025-12-01T15:28:53.516144",
-        "user": "help",
-        "bot": "\u2139\ufe0f  Available commands:\n\n\ud83d\udcfd\ufe0f  'show movies' - See what's playing\n\u2139\ufe0f  'tell me about [movie]' - Get movie information  \n\ud83c\udf9f\ufe0f  'book [movie]' - Book tickets\n\u2753 'what is my name' - I'll tell you your name\n\ud83d\udccb 'my bookings' - View booking history\n\u2753 'help' - Show this message\n\ud83d\udc4b 'quit' - Exit\n\nYou can also type naturally! Just tell me what you want."
-      },
-      {
-        "timestamp": "2025-12-01T15:28:59.876879",
-        "user": "show me my past bookings",
-        "bot": "Which movie would you like to book?\n\nCurrently showing:\n\n1. Joker: Folie a Deux (15)\n   Genre: Thriller, Duration: 138 mins\n   Price: \u00a312.50\n2. Dune: Part Two (12A)\n   Genre: Sci-fi, Duration: 166 mins\n   Price: \u00a312.50\n3. Paddington in Peru (PG)\n   Genre: Family, Duration: 106 mins\n   Price: \u00a310.00\n\nWhat would you like to know more about?"
-      },
-      {
-        "timestamp": "2025-12-01T15:29:09.486460",
-        "user": "what is my name",
-        "bot": "Your name is Krish."
-      },
-      {
-        "timestamp": "2025-12-01T15:29:13.750841",
-        "user": "can i change my name",
-        "bot": "Your name is Krish."
-      },
-      {
-        "timestamp": "2025-12-01T15:29:18.927460",
-        "user": "log out",
-        "bot": "\u26a0\ufe0f  I'm not sure what you mean. Type 'help' for options or 'show movies' to see what's playing."
+        "bot": "\n============================================================\n                  BOOKING CONFIRMED!\n============================================================\n\n\u2705 All set! Here's your booking reference: BK61868.\n\ud83d\udc64 Customer: Krish\n\n\ud83c\udfac Movie: Superman\n\ud83d\udd50 Time: 11:00 on Tuesday, December 02\n\ud83d\udcba Seats: C1, C2, C3\n\ud83c\udf9f\ufe0f  Tickets: 3\n\ud83d\udcb7 Total: \u00a340.50\n\n============================================================\n\n\ud83d\udce7 Confirmation email sent!\n\ud83d\udcf1 Please show this reference at the cinema.\n\ud83c\udf7f Enjoy your movie!\n\nWhat brings you here today?"
       }
     ],
     "booking_state": {
@@ -497,9 +497,9 @@
       "tickets": null,
       "seats": []
     },
-    "last_mentioned_movie": "dune2",
+    "last_mentioned_movie": "superman",
     "awaiting_confirmation": false,
     "session_start": "2025-11-30T21:17:14.585653",
-    "last_active": "2025-12-01T15:29:18.927472"
+    "last_active": "2025-12-02T15:00:36.870934"
   }
 }
