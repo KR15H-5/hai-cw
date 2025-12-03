@@ -197,7 +197,7 @@ print("\n" + "="*70)
 print("✅✅✅ PHASE 3 PART A COMPLETE - INTENT MODULE WORKING! ✅✅✅")
 print("="*70)
 
-print("\n📊 Summary:")
+print("\nSummary:")
 print("   ✅ intent/intent_trainer.py - Model training")
 print("   ✅ intent/intent_classifier.py - ML classification")
 print("   ✅ intent/intent_rules.py - Rule-based matching")

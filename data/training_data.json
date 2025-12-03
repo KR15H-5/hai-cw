@@ -1,0 +1,252 @@
+{
+    "greeting": [
+      "hello", "hi", "hey", "good morning", "good afternoon", "good evening",
+      "greetings", "howdy", "whats up", "sup", "yo", "hiya", "heya",
+      "hi there", "hello there", "hey there", "good day", "morning", "evening",
+      "hi bot", "hello bot", "hey bot", "greetings bot", "good to see you",
+      "nice to meet you", "pleased to meet you", "hi friend", "hello friend",
+      "wassup", "yo whats up", "hey whats up", "good to talk to you",
+      "hello again", "hi again", "back again", "im back", "its me again",
+      "hola", "bonjour", "konnichiwa", "namaste", "salaam", "shalom",
+      "top of the morning", "good to see you again", "pleasure to meet you",
+      "hello my friend", "hi pal", "hey buddy", "hello stranger", "long time no see",
+      "greetings and salutations", "well hello", "oh hi", "hey hey", "hi ya",
+      "good morning to you", "good evening to you", "evening", "morn"
+    ],
+    
+    "farewell": [
+      "bye", "goodbye", "see you", "farewell", "take care", "catch you later",
+      "see ya", "later", "peace out", "have a good day", "talk to you later",
+      "bye bye", "good night", "see you soon", "until next time", "ciao",
+      "adios", "au revoir", "sayonara", "cheerio", "toodles", "ta ta",
+      "gotta go", "got to run", "need to leave", "im leaving", "im out",
+      "see you around", "catch ya later", "later gator", "peace", "im done",
+      "thats all", "talk later", "bye for now", "signing off", "logging off",
+      "hasta la vista", "see you later alligator", "take it easy", "peace be with you",
+      "have a great day", "have a good one", "ttyl", "see ya soon", "until we meet again",
+      "so long", "good day to you", "farewell for now", "catch you on the flip side"
+    ],
+    
+    "give_name": [
+      "my name is john", "i am sarah", "call me mike", "im alex", "i am chris",
+      "this is david", "you can call me emma", "they call me sam",
+      "my name is alice", "i am bob", "call me charlie", "im diana",
+      "the name is eric", "people call me frank", "i go by george",
+      "my name is hannah", "im called ian", "you can call me julia",
+      "i am known as kevin", "my name is laura", "im mark", "call me nancy",
+      "this is oliver", "my name is peter", "im quinn", "they call me rachel",
+      "my name is steve", "im called tom", "you can call me ursula",
+      "i am victor", "my name is wendy", "im xavier", "call me yara",
+      "the names bond james bond", "they call me the doctor", "im known as ace",
+      "my friends call me max", "you can call me zee", "im called ash",
+      "people know me as jay", "my name happens to be kim", "im leo",
+      "you may call me maya", "im referred to as nate", "the name is owen"
+    ],
+    
+    "ask_name": [
+      "what is my name", "whats my name", "tell me my name", "my name",
+      "do you know my name", "who am i", "what do you call me", "remind me my name",
+      "what did i say my name was", "can you tell me my name",
+      "do you remember my name", "what name did i give", "who did i say i was",
+      "what am i called", "how do you know me", "what do you have me as",
+      "whats my name again", "can you remind me of my name", "my name please",
+      "tell me what my name is", "what name do you have for me", "do you know what im called",
+      "what did i tell you my name was", "can you recall my name", "refresh my name"
+    ],
+    
+    "small_talk_positive": [
+      "how are you", "how are you doing", "hows it going", "how do you do",
+      "how have you been", "whats up with you", "hows life", "how r u", "how are things",
+      "hows your day", "how are you today", "how is everything", "whats new",
+      "how you doing", "you good", "you alright", "everything ok",
+      "how goes it", "hows everything going", "how have you been doing",
+      "how are you feeling", "you doing ok", "are you well", "doing good",
+      "hows your day going", "how is your day", "having a good day",
+      "hows tricks", "how are you getting on", "how are you holding up",
+      "you doing well", "are you doing good", "hows your day been", "are things good",
+      "all well with you", "hope youre well", "hope youre doing well", "you doing alright"
+    ],
+    
+    "small_talk_thanks": [
+      "thank you", "thanks", "thx", "appreciate it", "cheers", "thanks a lot",
+      "thank you so much", "many thanks", "thanks so much", "appreciated",
+      "thank you very much", "much appreciated", "thanks very much", "ta",
+      "thank you kindly", "thanks again", "thanks mate", "thanks buddy",
+      "thanks pal", "thank you friend", "cheers mate", "cheers thanks",
+      "much obliged", "thank you loads", "thanks heaps", "thanks tons",
+      "big thanks", "huge thanks", "massive thanks", "thanks a bunch",
+      "thanks a million", "cant thank you enough", "really appreciate it", "youre the best",
+      "thanks for everything", "thanks for your time", "thanks for the help", "grateful"
+    ],
+    
+    "show_movies": [
+      "show movies", "list movies", "what movies", "available movies", "whats playing",
+      "what is playing", "movies showing", "which movies", "see movies", "display movies",
+      "movie list", "show me movies", "what movies are on", "whats on",
+      "what films are showing", "show me whats playing", "list all movies",
+      "what can i watch", "what movies do you have", "show films",
+      "tell me what movies", "what movies are available", "whats showing",
+      "current movies", "movies now", "playing now", "movies today",
+      "what can i see", "whats on today", "todays movies", "movies tonight",
+      "show me the movies", "list of movies", "available films", "film list",
+      "what films", "which films", "show me films", "see the movies",
+      "give me the movie list", "display all movies", "what films can i watch",
+      "movies playing now", "current film list", "what is showing now", "tonights movies",
+      "movies available", "whats on at the cinema", "cinema listings", "film listings"
+    ],
+    
+    "movie_info": [
+      "tell me about dune", "info about joker", "information about paddington",
+      "describe the movie", "details about the film", "explain the plot",
+      "what is it about", "who stars in it", "who directed it", "what is the movie about",
+      "tell me more about", "give me details on", "information on", "describe",
+      "what can you tell me about", "i want to know about", "whats the story",
+      "movie details", "film information", "more info", "tell me about the movie",
+      "what do you know about", "info on the film", "details please",
+      "more about this movie", "what is this movie", "describe this film",
+      "give me info", "tell me the story", "whats it about", "plot details",
+      "tell me more", "give me more information", "whats the plot", "movie synopsis",
+      "film synopsis", "what happens in", "storyline", "plot summary", "tell me the plot"
+    ],
+    
+    "book_tickets": [
+      "book", "reserve", "buy tickets", "get tickets", "purchase tickets",
+      "want tickets", "book tickets", "make reservation", "i want to book",
+      "id like to book", "can i book", "reserve seats", "get me tickets",
+      "i want to watch", "id like to see", "book me", "reserve for me",
+      "i need tickets", "purchase", "buy", "get seats",
+      "book a movie", "book a film", "reserve movie", "reserve film",
+      "make a booking", "i want to reserve", "can i reserve", "id like tickets",
+      "i need seats", "book seats", "can i get tickets", "id like to purchase",
+      "i want to buy", "buy movie tickets", "purchase film tickets", "book cinema",
+      "make me a booking", "reserve tickets for me", "get me some tickets", "book something",
+      "i want to see a movie", "lets book", "can we book", "book for tonight",
+      "book for today", "reserve for tonight", "get tickets for", "buy seats for"
+    ],
+    
+    "help": [
+      "help", "what can you do", "options", "commands", "how do i",
+      "assist me", "guide me", "show me how", "what are your capabilities",
+      "help me", "i need help", "how does this work", "what do you do",
+      "can you help", "show options", "what can i do", "how to use",
+      "help please", "assistance", "support", "i need assistance",
+      "can you assist", "i need support", "how to", "instructions",
+      "guide", "show me", "tell me how", "explain how", "what are the options",
+      "menu", "show menu", "available commands", "what can i ask", "how do i use this",
+      "im lost", "i dont know what to do", "confused", "need guidance", "show me the way"
+    ],
+    
+    "confirm": [
+      "yes", "yeah", "yep", "sure", "ok", "okay", "confirm", "correct",
+      "right", "proceed", "go ahead", "affirmative", "absolutely", "definitely",
+      "thats right", "sounds good", "alright", "fine", "agreed", "yup",
+      "aye", "indeed", "certainly", "of course", "for sure",
+      "yes please", "yeah sure", "yep sounds good", "ok lets do it",
+      "sure thing", "absolutely yes", "definitely yes", "yes lets go",
+      "roger", "positive", "confirmed", "approved", "accepted",
+      "you bet", "roger that", "yes sir", "yes maam", "uh huh", "mm hmm",
+      "affirmative", "thats correct", "exactly", "precisely", "spot on", "bingo"
+    ],
+    
+    "deny": [
+      "no", "nope", "nah", "not really", "negative", "dont think so",
+      "i dont think so", "not interested", "no thanks", "no thank you",
+      "naw", "nay", "no way", "not at all", "definitely not",
+      "absolutely not", "no please", "no i dont", "i dont want",
+      "not for me", "im not interested", "dont want to", "rather not",
+      "pass", "ill pass", "not now", "maybe not", "i dont think so",
+      "negative", "nope nope", "no way jose", "not happening", "forget it",
+      "not a chance", "no can do", "not interested", "decline", "refuse"
+    ],
+    
+    "cancel": [
+      "cancel", "stop", "nevermind", "abort", "forget it", "dont want to",
+      "changed my mind", "cancel booking", "stop this", "end this",
+      "quit", "exit", "never mind", "forget about it", "i dont want",
+      "cancel this booking", "stop booking", "cancel reservation",
+      "dont book", "dont reserve", "stop the booking", "end booking",
+      "abort booking", "i want to cancel", "please cancel", "cancel it",
+      "cancel that", "cancel this", "stop it", "end it", "abort it",
+      "i dont want this anymore", "changed my mind", "second thoughts", "on second thought"
+    ],
+    
+    "go_back": [
+      "back", "go back", "previous", "undo", "return", "go to previous step",
+      "previous step", "step back", "take me back", "go backwards",
+      "revert", "back up", "previous screen", "last step", "go to last",
+      "one step back", "backward", "previous page", "go to previous",
+      "take me to previous", "return to previous", "previous please",
+      "can i go back", "let me go back", "i want to go back",
+      "back one step", "go back one", "previous one", "last one", "go to last step"
+    ],
+    
+    "view_bookings": [
+      "my bookings", "show bookings", "booking history", "view bookings",
+      "past bookings", "previous bookings", "my reservations", "booking list",
+      "what did i book", "my tickets", "show my bookings", "list my bookings",
+      "reservation history", "my orders", "order history",
+      "see my bookings", "display bookings", "my booking history",
+      "show my reservations", "list reservations", "view my bookings",
+      "what have i booked", "my past bookings", "previous reservations",
+      "show my tickets", "my ticket history", "bookings please",
+      "see my tickets", "ticket list", "show me my bookings", "display my bookings",
+      "my booking list", "reservation list", "what bookings do i have"
+    ],
+    
+    "ask_price": [
+      "how much", "what is the price", "cost", "ticket price", "how much does it cost",
+      "price", "how expensive", "what does it cost", "whats the cost", "ticket cost",
+      "how much is it", "what is the cost", "pricing", "how much are tickets",
+      "whats the price", "price per ticket", "ticket prices", "how much per ticket",
+      "price please", "what price", "costs how much", "how much money",
+      "price info", "pricing info", "what are the prices", "how much do i pay",
+      "cost per ticket", "how much will it cost", "tell me the price",
+      "give me the price", "price details", "what will it cost me", "how much total",
+      "total cost", "total price", "how expensive is it", "is it expensive"
+    ],
+    
+    "ask_time": [
+      "what time", "when", "showtimes", "show times", "screening times",
+      "when is it showing", "at what time", "what times", "available times",
+      "when can i watch", "screening schedule", "time slots", "when does it start",
+      "what time is the movie", "movie times", "film times", "when is it playing",
+      "times available", "show schedule", "movie schedule", "when can i see it",
+      "what times are available", "screening times please", "showtime info",
+      "when does it play", "playing times", "when is showing", "time options",
+      "at what times", "times for", "schedule", "movie timings", "film schedule",
+      "when does it begin", "start time", "start times", "when does the movie start"
+    ],
+    
+    "complaint": [
+      "this is bad", "not good", "terrible", "awful", "disappointed",
+      "doesnt work", "broken", "problem", "issue", "not working", "poor service",
+      "this sucks", "horrible", "useless", "frustrated", "annoying", "error",
+      "bad service", "poor quality", "very bad", "not satisfied", "unsatisfied",
+      "not happy", "this is terrible", "this is awful", "worst service",
+      "horrible experience", "bad experience", "complaint", "i have a problem",
+      "there is an issue", "something is wrong", "not working properly",
+      "this is rubbish", "pathetic", "unacceptable", "disgusting", "waste of time",
+      "waste of money", "rip off", "scam", "fraud", "terrible quality"
+    ],
+    
+    "praise": [
+      "great", "excellent", "wonderful", "amazing", "fantastic", "awesome",
+      "brilliant", "perfect", "love it", "very good", "outstanding", "superb",
+      "incredible", "spectacular", "marvelous", "terrific", "impressive",
+      "well done", "good job", "nice work", "love this", "this is great",
+      "this is amazing", "this is wonderful", "so good", "really good",
+      "excellent work", "fantastic job", "awesome service", "great service",
+      "you rock", "youre awesome", "this rocks", "fabulous", "phenomenal",
+      "first class", "top notch", "stellar", "magnificent", "splendid"
+    ],
+    
+    "change_name": [
+      "change my name", "update my name", "i want to change my name",
+      "can i change my name", "change name", "update name", "new name",
+      "rename me", "call me something else", "different name",
+      "my name is wrong", "thats not my name", "change my name please",
+      "i want a new name", "update my name please", "can i update my name",
+      "i need to change my name", "let me change my name", "i want to be called something else",
+      "thats the wrong name", "not my name", "different name please", "call me by another name"
+    ]
+  }

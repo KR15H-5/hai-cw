@@ -113,7 +113,7 @@ try:
     
     # Test: Greeting
     greeting = bot.greet()
-    assert "CineBook" in greeting
+    assert "SavoyBot" in greeting
     print(f"   ✅ Greeting generated")
     
     # Test: Give name

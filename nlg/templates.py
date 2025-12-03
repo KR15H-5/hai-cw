@@ -107,7 +107,7 @@ class Templates:
     ]
     
     GOODBYE = [
-        "Goodbye! Thanks for using CineBook!",
+        "Goodbye! Thanks for using SavoyBot!",
         "See you soon! Enjoy your movie!",
         "Take care! Come back anytime!",
         "Farewell! Happy movie watching!"

@@ -5,6 +5,8 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from datetime import datetime
 from .response_generator import ResponseGenerator
 from utils.helpers import Helper
+from utils.ticket_generator import generate_ticket
+
 
 class NLGManager:
     """
@@ -43,15 +45,15 @@ class NLGManager:
         intro = self.generator.movie_info_intro(movie['title'])
         
         details = f"\n{intro}\n\n"
-        details += f"🎬 Title: {movie['title']}\n"
-        details += f"🎭 Genre: {movie['genre'].capitalize()}\n"
-        details += f"⭐ Rating: {movie['rating']}\n"
-        details += f"⏱️  Duration: {movie['duration']}\n"
-        details += f"🎥 Director: {movie['director']}\n"
-        details += f"👥 Cast: {', '.join(movie['cast'])}\n\n"
-        details += f"📖 Description: {movie['description']}\n\n"
-        details += f"🕐 Showtimes: {', '.join(movie['times'])}\n"
-        details += f"💷 Price: £{movie['price']:.2f} per ticket\n\n"
+        details += f"Title: {movie['title']}\n"
+        details += f"Genre: {movie['genre'].capitalize()}\n"
+        details += f"Rating: {movie['rating']}\n"
+        details += f"Duration: {movie['duration']}\n"
+        details += f"Director: {movie['director']}\n"
+        details += f"Cast: {', '.join(movie['cast'])}\n\n"
+        details += f"Description: {movie['description']}\n\n"
+        details += f"Showtimes: {', '.join(movie['times'])}\n"
+        details += f"Price: £{movie['price']:.2f} per ticket\n\n"
         details += "Would you like to book tickets for this movie?"
         
         return details
@@ -91,40 +93,39 @@ class NLGManager:
         summary = "\n" + "="*60 + "\n"
         summary += "                    BOOKING SUMMARY\n"
         summary += "="*60 + "\n\n"
-        summary += f"🎬 Movie: {movie['title']}\n"
-        summary += f"🕐 Time: {time}\n"
-        summary += f"📅 Date: {datetime.now().strftime('%A, %B %d, %Y')}\n"
-        summary += f"🎟️  Tickets: {tickets}\n"
-        summary += f"💺 Seats: {seats_str}\n"
-        summary += f"💷 Price: £{movie['price']:.2f} x {tickets} = £{total:.2f}\n\n"
+        summary += f"Movie: {movie['title']}\n"
+        summary += f"Time: {time}\n"
+        summary += f"Date: {datetime.now().strftime('%A, %B %d, %Y')}\n"
+        summary += f"Tickets: {tickets}\n"
+        summary += f"Seats: {seats_str}\n"
+        summary += f"Price: £{movie['price']:.2f} x {tickets} = £{total:.2f}\n\n"
         summary += "="*60 + "\n\n"
         summary += f"{prompt}\n\n"
         summary += "Type 'yes' to confirm or 'no' to cancel."
         
         return summary
     
-    def confirmation_message(self, ref, name, movie, time, seats, tickets, total):
-        """Generate booking confirmation message"""
-        seats_str = Helper.format_seat_list(seats)
-        confirmed_msg = self.generator.booking_confirmed(ref)
+    def confirmation_message(self, ref, customer, movie, showtime, seats, num_tickets, total):
+        """Generate booking confirmation with ASCII ticket"""
+        from datetime import datetime, timedelta
         
-        output = "\n" + "="*60 + "\n"
-        output += "                  BOOKING CONFIRMED!\n"
-        output += "="*60 + "\n\n"
-        output += f"✅ {confirmed_msg}\n"
-        output += f"👤 Customer: {name}\n\n"
-        output += f"🎬 Movie: {movie['title']}\n"
-        output += f"🕐 Time: {time} on {datetime.now().strftime('%A, %B %d')}\n"
-        output += f"💺 Seats: {seats_str}\n"
-        output += f"🎟️  Tickets: {tickets}\n"
-        output += f"💷 Total: £{total:.2f}\n\n"
-        output += "="*60 + "\n\n"
-        output += "📧 Confirmation email sent!\n"
-        output += "📱 Please show this reference at the cinema.\n"
-        output += "🍿 Enjoy your movie!\n\n"
-        output += self.generator.how_can_help()
+        # Calculate date
+        booking_date = datetime.now() + timedelta(days=0)
+        date_str = booking_date.strftime("%a, %d %b %Y")
         
-        return output
+        # Generate ASCII ticket with real QR code
+        ascii_ticket = generate_ticket(
+            ref=ref,
+            customer=customer,
+            movie=movie['title'],
+            date=date_str,
+            time=showtime,
+            seats=seats,
+            tickets=num_tickets,
+            total=total
+        )
+        
+        return ascii_ticket + "\nConfirmation email sent!"
     
     def cancellation_message(self):
         """Generate cancellation message"""

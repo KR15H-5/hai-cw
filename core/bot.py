@@ -9,7 +9,7 @@ from nlg import NLGManager
 from qa import QAManager
 from transaction import TransactionManager
 from utils.text_processor import TextProcessor
-from .session import Session  # ← FIXED: Changed from "from core import MovieBot"
+from .session import Session
 
 class MovieBot:
     """
@@ -54,13 +54,10 @@ class MovieBot:
         
         text_lower = user_input.lower().strip()
         
-        # Check for quit commands
         if text_lower in ['quit', 'exit', 'bye', 'goodbye']:
             return None
         
-        # Handle name input if just asked for name
         if self.last_question_was_name:
-            # Try to extract name
             name = self.text_processor.extract_name(user_input)
             
             if name:
@@ -70,7 +67,6 @@ class MovieBot:
                 self.context.add_to_history(user_input, response)
                 return response
             
-            # If extraction failed but it's a short input, treat as direct name
             words = user_input.split()
             if len(words) <= 2 and not any(word in text_lower for word in ['what', 'show', 'help', 'movie', 'book']):
                 name = words[0].capitalize()
@@ -80,10 +76,8 @@ class MovieBot:
                 self.context.add_to_history(user_input, response)
                 return response
             
-            # Otherwise process normally
             self.last_question_was_name = False
         
-        # Handle booking stages
         booking_state = self.context.get_booking_state()
         stage = booking_state.get('stage')
         
@@ -92,22 +86,19 @@ class MovieBot:
             self.context.add_to_history(user_input, response)
             return response
         
-        # Handle awaiting confirmation
         if self.context.get('awaiting_confirmation'):
             response = self._handle_awaiting_confirmation(user_input)
             self.context.add_to_history(user_input, response)
             return response
         
-        # Get intent
         intent, confidence = self.intent_matcher.get_intent_with_context(
             user_input,
             self.context.context
         )
 
-        print(f"🔍 DEBUG: Intent='{intent}', Confidence={confidence:.2f}")
+        print(f"DEBUG: Intent='{intent}', Confidence={confidence:.2f}")
 
         
-        # Route based on intent
         response = self._route_intent(intent, user_input)
         self.context.add_to_history(user_input, response)
         return response
@@ -272,7 +263,7 @@ class MovieBot:
                 'seats': []
             })
             movie = self.db.get_movie(booking_state['movie'])
-            return f"⬅️  Going back...\n\nWhich showtime? Available: {', '.join(movie['times'])}"
+            return f"Going back...\n\nWhich showtime? Available: {', '.join(movie['times'])}"
         
         elif previous_stage == 'tickets':
             self.context.update_booking_state({
@@ -280,7 +271,7 @@ class MovieBot:
                 'tickets': None,
                 'seats': []
             })
-            return "⬅️  Going back...\n\nHow many tickets? (1-10)"
+            return "Going back...\n\nHow many tickets? (1-10)"
         
         elif previous_stage == 'seats':
             self.context.update_booking_state({
@@ -291,7 +282,7 @@ class MovieBot:
                 booking_state['movie'],
                 booking_state['time']
             )
-            return f"⬅️  Going back...\n\n{seat_map}\n\nPlease select your {booking_state['tickets']} seat(s)."
+            return f"Going back...\n\n{seat_map}\n\nPlease select your {booking_state['tickets']} seat(s)."
         
         return "Something went wrong. Type 'cancel' to start over."
     
@@ -358,14 +349,12 @@ class MovieBot:
             return "Thank you! I'm glad you're enjoying the experience! 🎉"
         
         elif intent == 'complaint':
-            return "I'm sorry you're experiencing issues. Please contact our support team at support@cinebook.com"
+            return "I'm sorry you're experiencing issues. Please contact our support team at support@savoy.com"
         
-        # Try QA system
         qa_answer = self.qa.find_answer(user_input)
         if qa_answer:
             return qa_answer
         
-        # Try finding movie
         movie_key = self._find_movie(user_input)
         if movie_key:
             return self._show_movie_info(movie_key)
@@ -501,4 +490,4 @@ class MovieBot:
         return "Sure! What would you like me to call you?"
 
 if __name__ == "__main__":
-    print("✅ MovieBot module loaded successfully!")
+    print("MovieBot module loaded successfully!")

@@ -57,7 +57,7 @@ try:
     
     # Test basic generation
     welcome = gen.welcome("Good morning")
-    assert "CineBook" in welcome
+    assert "SavoyBot" in welcome
     print(f"   ✅ welcome(): {welcome}")
     
     greet = gen.greet_user("Alice")
@@ -110,13 +110,13 @@ try:
     
     # Test welcome messages
     welcome_no_name = nlg.welcome_message()
-    assert "CineBook" in welcome_no_name
+    assert "SavoyBot" in welcome_no_name
     assert "?" in welcome_no_name  # Should ask a question (for name)
     print("   ✅ welcome_message() without name")
     
     welcome_with_name = nlg.welcome_message("Bob")
     assert "Bob" in welcome_with_name
-    assert "CineBook" in welcome_with_name
+    assert "SavoyBot" in welcome_with_name
     print("   ✅ welcome_message('Bob') with name")
     
     # Test movie list

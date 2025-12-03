@@ -56,25 +56,25 @@ print("   ✅ Invalid time 15:00 rejected")
 # Test 4: Validate email
 print("\n4️⃣ Testing validate_email()...")
 assert Validator.validate_email('test@example.com') == True
-print("   ✅ Valid email 'test@example.com' accepted")
+print("   Valid email 'test@example.com' accepted")
 
 assert Validator.validate_email('user@uni.ac.uk') == True
-print("   ✅ Valid email 'user@uni.ac.uk' accepted")
+print("   Valid email 'user@uni.ac.uk' accepted")
 
 assert Validator.validate_email('invalid-email') == False
-print("   ✅ Invalid email rejected")
+print("   Invalid email rejected")
 
 # Test 5: Validate phone
 print("\n5️⃣ Testing validate_phone()...")
 assert Validator.validate_phone('07123456789') == True
-print("   ✅ Valid phone '07123456789' accepted")
+print("    Valid phone '07123456789' accepted")
 
 assert Validator.validate_phone('+447123456789') == True
-print("   ✅ Valid phone '+447123456789' accepted")
+print("   Valid phone '+447123456789' accepted")
 
 assert Validator.validate_phone('123') == False
-print("   ✅ Invalid phone '123' rejected")
+print("   Invalid phone '123' rejected")
 
 print("\n" + "="*60)
-print("✅✅✅ ALL VALIDATOR TESTS PASSED! ✅✅✅")
+print("ALL VALIDATOR TESTS PASSED!")
 print("="*60)

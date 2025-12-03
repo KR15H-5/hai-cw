@@ -7,7 +7,7 @@ def print_banner():
     banner = """
 ╔════════════════════════════════════════════════════════╗
 ║                                                        ║
-║                SAVOY CINEMA ASSISTANT!                 ║
+║                SAVOYBOT ASSISTANT!                     ║
 ║                                                        ║
 ║                Your NLP Movie Booking Bot              ║
 ║                                                        ║
@@ -39,7 +39,7 @@ def main():
             if response is None:
                 print("\nBot:", bot.nlg.generator.goodbye())
                 print("\n" + "─" * 60)
-                print("Thank you for using CineBook! 🎬🍿")
+                print("Thank you for using SavoyBot!")
                 print("─" * 60 + "\n")
                 break
             
