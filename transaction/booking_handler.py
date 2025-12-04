@@ -8,32 +8,24 @@ from utils.validators import Validator
 from utils.helpers import Helper
 
 class BookingHandler:
-    """
-    Handles booking flow logic
-    Validates each step of the booking process
-    """
-    
     def __init__(self, db_manager):
         self.db = db_manager
         self.text_processor = TextProcessor()
         self.validator = Validator()
     
     def start(self, movie_key):
-        """Start booking for a movie"""
         movie = self.db.get_movie(movie_key)
         if not movie:
             return None, "Sorry, that movie isn't available."
         return movie, None
     
     def validate_time(self, movie, time_input):
-        """Validate and match showtime"""
         is_valid, result = self.validator.validate_time(time_input, movie['times'])
         if is_valid:
             return result, None
         return None, f"That time isn't available. Choose from: {', '.join(movie['times'])}"
     
     def validate_tickets(self, num_input):
-        """Validate number of tickets"""
         num = self.text_processor.extract_number(num_input)
         
         if num is None:
@@ -65,7 +57,6 @@ class BookingHandler:
         return output
     
     def validate_seats(self, seat_input, movie_key, showtime, num_tickets):
-        """Validate seat selection"""
         seats = self.text_processor.parse_seats(seat_input)
         
         if not seats:
@@ -104,7 +95,6 @@ class BookingHandler:
         return selected, None
     
     def confirm(self, user_id, user_name, movie_key, time, tickets, seats, total):
-        """Confirm and create booking"""
         ref = Helper.generate_reference()
         
         booking_data = {
@@ -124,4 +114,4 @@ class BookingHandler:
         return ref
 
 if __name__ == "__main__":
-    print("✅ BookingHandler module loaded successfully!")
+    print("BookingHandler module loaded successfully!")

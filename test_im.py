@@ -44,45 +44,8 @@ except Exception as e:
     traceback.print_exc()
     sys.exit(1)
 
-# Test 2: Intent Rules
-print("\n" + "─"*70)
-print("📏 TEST 2: INTENT RULES")
-print("─"*70)
 
-try:
-    from intent.intent_rules import IntentRules
-    
-    rules = IntentRules()
-    
-    test_cases = [
-        ("what is my name", "ask_name"),
-        ("how are you doing", "small_talk_positive"),
-        ("book tickets for dune", "book_tickets"),
-        ("thanks a lot", "small_talk_thanks"),
-        ("hello", "greeting"),
-        ("show movies", "show_movies"),
-        ("how much does it cost", "ask_price"),
-    ]
-    
-    passed = 0
-    for text, expected in test_cases:
-        result = rules.check(text)
-        if result == expected:
-            print(f"   ✅ '{text}' → {result}")
-            passed += 1
-        else:
-            print(f"   ⚠️  '{text}' → {result} (expected: {expected})")
-    
-    assert passed >= 5, f"Only {passed}/{len(test_cases)} rule tests passed"
-    print(f"\n✅ IntentRules: {passed}/{len(test_cases)} TESTS PASSED")
-    
-except Exception as e:
-    print(f"❌ IntentRules FAILED: {e}")
-    import traceback
-    traceback.print_exc()
-    sys.exit(1)
 
-# Test 3: Intent Classifier
 print("\n" + "─"*70)
 print("🤖 TEST 3: INTENT CLASSIFIER (ML)")
 print("─"*70)

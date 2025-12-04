@@ -167,7 +167,6 @@ class MovieBot:
         return self.nlg.tickets_selected_response(num, seat_map)
     
     def _handle_seat_selection(self, seat_input):
-        """Handle seat selection"""
         booking_state = self.context.get_booking_state()
         movie_key = booking_state['movie']
         showtime = booking_state['time']

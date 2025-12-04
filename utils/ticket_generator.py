@@ -2,7 +2,6 @@ import subprocess
 import shutil
 
 def generate_qr_code(data):
-    """Generate QR code using qrencode command"""
     try:
         if not shutil.which('qrencode'):
             return [
@@ -35,23 +34,19 @@ def generate_qr_code(data):
 
 
 def generate_ticket(ref, customer, movie, date, time, seats, tickets, total):
-    """Generate compact ASCII ticket with real QR code"""
 
     WIDTH = 46
 
     def box(text=""):
-        text = text[:WIDTH]            # enforce max width
-        text = text.ljust(WIDTH)       # pad to width
+        text = text[:WIDTH]          
+        text = text.ljust(WIDTH)   
         return f"┃ {text} ┃"
 
-    # QR data
     qr_data = f"{ref}"
     qr_lines = generate_qr_code(qr_data)
 
-    # Seat string
     seat_str = ', '.join([f"{s[0]}{s[1]}" for s in seats])
 
-    # Truncate movie
     movie_display = movie[:23] + '...' if len(movie) > 25 else movie
 
     ticket = "\n"
@@ -65,7 +60,6 @@ def generate_ticket(ref, customer, movie, date, time, seats, tickets, total):
     ticket += f"┣{'━' * (WIDTH + 2)}┫\n"
     ticket += box("SCAN AT ENTRANCE:") + "\n"
 
-    # Centre each QR code line
     for qr_line in qr_lines:
         centred = qr_line.center(WIDTH)
         ticket += box(centred) + "\n"

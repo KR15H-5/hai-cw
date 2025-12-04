@@ -9,16 +9,12 @@ from utils.ticket_generator import generate_ticket
 
 
 class NLGManager:
-    """
-    Main NLG orchestrator
-    Generates all bot responses using templates and dynamic content
-    """
+
     
     def __init__(self):
         self.generator = ResponseGenerator()
     
     def welcome_message(self, name=None):
-        """Generate welcome message"""
         greeting = Helper.get_greeting()
         welcome = self.generator.welcome(greeting)
         
@@ -31,7 +27,6 @@ class NLGManager:
             return f"{welcome}\n{ask_name}"
     
     def movie_list_response(self, movies):
-        """Generate list of all movies"""
         output = "Currently showing:\n\n"
         for i, (key, movie) in enumerate(movies.items(), 1):
             output += f"{i}. {movie['title']} ({movie['rating']})\n"
@@ -41,7 +36,6 @@ class NLGManager:
         return output
     
     def movie_info_response(self, movie):
-        """Generate detailed movie information"""
         intro = self.generator.movie_info_intro(movie['title'])
         
         details = f"\n{intro}\n\n"
@@ -59,7 +53,6 @@ class NLGManager:
         return details
     
     def booking_start_response(self, movie):
-        """Generate booking start message"""
         start_msg = self.generator.booking_start(movie['title'])
         ask_time = self.generator.ask_time()
         
@@ -70,12 +63,10 @@ class NLGManager:
         return output
     
     def time_selected_response(self, time):
-        """Generate time selection confirmation"""
         ask_tickets = self.generator.ask_tickets()
         return f"Perfect! {time} showing selected.\n\n{ask_tickets} (1-10)"
     
     def tickets_selected_response(self, num, seat_map):
-        """Generate ticket selection confirmation"""
         ask_seats = self.generator.ask_seats(num)
         
         output = seat_map
@@ -86,7 +77,6 @@ class NLGManager:
         return output
     
     def booking_summary(self, movie, time, tickets, seats, total):
-        """Generate booking summary for confirmation"""
         seats_str = Helper.format_seat_list(seats)
         prompt = self.generator.confirmation_prompt()
         
@@ -106,14 +96,11 @@ class NLGManager:
         return summary
     
     def confirmation_message(self, ref, customer, movie, showtime, seats, num_tickets, total):
-        """Generate booking confirmation with ASCII ticket"""
         from datetime import datetime, timedelta
         
-        # Calculate date
         booking_date = datetime.now() + timedelta(days=0)
         date_str = booking_date.strftime("%a, %d %b %Y")
         
-        # Generate ASCII ticket with real QR code
         ascii_ticket = generate_ticket(
             ref=ref,
             customer=customer,
@@ -128,13 +115,11 @@ class NLGManager:
         return ascii_ticket + "\nConfirmation email sent!"
     
     def cancellation_message(self):
-        """Generate cancellation message"""
         cancel_msg = self.generator.cancel()
         how_help = self.generator.how_can_help()
-        return f"❌ {cancel_msg}\n\n{how_help}"
+        return f"{cancel_msg}\n\n{how_help}"
     
     def help_message(self, in_booking=False, stage=None):
-        """Generate help message"""
         if in_booking and stage:
             stage_help = {
                 'time': "Select a showtime from the available times shown above.",
@@ -142,50 +127,47 @@ class NLGManager:
                 'seats': "Select seats using format: A1, B5, C3",
                 'confirm': "Type 'yes' to confirm your booking or 'no' to cancel."
             }
-            help_text = f"ℹ️  Current step: {stage_help.get(stage, 'Booking in progress')}\n\n"
-            help_text += "💡 Type 'back' to go to previous step\n"
-            help_text += "❌ Type 'cancel' to cancel booking"
+            help_text = f"Current step: {stage_help.get(stage, 'Booking in progress')}\n\n"
+            help_text += "Type 'back' to go to previous step\n"
+            help_text += "Type 'cancel' to cancel booking"
             return help_text
         
-        return """ℹ️  Available commands:
+        return """Available commands:
 
-📽️  'show movies' - See what's playing
-ℹ️  'tell me about [movie]' - Get movie information  
-🎟️  'book [movie]' - Book tickets
-❓ 'what is my name' - I'll tell you your name
-📋 'my bookings' - View booking history
-❓ 'help' - Show this message
-👋 'quit' - Exit
+'show movies' - See what's playing
+'tell me about [movie]' - Get movie information  
+'book [movie]' - Book tickets
+'what is my name' - I'll tell you your name
+'my bookings' - View booking history
+'help' - Show this message
+'quit' - Exit
 
 You can also type naturally! Just tell me what you want."""
     
     def bookings_list_response(self, bookings, name):
-        """Generate bookings list"""
         if not bookings:
             return f"You don't have any bookings yet, {name}.\n\nWould you like to book a movie?"
         
-        output = f"📋 Your Booking History ({len(bookings)} booking(s)):\n\n"
+        output = f"Your Booking History ({len(bookings)} booking(s)):\n\n"
         
         for i, booking in enumerate(bookings, 1):
             seats_str = Helper.format_seat_list([tuple(s) for s in booking['seats']])
-            output += f"{i}. 🎬 {booking['movie_title']}\n"
-            output += f"   🔖 Reference: {booking['reference']}\n"
-            output += f"   🕐 Time: {booking['time']}\n"
-            output += f"   💺 Seats: {seats_str}\n"
-            output += f"   🎟️  Tickets: {booking['tickets']}\n"
-            output += f"   💷 Total: £{booking['total']:.2f}\n"
-            output += f"   📅 Date: {Helper.format_datetime(booking['timestamp'])}\n\n"
+            output += f"{i}. {booking['movie_title']}\n"
+            output += f"   Reference: {booking['reference']}\n"
+            output += f"   Time: {booking['time']}\n"
+            output += f"   Seats: {seats_str}\n"
+            output += f"   Tickets: {booking['tickets']}\n"
+            output += f"   Total: £{booking['total']:.2f}\n"
+            output += f"   Date: {Helper.format_datetime(booking['timestamp'])}\n\n"
         
         return output
     
     def error_message(self, custom_message=None):
-        """Generate error message"""
         if custom_message:
-            return f"⚠️  {custom_message}"
+            return f"{custom_message}"
         return self.generator.error()
     
     def validation_error(self, message):
-        """Generate validation error"""
         return f"⚠️  {message}"
 
 if __name__ == "__main__":

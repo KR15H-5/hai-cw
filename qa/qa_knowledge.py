@@ -1,12 +1,7 @@
 class QAKnowledge:
-    """
-    Knowledge base for FAQ
-    Stores question-answer pairs and movie-specific patterns
-    """
     
     @staticmethod
     def get_general_qa():
-        """Get general FAQ question-answer pairs"""
         return {
             # Bot identity
             "what is your name": "I'm SavoyBot, your intelligent movie booking assistant!",
@@ -99,7 +94,6 @@ class QAKnowledge:
     
     @staticmethod
     def get_movie_specific_patterns():
-        """Get patterns for movie-specific questions"""
         return {
             'genre': "is a {genre} film.",
             'director': "was directed by {director}.",

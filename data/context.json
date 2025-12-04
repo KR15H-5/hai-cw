@@ -240,171 +240,6 @@
     "preferences": {},
     "conversation_history": [
       {
-        "timestamp": "2025-12-02T18:39:46.395382",
-        "user": "a1, a2",
-        "bot": "\u26a0\ufe0f  Selected 0 but need 2.\nProblems: A1 (taken), A2 (taken)"
-      },
-      {
-        "timestamp": "2025-12-02T18:39:51.358389",
-        "user": "d1,d2",
-        "bot": "\n============================================================\n                    BOOKING SUMMARY\n============================================================\n\nMovie: Superman\nTime: 11:00\nDate: Tuesday, December 02, 2025\nTickets: 2\nSeats: D1, D2\nPrice: \u00a313.50 x 2 = \u00a327.00\n\n============================================================\n\nIs everything correct?\n\nType 'yes' to confirm or 'no' to cancel."
-      },
-      {
-        "timestamp": "2025-12-02T18:39:56.538224",
-        "user": "yes",
-        "bot": "\n\u250f\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2513\n\u2503 SAVOYBOT TICKET                                \u2503\n\u2523\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u252b\n\u2503 REF: BK77176       [User] Krish                \u2503\n\u2503 Superman                * 12A                  \u2503\n\u2503 Tue, 02 Dec 2025        11:00                  \u2503\n\u2503 D1, D2            TKT x2   \u00a327.00              \u2503\n\u2523\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u252b\n\u2503 SCAN AT ENTRANCE:                              \u2503\n\u2503         \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588 \u2584\u2584\u2584\u2584\u2584 \u2588 \u2584 \u2584 \u2588 \u2584\u2584\u2584\u2584\u2584 \u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588 \u2588   \u2588 \u2588 \u2580\u2580\u2580\u2588\u2588 \u2588   \u2588 \u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588 \u2588\u2584\u2584\u2584\u2588 \u2588\u2580\u2580\u2588\u2580\u2584\u2588 \u2588\u2584\u2584\u2584\u2588 \u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2588\u2584\u2580 \u2580 \u2588\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588  \u2588\u2580\u2584\u2584\u2584\u2580\u2588 \u2580 \u2580\u2588\u2588 \u2588\u2584 \u2584\u2584\u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588\u2580\u2588 \u2584\u2584\u2588\u2584\u2588 \u2580\u2584\u2584\u2588\u2580 \u2584   \u2588\u2588\u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588\u2588\u2588\u2584\u2584\u2584\u2588\u2584\u2588 \u2588\u2588\u2588   \u2588\u2588\u2580  \u2584\u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588 \u2584\u2584\u2584\u2584\u2584 \u2588\u2580 \u2584\u2580 \u2584\u2588\u2580\u2588 \u2588\u2580 \u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588 \u2588   \u2588 \u2588\u2584   \u2580\u2588\u2584\u2584\u2584\u2580\u2584  \u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588 \u2588\u2584\u2584\u2584\u2588 \u2588\u2580\u2584\u2580\u2584\u2588\u2580  \u2584\u2580\u2588\u2588\u2580\u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2588\u2584\u2584\u2588\u2588\u2584\u2584\u2584\u2584\u2588\u2588\u2584\u2584\u2584\u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588          \u2503\n\u2523\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u252b\n\u2503 123 Savoy St, Nottingham NG1 1AA               \u2503\n\u2503 Present this ticket \u2022 Enjoy your movie!        \u2503\n\u2517\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u251b\n\nConfirmation email sent!"
-      },
-      {
-        "timestamp": "2025-12-02T18:40:47.027450",
-        "user": "do you have 3d movies",
-        "bot": "Your name is Krish."
-      },
-      {
-        "timestamp": "2025-12-02T18:40:54.413747",
-        "user": "3d movies",
-        "bot": "Currently showing:\n\n1. Captain America: Brave New World (12A)\n   Genre: Action, Duration: 118 mins\n   Price: \u00a313.50\n2. Thunderbolts (12A)\n   Genre: Action, Duration: 127 mins\n   Price: \u00a313.50\n3. Mission: Impossible - The Final Reckoning (12A)\n   Genre: Action, Duration: 163 mins\n   Price: \u00a314.00\n4. Superman (12A)\n   Genre: Superhero, Duration: 140 mins\n   Price: \u00a313.50\n5. The Fantastic Four: First Steps (12A)\n   Genre: Superhero, Duration: 135 mins\n   Price: \u00a313.50\n\nWhat would you like to know more about?"
-      },
-      {
-        "timestamp": "2025-12-02T18:40:58.004908",
-        "user": "cancel",
-        "bot": "\u26a0\ufe0f  I'm not sure what you mean. Type 'help' for options or 'show movies' to see what's playing."
-      },
-      {
-        "timestamp": "2025-12-02T18:41:08.948113",
-        "user": "do you do you have 3d movies",
-        "bot": "Doing fantastic! Ready to help you book movies! Ready to help you book some great movies!"
-      },
-      {
-        "timestamp": "2025-12-02T18:41:20.405874",
-        "user": "do you serve food",
-        "bot": "Your name is Krish."
-      },
-      {
-        "timestamp": "2025-12-02T18:41:35.624789",
-        "user": "what is your name",
-        "bot": "I'm SavoyBot, your intelligent movie booking assistant!"
-      },
-      {
-        "timestamp": "2025-12-02T18:41:46.380845",
-        "user": "can i change my name",
-        "bot": "Sure! What would you like me to call you?"
-      },
-      {
-        "timestamp": "2025-12-02T18:41:49.121314",
-        "user": "ash",
-        "bot": "Good evening! Welcome to SavoyBot, your movie booking assistant!\nWelcome, Ash! What would you like to do today?\n\nYou can:\n- Ask about movies\n- Book tickets\n- Type 'help' for more options"
-      },
-      {
-        "timestamp": "2025-12-03T21:36:06.848216",
-        "user": "hello",
-        "bot": "Hello again, Ash! What would you like to do today?"
-      },
-      {
-        "timestamp": "2025-12-03T21:36:11.541268",
-        "user": "my name is krish",
-        "bot": "Good evening! Welcome to SavoyBot, your movie booking assistant!\nWelcome, Krish! How may I assist you?\n\nYou can:\n- Ask about movies\n- Book tickets\n- Type 'help' for more options"
-      },
-      {
-        "timestamp": "2025-12-03T21:36:21.378950",
-        "user": "do you have 3d movies",
-        "bot": "Your name is Krish."
-      },
-      {
-        "timestamp": "2025-12-03T21:37:13.057646",
-        "user": "do you have gift cards",
-        "bot": "Your name is Krish."
-      },
-      {
-        "timestamp": "2025-12-04T18:33:51.866354",
-        "user": "hey",
-        "bot": "Hello again, Krish! How can I help you today?"
-      },
-      {
-        "timestamp": "2025-12-04T18:33:53.934921",
-        "user": "how are you",
-        "bot": "I'm great, thanks for asking! Ready to help you book some great movies!"
-      },
-      {
-        "timestamp": "2025-12-04T18:33:57.379435",
-        "user": "what is your name",
-        "bot": "I'm SavoyBot, your intelligent movie booking assistant!"
-      },
-      {
-        "timestamp": "2025-12-04T18:34:15.269623",
-        "user": "do you have 3d movies",
-        "bot": "I can help you browse movies, book tickets, check showtimes, view your bookings, and answer questions about our cinema."
-      },
-      {
-        "timestamp": "2025-12-04T18:35:11.316225",
-        "user": "what payment methods do you accept",
-        "bot": "Your name is Krish."
-      },
-      {
-        "timestamp": "2025-12-04T18:36:09.217533",
-        "user": "hey",
-        "bot": "Hello again, Krish! What brings you here today?"
-      },
-      {
-        "timestamp": "2025-12-04T18:36:15.731496",
-        "user": "how much are tickets",
-        "bot": "Most tickets are \u00a312.50, but family films like Paddington are \u00a310.00."
-      },
-      {
-        "timestamp": "2025-12-04T18:36:29.098805",
-        "user": "do you have 3d movies",
-        "bot": "I can help you browse movies, book tickets, check showtimes, view your bookings, and answer questions about our cinema."
-      },
-      {
-        "timestamp": "2025-12-04T18:36:45.653515",
-        "user": "do you have parlking",
-        "bot": "Your name is Krish."
-      },
-      {
-        "timestamp": "2025-12-04T18:36:49.991127",
-        "user": "do you have parking",
-        "bot": "Your name is Krish."
-      },
-      {
-        "timestamp": "2025-12-04T18:38:31.523748",
-        "user": "hey",
-        "bot": "Hello again, Krish! What would you like to do today?"
-      },
-      {
-        "timestamp": "2025-12-04T18:38:34.975218",
-        "user": "how are you",
-        "bot": "Doing fantastic! Ready to help you book movies!"
-      },
-      {
-        "timestamp": "2025-12-04T18:38:47.328832",
-        "user": "do you have 3d movies",
-        "bot": "I can help you browse movies, book tickets, check showtimes, view your bookings, and answer questions about our cinema."
-      },
-      {
-        "timestamp": "2025-12-04T18:38:50.515188",
-        "user": "3d",
-        "bot": "\u26a0\ufe0f  I'm not sure what you mean. Type 'help' for options or 'show movies' to see what's playing."
-      },
-      {
-        "timestamp": "2025-12-04T18:38:53.495962",
-        "user": "3d movies",
-        "bot": "Currently showing:\n\n1. Captain America: Brave New World (12A)\n   Genre: Action, Duration: 118 mins\n   Price: \u00a313.50\n2. Thunderbolts (12A)\n   Genre: Action, Duration: 127 mins\n   Price: \u00a313.50\n3. Mission: Impossible - The Final Reckoning (12A)\n   Genre: Action, Duration: 163 mins\n   Price: \u00a314.00\n4. Superman (12A)\n   Genre: Superhero, Duration: 140 mins\n   Price: \u00a313.50\n5. The Fantastic Four: First Steps (12A)\n   Genre: Superhero, Duration: 135 mins\n   Price: \u00a313.50\n\nWhat would you like to know more about?"
-      },
-      {
-        "timestamp": "2025-12-04T18:38:57.015929",
-        "user": "cancel",
-        "bot": "\u26a0\ufe0f  I'm not sure what you mean. Type 'help' for options or 'show movies' to see what's playing."
-      },
-      {
-        "timestamp": "2025-12-04T18:40:02.885590",
-        "user": "do you have 3d movies",
-        "bot": "I can help you browse movies, book tickets, check showtimes, view your bookings, and answer questions about our cinema."
-      },
-      {
-        "timestamp": "2025-12-04T18:40:18.040805",
-        "user": "\"can i change my booking\"",
-        "bot": "\ud83d\udccb Your Booking History (22 booking(s)):\n\n1. \ud83c\udfac Paddington in Peru\n   \ud83d\udd16 Reference: BK19111\n   \ud83d\udd50 Time: 14:00\n   \ud83d\udcba Seats: A1, A2, A3, A4, A5\n   \ud83c\udf9f\ufe0f  Tickets: 5\n   \ud83d\udcb7 Total: \u00a350.00\n   \ud83d\udcc5 Date: Sunday, November 30, 2025 at 21:18\n\n2. \ud83c\udfac Dune: Part Two\n   \ud83d\udd16 Reference: BK75921\n   \ud83d\udd50 Time: 19:45\n   \ud83d\udcba Seats: E1, E2\n   \ud83c\udf9f\ufe0f  Tickets: 2\n   \ud83d\udcb7 Total: \u00a325.00\n   \ud83d\udcc5 Date: Sunday, November 30, 2025 at 21:20\n\n3. \ud83c\udfac Paddington in Peru\n   \ud83d\udd16 Reference: BK43987\n   \ud83d\udd50 Time: 14:00\n   \ud83d\udcba Seats: B1, B2\n   \ud83c\udf9f\ufe0f  Tickets: 2\n   \ud83d\udcb7 Total: \u00a320.00\n   \ud83d\udcc5 Date: Sunday, November 30, 2025 at 21:21\n\n4. \ud83c\udfac Dune: Part Two\n   \ud83d\udd16 Reference: BK19121\n   \ud83d\udd50 Time: 16:30\n   \ud83d\udcba Seats: C1, C2, C3\n   \ud83c\udf9f\ufe0f  Tickets: 3\n   \ud83d\udcb7 Total: \u00a337.50\n   \ud83d\udcc5 Date: Sunday, November 30, 2025 at 23:16\n\n5. \ud83c\udfac Paddington in Peru\n   \ud83d\udd16 Reference: BK90878\n   \ud83d\udd50 Time: 11:00\n   \ud83d\udcba Seats: D1, D2, D3, D4, D5, D6\n   \ud83c\udf9f\ufe0f  Tickets: 6\n   \ud83d\udcb7 Total: \u00a360.00\n   \ud83d\udcc5 Date: Monday, December 01, 2025 at 12:06\n\n6. \ud83c\udfac Joker: Folie a Deux\n   \ud83d\udd16 Reference: BK88365\n   \ud83d\udd50 Time: 14:00\n   \ud83d\udcba Seats: D1, D3, D4\n   \ud83c\udf9f\ufe0f  Tickets: 3\n   \ud83d\udcb7 Total: \u00a337.50\n   \ud83d\udcc5 Date: Monday, December 01, 2025 at 16:00\n\n7. \ud83c\udfac Paddington in Peru\n   \ud83d\udd16 Reference: BK34544\n   \ud83d\udd50 Time: 11:00\n   \ud83d\udcba Seats: B1, B2, B3\n   \ud83c\udf9f\ufe0f  Tickets: 3\n   \ud83d\udcb7 Total: \u00a330.00\n   \ud83d\udcc5 Date: Monday, December 01, 2025 at 16:21\n\n8. \ud83c\udfac Paddington in Peru\n   \ud83d\udd16 Reference: BK63467\n   \ud83d\udd50 Time: 11:00\n   \ud83d\udcba Seats: D7, D8\n   \ud83c\udf9f\ufe0f  Tickets: 2\n   \ud83d\udcb7 Total: \u00a320.00\n   \ud83d\udcc5 Date: Monday, December 01, 2025 at 16:30\n\n9. \ud83c\udfac Mission: Impossible - The Final Reckoning\n   \ud83d\udd16 Reference: BK13524\n   \ud83d\udd50 Time: 17:45\n   \ud83d\udcba Seats: A1, A2, A3\n   \ud83c\udf9f\ufe0f  Tickets: 3\n   \ud83d\udcb7 Total: \u00a342.00\n   \ud83d\udcc5 Date: Monday, December 01, 2025 at 16:36\n\n10. \ud83c\udfac Superman\n   \ud83d\udd16 Reference: BK29048\n   \ud83d\udd50 Time: 14:30\n   \ud83d\udcba Seats: E3, E4, E6\n   \ud83c\udf9f\ufe0f  Tickets: 3\n   \ud83d\udcb7 Total: \u00a340.50\n   \ud83d\udcc5 Date: Monday, December 01, 2025 at 16:51\n\n11. \ud83c\udfac Superman\n   \ud83d\udd16 Reference: BK61868\n   \ud83d\udd50 Time: 11:00\n   \ud83d\udcba Seats: C1, C2, C3\n   \ud83c\udf9f\ufe0f  Tickets: 3\n   \ud83d\udcb7 Total: \u00a340.50\n   \ud83d\udcc5 Date: Tuesday, December 02, 2025 at 15:00\n\n12. \ud83c\udfac Superman\n   \ud83d\udd16 Reference: BK64204\n   \ud83d\udd50 Time: 14:30\n   \ud83d\udcba Seats: A1, A2\n   \ud83c\udf9f\ufe0f  Tickets: 2\n   \ud83d\udcb7 Total: \u00a327.00\n   \ud83d\udcc5 Date: Tuesday, December 02, 2025 at 15:14\n\n13. \ud83c\udfac Superman\n   \ud83d\udd16 Reference: BK12475\n   \ud83d\udd50 Time: 14:30\n   \ud83d\udcba Seats: A1, A2\n   \ud83c\udf9f\ufe0f  Tickets: 2\n   \ud83d\udcb7 Total: \u00a327.00\n   \ud83d\udcc5 Date: Tuesday, December 02, 2025 at 15:15\n\n14. \ud83c\udfac Superman\n   \ud83d\udd16 Reference: BK94608\n   \ud83d\udd50 Time: 14:30\n   \ud83d\udcba Seats: C1, C2\n   \ud83c\udf9f\ufe0f  Tickets: 2\n   \ud83d\udcb7 Total: \u00a327.00\n   \ud83d\udcc5 Date: Tuesday, December 02, 2025 at 15:16\n\n15. \ud83c\udfac Superman\n   \ud83d\udd16 Reference: BK17363\n   \ud83d\udd50 Time: 14:30\n   \ud83d\udcba Seats: B1\n   \ud83c\udf9f\ufe0f  Tickets: 1\n   \ud83d\udcb7 Total: \u00a313.50\n   \ud83d\udcc5 Date: Tuesday, December 02, 2025 at 15:34\n\n16. \ud83c\udfac Superman\n   \ud83d\udd16 Reference: BK48408\n   \ud83d\udd50 Time: 11:00\n   \ud83d\udcba Seats: A1\n   \ud83c\udf9f\ufe0f  Tickets: 1\n   \ud83d\udcb7 Total: \u00a313.50\n   \ud83d\udcc5 Date: Tuesday, December 02, 2025 at 15:50\n\n17. \ud83c\udfac Superman\n   \ud83d\udd16 Reference: BK35789\n   \ud83d\udd50 Time: 11:00\n   \ud83d\udcba Seats: A2\n   \ud83c\udf9f\ufe0f  Tickets: 1\n   \ud83d\udcb7 Total: \u00a313.50\n   \ud83d\udcc5 Date: Tuesday, December 02, 2025 at 15:51\n\n18. \ud83c\udfac Superman\n   \ud83d\udd16 Reference: BK27618\n   \ud83d\udd50 Time: 11:00\n   \ud83d\udcba Seats: A3\n   \ud83c\udf9f\ufe0f  Tickets: 1\n   \ud83d\udcb7 Total: \u00a313.50\n   \ud83d\udcc5 Date: Tuesday, December 02, 2025 at 15:55\n\n19. \ud83c\udfac Superman\n   \ud83d\udd16 Reference: BK82957\n   \ud83d\udd50 Time: 11:00\n   \ud83d\udcba Seats: E1\n   \ud83c\udf9f\ufe0f  Tickets: 1\n   \ud83d\udcb7 Total: \u00a313.50\n   \ud83d\udcc5 Date: Tuesday, December 02, 2025 at 15:59\n\n20. \ud83c\udfac Superman\n   \ud83d\udd16 Reference: BK96148\n   \ud83d\udd50 Time: 11:00\n   \ud83d\udcba Seats: A4\n   \ud83c\udf9f\ufe0f  Tickets: 1\n   \ud83d\udcb7 Total: \u00a313.50\n   \ud83d\udcc5 Date: Tuesday, December 02, 2025 at 16:09\n\n21. \ud83c\udfac Superman\n   \ud83d\udd16 Reference: BK14744\n   \ud83d\udd50 Time: 11:00\n   \ud83d\udcba Seats: B1, B2, B3\n   \ud83c\udf9f\ufe0f  Tickets: 3\n   \ud83d\udcb7 Total: \u00a340.50\n   \ud83d\udcc5 Date: Tuesday, December 02, 2025 at 17:00\n\n22. \ud83c\udfac Superman\n   \ud83d\udd16 Reference: BK77176\n   \ud83d\udd50 Time: 11:00\n   \ud83d\udcba Seats: D1, D2\n   \ud83c\udf9f\ufe0f  Tickets: 2\n   \ud83d\udcb7 Total: \u00a327.00\n   \ud83d\udcc5 Date: Tuesday, December 02, 2025 at 18:39\n\n"
-      },
-      {
         "timestamp": "2025-12-04T18:40:40.117917",
         "user": "\"can i bring my own food\"",
         "bot": "\u26a0\ufe0f  I'm not sure what you mean. Type 'help' for options or 'show movies' to see what's playing."
@@ -488,6 +323,171 @@
         "timestamp": "2025-12-04T18:51:59.730121",
         "user": "do you serve popcorn",
         "bot": "Yes! We have a full concessions stand with popcorn, nachos, hot dogs, candy, and drinks."
+      },
+      {
+        "timestamp": "2025-12-04T19:35:08.287407",
+        "user": "hey",
+        "bot": "Hello again, Krish! How may I assist you?"
+      },
+      {
+        "timestamp": "2025-12-04T19:35:10.142612",
+        "user": "how are you",
+        "bot": "I'm wonderful! How can I help you today?"
+      },
+      {
+        "timestamp": "2025-12-04T19:35:12.219142",
+        "user": "help",
+        "bot": "\u2139\ufe0f  Available commands:\n\n\ud83d\udcfd\ufe0f  'show movies' - See what's playing\n\u2139\ufe0f  'tell me about [movie]' - Get movie information  \n\ud83c\udf9f\ufe0f  'book [movie]' - Book tickets\n\u2753 'what is my name' - I'll tell you your name\n\ud83d\udccb 'my bookings' - View booking history\n\u2753 'help' - Show this message\n\ud83d\udc4b 'quit' - Exit\n\nYou can also type naturally! Just tell me what you want."
+      },
+      {
+        "timestamp": "2025-12-04T19:35:18.132957",
+        "user": "popcorn",
+        "bot": "Yes! We sell popcorn, candy, drinks, and other snacks at our concessions stand."
+      },
+      {
+        "timestamp": "2025-12-04T19:44:13.964268",
+        "user": "hey!",
+        "bot": "Hello again, Krish! How can I help you today?"
+      },
+      {
+        "timestamp": "2025-12-04T19:44:17.027061",
+        "user": "how are you",
+        "bot": "I'm wonderful! How can I help you today?"
+      },
+      {
+        "timestamp": "2025-12-04T19:44:26.032409",
+        "user": "what movies do u have",
+        "bot": "Currently showing:\n\n1. Captain America: Brave New World (12A)\n   Genre: Action, Duration: 118 mins\n   Price: \u00a313.50\n2. Thunderbolts (12A)\n   Genre: Action, Duration: 127 mins\n   Price: \u00a313.50\n3. Mission: Impossible - The Final Reckoning (12A)\n   Genre: Action, Duration: 163 mins\n   Price: \u00a314.00\n4. Superman (12A)\n   Genre: Superhero, Duration: 140 mins\n   Price: \u00a313.50\n5. The Fantastic Four: First Steps (12A)\n   Genre: Superhero, Duration: 135 mins\n   Price: \u00a313.50\n\nWhat would you like to know more about?"
+      },
+      {
+        "timestamp": "2025-12-04T19:44:29.865941",
+        "user": "superman",
+        "bot": "\nLet me tell you about Superman:\n\nTitle: Superman\nGenre: Superhero\nRating: 12A\nDuration: 140 mins\nDirector: James Gunn\nCast: David Corenswet, Rachel Brosnahan, Nicholas Hoult\n\nDescription: Clark Kent embraces his Kryptonian heritage and becomes Superman, Earth's greatest protector and symbol of hope.\n\nShowtimes: 11:00, 14:30, 18:00, 21:15\nPrice: \u00a313.50 per ticket\n\nWould you like to book tickets for this movie?"
+      },
+      {
+        "timestamp": "2025-12-04T19:44:32.168615",
+        "user": "11",
+        "bot": "Would you like to book this movie? (yes/no)"
+      },
+      {
+        "timestamp": "2025-12-04T19:44:34.463251",
+        "user": "yes",
+        "bot": "Excellent choice! Booking Superman.\n\nAvailable times: 11:00, 14:30, 18:00, 21:15\n\nWhich showtime works for you?"
+      },
+      {
+        "timestamp": "2025-12-04T19:44:35.138311",
+        "user": "1",
+        "bot": "\u26a0\ufe0f  That time isn't available. Choose from: 11:00, 14:30, 18:00, 21:15"
+      },
+      {
+        "timestamp": "2025-12-04T19:44:36.052075",
+        "user": "11",
+        "bot": "Perfect! 11:00 showing selected.\n\nHow many tickets do you need? (1-10)"
+      },
+      {
+        "timestamp": "2025-12-04T19:44:37.013818",
+        "user": "1",
+        "bot": "\n       SCREEN\n\n     1  2  3  4  5  6  7  8  9 10\nA   \u274c  \u274c  \u274c  \u274c  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705 \nB   \u274c  \u274c  \u274c  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705 \nC   \u274c  \u274c  \u274c  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705 \nD   \u274c  \u274c  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705 \nE   \u274c  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705 \n\n\u2705 = Available  \u274c = Taken\n\nYou're booking 1 ticket(s).\nChoose your 1 seat(s) please.\nFormat: A1, B5, C3"
+      },
+      {
+        "timestamp": "2025-12-04T19:44:41.277330",
+        "user": "d10",
+        "bot": "\n============================================================\n                    BOOKING SUMMARY\n============================================================\n\nMovie: Superman\nTime: 11:00\nDate: Thursday, December 04, 2025\nTickets: 1\nSeats: D10\nPrice: \u00a313.50 x 1 = \u00a313.50\n\n============================================================\n\nDoes this look good to you?\n\nType 'yes' to confirm or 'no' to cancel."
+      },
+      {
+        "timestamp": "2025-12-04T19:44:42.732125",
+        "user": "yes",
+        "bot": "\n\u250f\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2513\n\u2503 SAVOYBOT TICKET                                \u2503\n\u2523\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u252b\n\u2503 REF: BK24551       [User] Krish                \u2503\n\u2503 Superman                * 12A                  \u2503\n\u2503 Thu, 04 Dec 2025        11:00                  \u2503\n\u2503 D10               TKT x1   \u00a313.50              \u2503\n\u2523\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u252b\n\u2503 SCAN AT ENTRANCE:                              \u2503\n\u2503         \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588 \u2584\u2584\u2584\u2584\u2584 \u2588\u2588 \u2580 \u2584\u2588 \u2584\u2584\u2584\u2584\u2584 \u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588 \u2588   \u2588 \u2588\u2584 \u2588 \u2584\u2588 \u2588   \u2588 \u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588 \u2588\u2584\u2584\u2584\u2588 \u2588\u2588\u2588\u2584\u2588 \u2588 \u2588\u2584\u2584\u2584\u2588 \u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2588 \u2580\u2584\u2580 \u2588\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588\u2584  \u2580\u2584 \u2584  \u2584 \u2584\u2588\u2584 \u2588\u2588\u2580\u2584\u2588\u2580\u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588\u2584\u2588\u2588\u2588\u2584 \u2584 \u2588\u2588 \u2588\u2584\u2588\u2580\u2588\u2584\u2580 \u2580\u2584\u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588\u2584\u2588\u2588\u2588\u2588\u2584\u2584\u2588 \u2588\u2584\u2580\u2584\u2580\u2584\u2580\u2584\u2584\u2580\u2580 \u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588 \u2584\u2584\u2584\u2584\u2584 \u2588 \u2584\u2580 \u2580 \u2584 \u2580\u2580\u2584\u2588\u2580\u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588 \u2588   \u2588 \u2588\u2584  \u2584\u2588\u2584  \u2588 \u2580\u2580\u2584\u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588 \u2588\u2584\u2584\u2584\u2588 \u2588 \u2580\u2580\u2588\u2584\u2588\u2580\u2588\u2584  \u2580 \u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2588\u2584\u2588\u2584\u2588\u2584\u2588\u2584\u2588\u2584\u2588\u2584\u2588\u2584\u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588          \u2503\n\u2523\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u252b\n\u2503 123 Savoy St, Nottingham NG1 1AA               \u2503\n\u2503 Present this ticket \u2022 Enjoy your movie!        \u2503\n\u2517\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u251b\n\nConfirmation email sent!"
+      },
+      {
+        "timestamp": "2025-12-04T20:04:13.869600",
+        "user": "gift card?",
+        "bot": "Yes! Gift cards are available at the box office in denominations from \u00a310 to \u00a3100."
+      },
+      {
+        "timestamp": "2025-12-04T20:54:37.687030",
+        "user": "hello",
+        "bot": "Hello again, Krish! What can I do for you?"
+      },
+      {
+        "timestamp": "2025-12-04T20:54:43.491295",
+        "user": "how are you",
+        "bot": "I'm wonderful! How can I help you today?"
+      },
+      {
+        "timestamp": "2025-12-04T20:54:48.507505",
+        "user": "lets book a movie",
+        "bot": "Which movie would you like to book?\n\nCurrently showing:\n\n1. Captain America: Brave New World (12A)\n   Genre: Action, Duration: 118 mins\n   Price: \u00a313.50\n2. Thunderbolts (12A)\n   Genre: Action, Duration: 127 mins\n   Price: \u00a313.50\n3. Mission: Impossible - The Final Reckoning (12A)\n   Genre: Action, Duration: 163 mins\n   Price: \u00a314.00\n4. Superman (12A)\n   Genre: Superhero, Duration: 140 mins\n   Price: \u00a313.50\n5. The Fantastic Four: First Steps (12A)\n   Genre: Superhero, Duration: 135 mins\n   Price: \u00a313.50\n\nWhat would you like to know more about?"
+      },
+      {
+        "timestamp": "2025-12-04T20:54:51.041032",
+        "user": "fantastic",
+        "bot": "Thank you! I'm glad you're enjoying the experience! \ud83c\udf89"
+      },
+      {
+        "timestamp": "2025-12-04T20:54:56.243799",
+        "user": "fantastic four",
+        "bot": "Thank you! I'm glad you're enjoying the experience! \ud83c\udf89"
+      },
+      {
+        "timestamp": "2025-12-04T20:55:03.373303",
+        "user": "i want to watch fantastic four",
+        "bot": "Excellent choice! Booking The Fantastic Four: First Steps.\n\nAvailable times: 12:30, 15:45, 19:00\n\nWhich showtime works for you?"
+      },
+      {
+        "timestamp": "2025-12-04T20:55:07.270191",
+        "user": "1230",
+        "bot": "Perfect! 12:30 showing selected.\n\nFor how many people? (1-10)"
+      },
+      {
+        "timestamp": "2025-12-04T20:55:08.518771",
+        "user": "1",
+        "bot": "\n       SCREEN\n\n     1  2  3  4  5  6  7  8  9 10\nA   \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705 \nB   \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705 \nC   \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705 \nD   \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705 \nE   \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705  \u2705 \n\n\u2705 = Available  \u274c = Taken\n\nYou're booking 1 ticket(s).\nPick 1 seat(s) from the map above.\nFormat: A1, B5, C3"
+      },
+      {
+        "timestamp": "2025-12-04T20:55:10.049786",
+        "user": "a1",
+        "bot": "\n============================================================\n                    BOOKING SUMMARY\n============================================================\n\nMovie: The Fantastic Four: First Steps\nTime: 12:30\nDate: Thursday, December 04, 2025\nTickets: 1\nSeats: A1\nPrice: \u00a313.50 x 1 = \u00a313.50\n\n============================================================\n\nDoes this look good to you?\n\nType 'yes' to confirm or 'no' to cancel."
+      },
+      {
+        "timestamp": "2025-12-04T20:55:11.661939",
+        "user": "yes",
+        "bot": "\n\u250f\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2513\n\u2503 SAVOYBOT TICKET                                \u2503\n\u2523\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u252b\n\u2503 REF: BK90866       [User] Krish                \u2503\n\u2503 The Fantastic Four: Fir... * 12A               \u2503\n\u2503 Thu, 04 Dec 2025        12:30                  \u2503\n\u2503 A1                TKT x1   \u00a313.50              \u2503\n\u2523\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u252b\n\u2503 SCAN AT ENTRANCE:                              \u2503\n\u2503         \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588 \u2584\u2584\u2584\u2584\u2584 \u2588\u2588 \u2580 \u2584\u2588 \u2584\u2584\u2584\u2584\u2584 \u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588 \u2588   \u2588 \u2588\u2584 \u2588 \u2584\u2588 \u2588   \u2588 \u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588 \u2588\u2584\u2584\u2584\u2588 \u2588\u2588\u2588\u2584\u2588 \u2588 \u2588\u2584\u2584\u2584\u2588 \u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2588 \u2580\u2584\u2580 \u2588\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588\u2584\u2584\u2584\u2588\u2584 \u2584\u2584\u2584\u2584\u2584\u2584\u2588\u2584 \u2588\u2588\u2580\u2584\u2588\u2580\u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588 \u2580\u2584 \u2580\u2580\u2584 \u2580 \u2584\u2588\u2584\u2588\u2580\u2588\u2584 \u2588\u2580\u2584\u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588\u2584\u2588\u2584\u2588\u2588\u2584\u2584\u2584\u2580\u2580\u2580\u2580\u2584\u2580\u2584\u2580\u2584\u2580\u2580\u2580 \u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588 \u2584\u2584\u2584\u2584\u2584 \u2588 \u2580\u2588 \u2580 \u2584 \u2580\u2588\u2588\u2588\u2580\u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588 \u2588   \u2588 \u2588\u2584\u2588\u2580\u2584\u2588\u2584  \u2588  \u2580\u2584\u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588 \u2588\u2584\u2584\u2584\u2588 \u2588  \u2584\u2588\u2584\u2588\u2580\u2580  \u2580\u2580 \u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2588\u2584\u2588\u2588\u2588\u2584\u2588\u2584\u2584\u2584\u2588\u2584\u2588\u2584\u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588          \u2503\n\u2503         \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588          \u2503\n\u2523\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u252b\n\u2503 123 Savoy St, Nottingham NG1 1AA               \u2503\n\u2503 Present this ticket \u2022 Enjoy your movie!        \u2503\n\u2517\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u251b\n\nConfirmation email sent!"
+      },
+      {
+        "timestamp": "2025-12-04T20:56:02.440453",
+        "user": "hello",
+        "bot": "Hello again, Krish! What brings you here today?"
+      },
+      {
+        "timestamp": "2025-12-04T20:56:04.202813",
+        "user": "how are you",
+        "bot": "I'm great, thanks for asking!"
+      },
+      {
+        "timestamp": "2025-12-04T20:56:07.935366",
+        "user": "tell me something",
+        "bot": "I'm SavoyBot, your intelligent movie booking assistant!"
+      },
+      {
+        "timestamp": "2025-12-04T20:56:18.247780",
+        "user": "what time do you open",
+        "bot": "Showtimes vary by movie. Which movie are you interested in?"
+      },
+      {
+        "timestamp": "2025-12-04T20:56:21.788722",
+        "user": "opening hours",
+        "bot": "We open 30 minutes before the first showing each day."
+      },
+      {
+        "timestamp": "2025-12-04T20:56:27.484966",
+        "user": "outside food allowed",
+        "bot": "Outside food and drinks are not permitted, but we have a great selection at our concessions!"
+      },
+      {
+        "timestamp": "2025-12-04T20:56:36.232173",
+        "user": "disabled access",
+        "bot": "Yes, we have full wheelchair access and accessible seating in all screens."
       }
     ],
     "booking_state": {
@@ -500,6 +500,6 @@
     "last_mentioned_movie": "superman",
     "awaiting_confirmation": false,
     "session_start": "2025-11-30T21:17:14.585653",
-    "last_active": "2025-12-04T18:51:59.730143"
+    "last_active": "2025-12-04T20:56:36.232260"
   }
 }

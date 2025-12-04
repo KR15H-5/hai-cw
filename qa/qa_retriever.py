@@ -7,11 +7,6 @@ from sklearn.metrics.pairwise import cosine_similarity
 from config import SIMILARITY_THRESHOLD
 
 class QARetriever:
-    """
-    Retrieval-based QA using cosine similarity
-    Finds most similar question from knowledge base
-    """
-    
     def __init__(self, qa_pairs):
         self.qa_pairs = qa_pairs
         self.questions = list(qa_pairs.keys())
@@ -24,10 +19,6 @@ class QARetriever:
             self.question_vectors = None
     
     def retrieve(self, query):
-        """
-        Retrieve answer for query
-        Returns: (answer, similarity_score)
-        """
         if not query or not query.strip() or not self.vectorizer:
             return None, 0.0
         

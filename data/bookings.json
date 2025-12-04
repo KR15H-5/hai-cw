@@ -650,5 +650,41 @@
     "total": 27.0,
     "booking_id": 28,
     "timestamp": "2025-12-04T18:49:33.431978"
+  },
+  {
+    "reference": "BK24551",
+    "user_id": "user_001",
+    "user_name": "Krish",
+    "movie_key": "superman",
+    "movie_title": "Superman",
+    "time": "11:00",
+    "tickets": 1,
+    "seats": [
+      [
+        "D",
+        10
+      ]
+    ],
+    "total": 13.5,
+    "booking_id": 29,
+    "timestamp": "2025-12-04T19:44:42.705592"
+  },
+  {
+    "reference": "BK90866",
+    "user_id": "user_001",
+    "user_name": "Krish",
+    "movie_key": "fantastic_four",
+    "movie_title": "The Fantastic Four: First Steps",
+    "time": "12:30",
+    "tickets": 1,
+    "seats": [
+      [
+        "A",
+        1
+      ]
+    ],
+    "total": 13.5,
+    "booking_id": 30,
+    "timestamp": "2025-12-04T20:55:11.468631"
   }
 ]

@@ -9,35 +9,24 @@ from utils.text_processor import TextProcessor
 from config import DATA_DIR
 
 class IntentTrainer:
-    """
-    Trains the intent classification model
-    Loads training data from JSON file
-    """
     
     def __init__(self):
         self.text_processor = TextProcessor()
         self.intent_data = self._load_training_data()
     
-    def _load_training_data(self):
-        """Load training data from JSON file"""
+    def load_training_data(self):
         training_file = os.path.join(DATA_DIR, 'training_data.json')
         
         try:
             with open(training_file, 'r', encoding='utf-8') as f:
                 data = json.load(f)
-            print(f"✅ Loaded training data from {training_file}")
             return data
         except FileNotFoundError:
-            print(f"❌ Training data file not found: {training_file}")
-            print("   Using minimal fallback data...")
             return self._get_fallback_data()
         except json.JSONDecodeError as e:
-            print(f"❌ Error parsing JSON: {e}")
-            print("   Using minimal fallback data...")
             return self._get_fallback_data()
     
-    def _get_fallback_data(self):
-        """Minimal fallback data if JSON fails"""
+    def get_fallback_data(self):
         return {
             'greeting': ['hello', 'hi', 'hey'],
             'farewell': ['bye', 'goodbye'],
@@ -45,43 +34,36 @@ class IntentTrainer:
         }
     
     def train(self):
-        """
-        Train the intent classification model
-        Returns: (vectorizer, classifier)
-        """
+
         X = []
         y = []
         
-        # Prepare training data
         for intent, examples in self.intent_data.items():
             for example in examples:
-                # Stem the text for better generalization
                 processed = self.text_processor.stem_text(example)
                 X.append(processed)
                 y.append(intent)
         
         print(f"🎓 Training on {len(X)} examples across {len(self.intent_data)} intents...")
         
-        # Vectorize using TF-IDF
         vectorizer = TfidfVectorizer(
-            max_features=1000,  # Increased from 500
-            ngram_range=(1, 3),  # Increased to trigrams
+            max_features=1000,  
+            ngram_range=(1, 3), 
             min_df=1,
-            sublinear_tf=True  # Use sublinear term frequency
+            sublinear_tf=True 
         )
         X_vec = vectorizer.fit_transform(X)
         
-        # Train Logistic Regression classifier
+    
         classifier = LogisticRegression(
-            max_iter=2000,  # Increased iterations
-            C=10.0,  # Increased regularization parameter
+            max_iter=2000, 
+            C=10.0,  
             random_state=42,
             solver='lbfgs',
-            class_weight='balanced'  # Handle class imbalance
+            class_weight='balanced'  
         )
         classifier.fit(X_vec, y)
         
-        # Calculate accuracy on training set
         train_accuracy = classifier.score(X_vec, y)
         print(f"✅ Training complete! Accuracy: {train_accuracy*100:.2f}%")
         

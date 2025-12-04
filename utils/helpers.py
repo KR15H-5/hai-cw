@@ -8,7 +8,6 @@ class Helper:
     
     @staticmethod
     def load_json(filepath, default=None):
-        """Load JSON file with error handling"""
         try:
             with open(filepath, 'r') as f:
                 return json.load(f)
@@ -17,13 +16,11 @@ class Helper:
     
     @staticmethod
     def save_json(filepath, data):
-        """Save data to JSON file"""
         with open(filepath, 'w') as f:
             json.dump(data, f, indent=2)
     
     @staticmethod
     def get_greeting():
-        """Get time-based greeting"""
         hour = datetime.now().hour
         if hour < 12:
             return "Good morning"
@@ -34,23 +31,19 @@ class Helper:
     
     @staticmethod
     def format_seat_list(seats):
-        """Format list of seats as string"""
         return ', '.join([f"{row}{num}" for row, num in seats])
     
     @staticmethod
     def format_price(price):
-        """Format price with currency"""
         return f"£{price:.2f}"
     
     @staticmethod
     def format_datetime(dt_string):
-        """Format datetime string nicely"""
         dt = datetime.fromisoformat(dt_string)
         return dt.strftime('%A, %B %d, %Y at %H:%M')
     
     @staticmethod
     def generate_reference():
-        """Generate booking reference"""
         return f"BK{random.randint(10000, 99999)}"
 
 if __name__ == "__main__":
