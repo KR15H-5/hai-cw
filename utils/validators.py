@@ -76,4 +76,4 @@ class Validator:
         return bool(re.match(pattern, phone.replace(' ', '')))
 
 if __name__ == "__main__":
-    print("✅ Validator module loaded successfully!")
+    print("Validator module loaded successfully!")

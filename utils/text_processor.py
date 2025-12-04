@@ -116,13 +116,4 @@ class TextProcessor:
         return [(row, int(num)) for row, num in matches]
 
 if __name__ == "__main__":
-    print("✅ TextProcessor module loaded successfully!")
-    
-    # Quick test
-    processor = TextProcessor()
-    print("\n🧪 Quick Test:")
-    print(f"Stem 'running' → '{processor.stemmer.stem('running')}'")
-    print(f"Stem 'books' → '{processor.stemmer.stem('books')}'")
-    print(f"Tokenize 'I want tickets' → {processor.tokenize('I want tickets')}")
-    stemmed = processor.stem_text("I am booking tickets for movies")
-    print(f"Stem full text → '{stemmed}'")
+    print("TextProcessor module loaded successfully!")

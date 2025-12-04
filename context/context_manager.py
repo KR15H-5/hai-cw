@@ -85,17 +85,3 @@ class ContextManager:
 if __name__ == "__main__":
     print("ContextManager module loaded successfully!")
     
-    # Quick test
-    ctx = ContextManager('test_user')
-    
-    print("\n🧪 Quick Test:")
-    print(f"User ID: {ctx.user_id}")
-    print(f"Name: {ctx.get('name')}")
-    
-    ctx.set('name', 'TestUser')
-    print(f"After setting name: {ctx.get('name')}")
-    
-    ctx.update_booking_state({'stage': 'time', 'movie': 'test_movie'})
-    print(f"Booking state: {ctx.get_booking_state()}")
-    print(f"In booking: {ctx.is_in_booking()}")
-    print(f"Progress: {ctx.get_booking_progress()}%")

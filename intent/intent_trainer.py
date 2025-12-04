@@ -88,13 +88,5 @@ class IntentTrainer:
         return vectorizer, classifier
 
 if __name__ == "__main__":
-    print("✅ IntentTrainer module loaded successfully!")
+    print("IntentTrainer module loaded successfully!")
     
-    # Quick test
-    trainer = IntentTrainer()
-    print(f"\n🧪 Quick Test:")
-    print(f"Total intents: {len(trainer.intent_data)}")
-    print(f"Intents: {list(trainer.intent_data.keys())}")
-    
-    total_examples = sum(len(examples) for examples in trainer.intent_data.values())
-    print(f"Total training examples: {total_examples}")

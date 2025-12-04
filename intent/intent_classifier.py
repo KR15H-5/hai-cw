@@ -82,20 +82,5 @@ class IntentClassifier:
             return False
 
 if __name__ == "__main__":
-    print("✅ IntentClassifier module loaded successfully!")
+    print("IntentClassifier module loaded successfully!")
     
-    # Quick test
-    classifier = IntentClassifier()
-    
-    test_phrases = [
-        "hello",
-        "I want to book tickets",
-        "what movies are playing",
-        "how much does it cost",
-        "thank you"
-    ]
-    
-    print("\n🧪 Quick Test:")
-    for phrase in test_phrases:
-        intent, confidence = classifier.classify(phrase)
-        print(f"   '{phrase}' → {intent} ({confidence:.2f})")

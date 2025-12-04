@@ -189,12 +189,4 @@ You can also type naturally! Just tell me what you want."""
         return f"⚠️  {message}"
 
 if __name__ == "__main__":
-    print("✅ NLGManager module loaded successfully!")
-    
-    # Quick test
-    nlg = NLGManager()
-    
-    print("\n🧪 Quick Test:")
-    print(nlg.welcome_message())
-    print("\n" + "─"*50)
-    print(nlg.welcome_message("Alice"))
+    print("NLGManager module loaded successfully!")

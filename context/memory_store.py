@@ -57,9 +57,5 @@ class MemoryStore:
         return self.contexts
 
 if __name__ == "__main__":
-    print("✅ MemoryStore module loaded successfully!")
+    print("MemoryStore module loaded successfully!")
     
-    # Quick test
-    store = MemoryStore()
-    print(f"\n🧪 Quick Test:")
-    print(f"Total stored contexts: {len(store.get_all_contexts())}")

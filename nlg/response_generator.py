@@ -94,13 +94,4 @@ class ResponseGenerator:
         return self.generate(Templates.GO_BACK)
 
 if __name__ == "__main__":
-    print("✅ ResponseGenerator module loaded successfully!")
-    
-    # Quick test
-    gen = ResponseGenerator()
-    
-    print("\nQuick Test:")
-    print(f"Welcome: {gen.welcome('Good morning')}")
-    print(f"Greet user: {gen.greet_user('John')}")
-    print(f"How can help: {gen.how_can_help()}")
-    print(f"Thanks: {gen.thanks()}")
+    print("ResponseGenerator module loaded successfully!")

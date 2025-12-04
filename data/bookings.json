@@ -628,5 +628,27 @@
     "total": 27.0,
     "booking_id": 27,
     "timestamp": "2025-12-02T18:39:56.442378"
+  },
+  {
+    "reference": "BK89162",
+    "user_id": "user_001",
+    "user_name": "Krish",
+    "movie_key": "superman",
+    "movie_title": "Superman",
+    "time": "21:15",
+    "tickets": 2,
+    "seats": [
+      [
+        "A",
+        1
+      ],
+      [
+        "A",
+        2
+      ]
+    ],
+    "total": 27.0,
+    "booking_id": 28,
+    "timestamp": "2025-12-04T18:49:33.431978"
   }
 ]

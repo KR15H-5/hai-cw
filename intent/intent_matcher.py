@@ -70,21 +70,5 @@ class IntentMatcher:
         return intent, confidence
 
 if __name__ == "__main__":
-    print("✅ IntentMatcher module loaded successfully!")
+    print("IntentMatcher module loaded successfully!")
     
-    # Quick test
-    matcher = IntentMatcher()
-    
-    test_phrases = [
-        "hello there",
-        "I want to book dune",
-        "show me movies",
-        "how much is it",
-        "what is my name",
-        "thanks a lot"
-    ]
-    
-    print("\n🧪 Quick Test:")
-    for phrase in test_phrases:
-        intent, confidence = matcher.match(phrase)
-        print(f"   '{phrase}' → {intent} ({confidence:.2f})")

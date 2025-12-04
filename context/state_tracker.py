@@ -56,15 +56,4 @@ class StateTracker:
         return int((current_idx + 1) / len(stages) * 100)
 
 if __name__ == "__main__":
-    print("✅ StateTracker module loaded successfully!")
-    
-    # Quick test
-    tracker = StateTracker()
-    test_context = {}
-    
-    print("\n🧪 Quick Test:")
-    print(f"Empty state: {tracker.get_state(test_context)}")
-    
-    tracker.set_stage(test_context, 'time')
-    print(f"After setting stage to 'time': {tracker.get_stage(test_context)}")
-    print(f"Progress: {tracker.get_progress(test_context)}%")
+    print("StateTracker module loaded successfully!")

@@ -312,7 +312,7 @@ class MovieBot:
             return self._handle_ask_name()
         
         elif intent == 'small_talk_positive':
-            return self.nlg.generator.small_talk_positive() + " Ready to help you book some great movies!"
+            return self.nlg.generator.small_talk_positive()
         
         elif intent == 'small_talk_thanks':
             return self.nlg.generator.thanks()

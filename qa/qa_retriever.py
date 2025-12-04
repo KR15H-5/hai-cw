@@ -47,4 +47,4 @@ class QARetriever:
             return None, 0.0
 
 if __name__ == "__main__":
-    print("✅ QARetriever module loaded successfully!")
+    print("QARetriever module loaded successfully!")

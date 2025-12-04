@@ -44,11 +44,5 @@ class Session:
         }
 
 if __name__ == "__main__":
-    print("✅ Session module loaded successfully!")
+    print("Session module loaded successfully!")
     
-    # Quick test
-    session = Session('test_user')
-    print(f"\n🧪 Quick Test:")
-    print(f"Session ID: {session.session_id}")
-    print(f"Duration: {session.get_duration():.2f}s")
-    print(f"Messages: {session.message_count}")

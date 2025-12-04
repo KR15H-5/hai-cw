@@ -78,21 +78,5 @@ class IntentRules:
         return any(phrase in text for phrase in phrases)
 
 if __name__ == "__main__":
-    print("✅ IntentRules module loaded successfully!")
+    print("IntentRules module loaded successfully!")
     
-    # Quick test
-    rules = IntentRules()
-    
-    test_cases = [
-        ("what is my name", "ask_name"),
-        ("how are you", "small_talk_positive"),
-        ("book tickets", "book_tickets"),
-        ("thanks", "small_talk_thanks"),
-        ("hi", "greeting"),
-    ]
-    
-    print("\n🧪 Quick Test:")
-    for text, expected in test_cases:
-        result = rules.check(text)
-        status = "✅" if result == expected else "❌"
-        print(f"   {status} '{text}' → {result} (expected: {expected})")

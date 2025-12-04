@@ -129,4 +129,3 @@ class Templates:
 
 if __name__ == "__main__":
     print("Templates module loaded successfully!")
-    print(f"\nAvailable template sets: {len([attr for attr in dir(Templates) if attr.isupper()])}")

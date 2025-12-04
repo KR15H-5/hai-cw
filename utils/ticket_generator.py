@@ -78,24 +78,4 @@ def generate_ticket(ref, customer, movie, date, time, seats, tickets, total):
     return ticket
 
 
-if __name__ == "__main__":
-    print("\n" + "="*50)
-    print("TESTING TICKET GENERATOR")
-    print("="*50)
-    
-    ticket = generate_ticket(
-        ref="BK61868",
-        customer="Krish",
-        movie="Superman",
-        date="Tue, 02 Dec 2025",
-        time="11:00",
-        seats=[('C', 1), ('C', 2), ('C', 3)],
-        tickets=3,
-        total=40.50
-    )
 
-    print(ticket)
-
-    print("\n" + "="*50)
-    print("TICKET GENERATED!")
-    print("="*50 + "\n")

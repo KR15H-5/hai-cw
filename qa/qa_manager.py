@@ -56,4 +56,4 @@ class QAManager:
         return None
 
 if __name__ == "__main__":
-    print("✅ QAManager module loaded successfully!")
+    print("QAManager module loaded successfully!")
