@@ -120,10 +120,6 @@ class MovieRepository:
         return {k: v for k, v in self.movies.items() if v['rating'] == rating}
 
 if __name__ == "__main__":
-    print("MovieRepository module loaded successfully!")
+    pass
+    # print("MovieRepository module loaded successfully!")
     
-    # Quick test
-    repo = MovieRepository()
-    print(f"\nQuick Test:")
-    print(f"Total movies: {len(repo.get_all())}")
-    print(f"Movies: {list(repo.get_all().keys())}")

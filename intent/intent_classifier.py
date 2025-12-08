@@ -56,10 +56,11 @@ class IntentClassifier:
             data = pickle.load(f)
             self.vectorizer = data['vectorizer']
             self.classifier = data['classifier']
-        print(f"Model loaded from {INTENT_MODEL_FILE}")
+        # print(f"Model loaded from {INTENT_MODEL_FILE}")
         return True
 
 
 if __name__ == "__main__":
-    print("IntentClassifier module loaded successfully!")
+    pass
+    # print("IntentClassifier module loaded successfully!")
     

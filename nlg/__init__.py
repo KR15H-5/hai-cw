@@ -4,4 +4,4 @@ from .response_generator import ResponseGenerator
 
 __all__ = ['NLGManager', 'Templates', 'ResponseGenerator']
 
-print("NLG package loaded successfully!")
+# print("NLG package loaded successfully!")

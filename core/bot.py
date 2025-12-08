@@ -96,7 +96,7 @@ class MovieBot:
             self.context.context
         )
 
-        print(f"DEBUG: Intent='{intent}', Confidence={confidence:.2f}")
+        # print(f"DEBUG: Intent='{intent}', Confidence={confidence:.2f}")
 
         
         response = self._route_intent(intent, user_input)
@@ -117,7 +117,6 @@ class MovieBot:
         """Handle input during booking flow"""
         text_lower = user_input.lower().strip()
         
-        # Check for back/cancel
         if text_lower in ['back', 'go back']:
             return self._handle_go_back()
         
@@ -345,7 +344,7 @@ class MovieBot:
             return self._handle_time_query(user_input)
         
         elif intent == 'praise':
-            return "Thank you! I'm glad you're enjoying the experience! 🎉"
+            return "Thank you! I'm glad you're enjoying the experience!"
         
         elif intent == 'complaint':
             return "I'm sorry you're experiencing issues. Please contact our support team at support@savoy.com"
@@ -489,4 +488,5 @@ class MovieBot:
         return "Sure! What would you like me to call you?"
 
 if __name__ == "__main__":
-    print("MovieBot module loaded successfully!")
+    pass
+    # print("MovieBot module loaded successfully!")

@@ -4,4 +4,4 @@ from .intent_trainer import IntentTrainer
 
 __all__ = ['IntentMatcher', 'IntentClassifier', 'IntentTrainer']
 
-print("Intent package loaded successfully!")
+# print("Intent package loaded successfully!")

@@ -67,5 +67,6 @@ class ContextManager:
         return self.state_tracker.is_in_booking(self.context)
 
 if __name__ == "__main__":
-    print("ContextManager module loaded successfully!")
+    pass
+    # print("ContextManager module loaded successfully!")
     

@@ -43,4 +43,5 @@ class StateTracker:
         return int((current_idx + 1) / len(stages) * 100)
 
 if __name__ == "__main__":
-    print("StateTracker module loaded successfully!")
+    pass
+    # print("StateTracker module loaded successfully!")

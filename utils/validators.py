@@ -2,7 +2,6 @@ import re
 import sys
 import os
 
-# Add parent directory to path to import config
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from config import ROWS, SEATS_PER_ROW, MIN_TICKETS, MAX_TICKETS
@@ -34,30 +33,23 @@ class Validator:
     @staticmethod
     def validate_time(time, available_times):
         """Validate showtime - accepts multiple formats"""
-        # Clean input - remove spaces, fix common typos
         time_clean = time.replace(' ', '').replace(';', ':').lower()
         
-        # Handle different input formats
         if ':' not in time_clean:
             if time_clean.isdigit():
-                # User entered "11" or "1100"
-                if len(time_clean) == 2:  # "11" → "1100"
+                if len(time_clean) == 2:  
                     time_clean = time_clean + "00"
-                elif len(time_clean) == 3:  # "930" → "0930"
+                elif len(time_clean) == 3:  
                     time_clean = "0" + time_clean
         
-        # Remove colons for comparison
         time_normalized = time_clean.replace(':', '')
         
-        # Try to match against available times
         for available in available_times:
             available_normalized = available.replace(':', '').lower()
             
-            # Match "1100" against "11:00"
             if time_normalized == available_normalized:
                 return True, available
             
-            # Also check if user typed exact format
             if time.strip() == available:
                 return True, available
         

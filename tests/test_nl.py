@@ -158,7 +158,7 @@ try:
     time_selected = nlg.time_selected_response("14:00")
     assert "14:00" in time_selected
     assert "ticket" in time_selected.lower()
-    print("   ✅ time_selected_response()")
+    print("time_selected_response()")
     
     # Test summary
     summary = nlg.booking_summary(

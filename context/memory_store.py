@@ -48,5 +48,6 @@ class MemoryStore:
         return self.contexts
 
 if __name__ == "__main__":
-    print("MemoryStore module loaded successfully!")
+    pass
+    # print("MemoryStore module loaded successfully!")
     

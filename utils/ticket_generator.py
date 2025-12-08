@@ -2,6 +2,7 @@ import subprocess
 import shutil
 
 def generate_qr_code(data):
+    """Generate QR code using qrencode command"""
     try:
         if not shutil.which('qrencode'):
             return [
@@ -34,19 +35,23 @@ def generate_qr_code(data):
 
 
 def generate_ticket(ref, customer, movie, date, time, seats, tickets, total):
+    """Generate compact ASCII ticket with real QR code"""
 
     WIDTH = 46
 
     def box(text=""):
-        text = text[:WIDTH]          
-        text = text.ljust(WIDTH)   
+        text = text[:WIDTH]            # enforce max width
+        text = text.ljust(WIDTH)       # pad to width
         return f"┃ {text} ┃"
 
+    # QR data
     qr_data = f"{ref}"
     qr_lines = generate_qr_code(qr_data)
 
+    # Seat string
     seat_str = ', '.join([f"{s[0]}{s[1]}" for s in seats])
 
+    # Truncate movie
     movie_display = movie[:23] + '...' if len(movie) > 25 else movie
 
     ticket = "\n"
@@ -60,6 +65,7 @@ def generate_ticket(ref, customer, movie, date, time, seats, tickets, total):
     ticket += f"┣{'━' * (WIDTH + 2)}┫\n"
     ticket += box("SCAN AT ENTRANCE:") + "\n"
 
+    # Centre each QR code line
     for qr_line in qr_lines:
         centred = qr_line.center(WIDTH)
         ticket += box(centred) + "\n"
@@ -72,4 +78,24 @@ def generate_ticket(ref, customer, movie, date, time, seats, tickets, total):
     return ticket
 
 
+if __name__ == "__main__":
+    print("\n" + "="*50)
+    print("TESTING TICKET GENERATOR")
+    print("="*50)
+    
+    ticket = generate_ticket(
+        ref="BK61868",
+        customer="Krish",
+        movie="Superman",
+        date="Tue, 02 Dec 2025",
+        time="11:00",
+        seats=[('C', 1), ('C', 2), ('C', 3)],
+        tickets=3,
+        total=40.50
+    )
 
+    print(ticket)
+
+    print("\n" + "="*50)
+    print("TICKET GENERATED!")
+    print("="*50 + "\n")

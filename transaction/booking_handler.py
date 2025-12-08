@@ -38,7 +38,6 @@ class BookingHandler:
         return num, None
     
     def show_seat_map(self, movie_key, showtime):
-        """Generate ASCII seat map"""
         taken = self.db.get_taken_seats(movie_key, showtime)
         
         output = "\n       SCREEN\n\n"
@@ -48,12 +47,12 @@ class BookingHandler:
             output += f"{row}  "
             for seat_num in range(1, SEATS_PER_ROW + 1):
                 if (row, seat_num) in taken:
-                    output += " ❌ "
+                    output += " X "
                 else:
-                    output += " ✅ "
+                    output += " O "
             output += "\n"
         
-        output += "\n✅ = Available  ❌ = Taken"
+        output += "\nO = Available  X = Taken"
         return output
     
     def validate_seats(self, seat_input, movie_key, showtime, num_tickets):

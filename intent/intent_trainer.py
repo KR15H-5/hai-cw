@@ -65,7 +65,7 @@ class IntentTrainer:
         classifier.fit(X_vec, y)
         
         train_accuracy = classifier.score(X_vec, y)
-        print(f"✅ Training complete! Accuracy: {train_accuracy*100:.2f}%")
+        print(f"raining complete! Accuracy: {train_accuracy*100:.2f}%")
         
         return vectorizer, classifier
 

@@ -3,4 +3,4 @@ from .session import Session
 
 __all__ = ['MovieBot', 'Session']
 
-print("Core package loaded successfully!")
+# print("Core package loaded successfully!")

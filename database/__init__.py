@@ -4,4 +4,4 @@ from .booking_repository import BookingRepository
 
 __all__ = ['DatabaseManager', 'MovieRepository', 'BookingRepository']
 
-print("Database package loaded successfully!")
+# print("Database package loaded successfully!")

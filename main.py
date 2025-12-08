@@ -16,14 +16,11 @@ def print_banner():
     print(banner)
 
 def main():
-    """Main application loop"""
     print_banner()
     
-    # Create bot instance
     bot = MovieBot(user_id='user_001')
     
-    # Initial greeting
-    print("Bot:", bot.greet())
+    print("SavoyBot:", bot.greet())
     print("\n" + "─" * 60 + "\n")
     
     # Main conversation loop
@@ -37,21 +34,21 @@ def main():
             response = bot.respond(user_input)
             
             if response is None:
-                print("\nBot:", bot.nlg.generator.goodbye())
+                print("\nSavoyBot:", bot.nlg.generator.goodbye())
                 print("\n" + "─" * 60)
                 print("Thank you for using SavoyBot!")
                 print("─" * 60 + "\n")
                 break
             
-            print(f"\nBot: {response}")
+            print(f"\nSavoyBot: {response}")
             print("\n" + "─" * 60 + "\n")
         
         except KeyboardInterrupt:
-            print("\n\nBot:", bot.nlg.generator.goodbye())
+            print("\n\nSavoyBot:", bot.nlg.generator.goodbye())
             break
         
         except Exception as e:
-            print(f"\nBot: Sorry, an error occurred: {str(e)}")
+            print(f"\nSavoyBot: Sorry, an error occurred: {str(e)}")
             print("Please try again or type 'help' for assistance.\n")
 
 if __name__ == "__main__":
