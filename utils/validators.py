@@ -10,7 +10,6 @@ class Validator:
     
     @staticmethod
     def validate_seat(row, seat_num):
-        """Validate seat row and number"""
         if row not in ROWS:
             return False, f"Row must be {ROWS[0]}-{ROWS[-1]}"
         
@@ -21,7 +20,6 @@ class Validator:
     
     @staticmethod
     def validate_ticket_count(num):
-        """Validate ticket count"""
         if num < MIN_TICKETS:
             return False, f"Minimum {MIN_TICKETS} ticket"
         
@@ -32,7 +30,6 @@ class Validator:
     
     @staticmethod
     def validate_time(time, available_times):
-        """Validate showtime - accepts multiple formats"""
         time_clean = time.replace(' ', '').replace(';', ':').lower()
         
         if ':' not in time_clean:
@@ -57,15 +54,13 @@ class Validator:
     
     @staticmethod
     def validate_email(email):
-        """Validate email format"""
         pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
         return bool(re.match(pattern, email))
     
     @staticmethod
     def validate_phone(phone):
-        """Validate UK phone number"""
         pattern = r'^(\+44|0)[0-9]{10}$'
         return bool(re.match(pattern, phone.replace(' ', '')))
 
 if __name__ == "__main__":
-    print("✅ Validator module loaded successfully!")
+    print("Validator module loaded successfully!")

@@ -6,24 +6,17 @@ from config import MOVIES_FILE
 from utils.helpers import Helper
 
 class MovieRepository:
-    """
-    Repository for movie data operations
-    Handles CRUD operations for movies
-    """
-    
     def __init__(self):
         self.movies = {}
         self.load()
     
     def load(self):
-        """Load movies from JSON file"""
         self.movies = Helper.load_json(MOVIES_FILE, self.get_default_movies())
         if not self.movies:
             self.movies = self.get_default_movies()
             self.save()
     
     def save(self):
-        """Save movies to JSON file"""
         Helper.save_json(MOVIES_FILE, self.movies)
     
     def get_default_movies(self):
@@ -68,15 +61,12 @@ class MovieRepository:
         }
     
     def get(self, movie_key):
-        """Get a single movie by key"""
         return self.movies.get(movie_key)
     
     def get_all(self):
-        """Get all movies"""
         return self.movies
     
     def search(self, query):
-        """Search movies by query string"""
         query_lower = query.lower()
         results = []
         
@@ -90,13 +80,11 @@ class MovieRepository:
         return results
     
     def add(self, movie_key, movie_data):
-        """Add a new movie"""
         self.movies[movie_key] = movie_data
         self.save()
         return True
     
     def update(self, movie_key, updates):
-        """Update an existing movie"""
         if movie_key in self.movies:
             self.movies[movie_key].update(updates)
             self.save()
@@ -104,7 +92,6 @@ class MovieRepository:
         return False
     
     def delete(self, movie_key):
-        """Delete a movie"""
         if movie_key in self.movies:
             del self.movies[movie_key]
             self.save()

@@ -1,8 +1,4 @@
 class Templates:
-    """
-    Response templates for natural language generation
-    Each template type has multiple variations for naturalness
-    """
     
     WELCOME = [
         "{greeting}. Welcome to SavoyBot!",

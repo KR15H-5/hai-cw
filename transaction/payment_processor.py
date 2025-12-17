@@ -1,7 +1,4 @@
 class PaymentProcessor:
-    """
-    Handles payment calculations and processing
-    """
     
     def calculate_total(self, movie, num_tickets):
         return movie['price'] * num_tickets
@@ -17,13 +14,12 @@ class PaymentProcessor:
         if discount_type == 'student':
             return total * 0.8  
         elif discount_type == 'family':
-            return min(total, 40.0)  # Family deal: max £40
+            return min(total, 40.0) 
         elif discount_type == 'senior':
-            return total * 0.85  # 15% off
+            return total * 0.85  
         return total
     
     def format_price(self, price):
-        """Format price for display"""
         return f"£{price:.2f}"
 
 if __name__ == "__main__":

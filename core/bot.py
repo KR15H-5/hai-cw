@@ -33,7 +33,6 @@ class MovieBot:
         
         booking_state = self.context.get_booking_state()
         if booking_state.get('stage') and not booking_state.get('movie'):
-            print("⚠️  Detected corrupt booking state, cleaning...")
             self.context.reset_booking()
     
     def greet(self):
@@ -43,10 +42,6 @@ class MovieBot:
         return self.nlg.welcome_message(name)
     
     def respond(self, user_input):
-        """
-        Main response method
-        Processes user input and generates appropriate response
-        """
         self.session.update_activity()
         
         if not user_input or not user_input.strip():
@@ -197,7 +192,6 @@ class MovieBot:
             return "Please type 'yes' to confirm or 'no' to cancel the booking."
     
     def _confirm_booking(self):
-        """Confirm and create booking"""
         booking_state = self.context.get_booking_state()
         user_name = self.context.get('name', 'Guest')
         
