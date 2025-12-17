@@ -2,35 +2,27 @@ import subprocess
 import shutil
 
 def generate_qr_code(data):
-    try:
-        if not shutil.which('qrencode'):
-            return [
-                "  ████████████████  ",
-                "  ██ ▄▄▄▄▄ █ ▄██  ",
-                "  ██ █   █ █▀▀██  ",
-                "  ██ █▄▄▄█ █▄ ██  ",
-                "  ██▄▄▄▄▄▄▄█▄▄██  ",
-                "  ████████████████  "
-            ]
-        
-        result = subprocess.run(
-            ['qrencode', '-t', 'UTF8', str(data)],
-            capture_output=True,
-            text=True,
-            check=True
-        )
-        
-        qr_lines = result.stdout.strip().split('\n')
-        return qr_lines
-        
-    except Exception:
+
+    if not shutil.which('qrencode'):
         return [
             "  ████████████████  ",
-            "  ██          ██  ",
-            "  ██  QR CODE ██  ",
-            "  ██          ██  ",
+            "  ██ ▄▄▄▄▄ █ ▄██  ",
+            "  ██ █   █ █▀▀██  ",
+            "  ██ █▄▄▄█ █▄ ██  ",
+            "  ██▄▄▄▄▄▄▄█▄▄██  ",
             "  ████████████████  "
         ]
+    
+    result = subprocess.run(
+        ['qrencode', '-t', 'UTF8', str(data)],
+        capture_output=True,
+        text=True,
+        check=True
+    )
+    
+    qr_lines = result.stdout.strip().split('\n')
+    return qr_lines
+        
 
 
 def generate_ticket(ref, customer, movie, date, time, seats, tickets, total):

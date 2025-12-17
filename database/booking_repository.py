@@ -55,11 +55,9 @@ class BookingRepository:
         return booking_data['booking_id']
     
     def get_by_user(self, user_id):
-        """Get all bookings for a specific user"""
         return [b for b in self.bookings if b.get('user_id') == user_id]
     
     def get_by_reference(self, reference):
-        """Get a booking by reference number"""
         for booking in self.bookings:
             if booking.get('reference') == reference:
                 return booking

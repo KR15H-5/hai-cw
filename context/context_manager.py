@@ -1,19 +1,20 @@
 import sys
 import os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
 from datetime import datetime
 from .state_tracker import StateTracker
 from .memory_store import MemoryStore
 
+# ContextManager is a class that handles the state of the conversation between the user and the chatbot.
 class ContextManager:
 
+    # Constructor
     def __init__(self, user_id='default_user'):
         self.user_id = user_id
         self.state_tracker = StateTracker()
         self.memory_store = MemoryStore()
         self.context = self.memory_store.load_context(user_id)
-    
+    # Methods
     def get(self, key, default=None):
         return self.context.get(key, default)
     
@@ -37,6 +38,7 @@ class ContextManager:
         self.context['awaiting_confirmation'] = False
         self.save()
     
+    # Add a message to the conversation history
     def add_to_history(self, user_message, bot_response):
         if 'conversation_history' not in self.context:
             self.context['conversation_history'] = []

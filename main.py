@@ -3,7 +3,6 @@
 from core import MovieBot
 
 def print_banner():
-    """Print welcome banner"""
     banner = """
 ╔════════════════════════════════════════════════════════╗
 ║                                                        ║

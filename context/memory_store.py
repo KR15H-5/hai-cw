@@ -6,6 +6,7 @@ from datetime import datetime
 from config import CONTEXT_FILE
 from utils.helpers import Helper
 
+# MemoryStore is a class that handles the state of the conversation between the user and the chatbot.
 class MemoryStore:
     
     def __init__(self):

@@ -12,10 +12,6 @@ from utils.text_processor import TextProcessor
 from .session import Session
 
 class MovieBot:
-    """
-    Main Movie Booking Bot
-    Orchestrates all components to handle user conversations
-    """
     
     def __init__(self, user_id='default_user'):
         self.user_id = user_id
@@ -36,7 +32,6 @@ class MovieBot:
             self.context.reset_booking()
     
     def greet(self):
-        """Initial greeting"""
         name = self.context.get('name')
         self.last_question_was_name = (name is None)
         return self.nlg.welcome_message(name)
@@ -99,7 +94,6 @@ class MovieBot:
         return response
     
     def _handle_name_input(self, text):
-        """Handle simple name input"""
         if len(text.split()) <= 2 and not any(word in text.lower() for word in ['book', 'movie', 'show', 'help']):
             name = self.text_processor.extract_name(text)
             if name:
@@ -109,7 +103,6 @@ class MovieBot:
         return None
     
     def _handle_booking_stage(self, user_input, stage):
-        """Handle input during booking flow"""
         text_lower = user_input.lower().strip()
         
         if text_lower in ['back', 'go back']:
@@ -131,7 +124,6 @@ class MovieBot:
         return self.nlg.error_message()
     
     def _handle_time_selection(self, time_input):
-        """Handle showtime selection"""
         booking_state = self.context.get_booking_state()
         movie_key = booking_state['movie']
         movie = self.db.get_movie(movie_key)
@@ -145,7 +137,6 @@ class MovieBot:
         return self.nlg.time_selected_response(time)
     
     def _handle_ticket_selection(self, num_input):
-        """Handle ticket count selection"""
         num, error = self.transaction.validate_tickets(num_input)
         
         if error:
@@ -181,7 +172,6 @@ class MovieBot:
         return self.nlg.booking_summary(movie, showtime, num_tickets, seats, total)
     
     def _handle_confirmation(self, user_input):
-        """Handle booking confirmation"""
         text_lower = user_input.lower()
         
         if any(word in text_lower for word in ['yes', 'confirm', 'ok', 'yeah', 'yep']):
@@ -216,7 +206,6 @@ class MovieBot:
         return response
     
     def _handle_awaiting_confirmation(self, user_input):
-        """Handle awaiting booking confirmation after showing movie info"""
         text_lower = user_input.lower()
         
         if any(word in text_lower for word in ['yes', 'yeah', 'yep', 'sure', 'ok', 'book']):
@@ -231,7 +220,6 @@ class MovieBot:
         return "Would you like to book this movie? (yes/no)"
     
     def _handle_go_back(self):
-        """Handle going back in booking flow"""
         booking_state = self.context.get_booking_state()
         stage = booking_state.get('stage')
         
@@ -284,7 +272,6 @@ class MovieBot:
         return self.nlg.cancellation_message()
     
     def _route_intent(self, intent, user_input):
-        """Route to appropriate handler based on intent"""
         name = self.context.get('name')
         
         if intent == 'greeting':
@@ -354,7 +341,6 @@ class MovieBot:
         return self.nlg.error_message("I'm not sure what you mean. Type 'help' for options or 'show movies' to see what's playing.")
     
     def _handle_give_name(self, text):
-        """Handle user giving their name"""
         name = self.text_processor.extract_name(text)
         if name:
             self.context.set('name', name)
@@ -363,19 +349,16 @@ class MovieBot:
         return "Sorry, I didn't catch your name. Could you repeat it?"
     
     def _handle_ask_name(self):
-        """Handle user asking about their name"""
         name = self.context.get('name')
         if name:
             return f"Your name is {name}."
         return "You haven't told me your name yet."
     
     def _show_all_movies(self):
-        """Show all available movies"""
         movies = self.db.get_all_movies()
         return self.nlg.movie_list_response(movies)
     
     def _show_movie_info(self, movie_key):
-        """Show information about a specific movie"""
         movie = self.db.get_movie(movie_key)
         if not movie:
             return "Sorry, I couldn't find that movie."
@@ -386,7 +369,6 @@ class MovieBot:
         return self.nlg.movie_info_response(movie)
     
     def _handle_movie_info_request(self, user_input):
-        """Handle request for movie information"""
         movie_key = self._find_movie(user_input)
         
         if movie_key:
@@ -399,7 +381,6 @@ class MovieBot:
         return "Which movie would you like to know about?\n\n" + self._show_all_movies()
     
     def _handle_book_request(self, user_input):
-        """Handle booking request"""
         movie_key = self._find_movie(user_input)
         
         if movie_key:
@@ -408,7 +389,6 @@ class MovieBot:
         return "Which movie would you like to book?\n\n" + self._show_all_movies()
     
     def _start_booking(self, movie_key):
-        """Start booking process"""
         movie, error = self.transaction.start_booking(movie_key)
         
         if error:
@@ -425,13 +405,11 @@ class MovieBot:
         return self.nlg.booking_start_response(movie)
     
     def _show_bookings(self):
-        """Show user's booking history"""
         bookings = self.db.get_user_bookings(self.user_id)
         name = self.context.get('name', 'Guest')
         return self.nlg.bookings_list_response(bookings, name)
     
     def _handle_price_query(self, user_input):
-        """Handle price query"""
         movie_key = self._find_movie(user_input)
         
         if movie_key:
@@ -441,7 +419,6 @@ class MovieBot:
         return "Most tickets are £12.50, but family films like Paddington are £10.00."
     
     def _handle_time_query(self, user_input):
-        """Handle showtime query"""
         movie_key = self._find_movie(user_input)
         
         if movie_key:
@@ -451,7 +428,6 @@ class MovieBot:
         return "Showtimes vary by movie. Which movie are you interested in?"
     
     def _find_movie(self, query):
-        """Find movie from user query"""
         query_lower = query.lower()
         
         keywords = {
@@ -477,7 +453,6 @@ class MovieBot:
         
         return None
     def _handle_change_name(self):
-        """Handle user wanting to change their name"""
         self.last_question_was_name = True
         return "Sure! What would you like me to call you?"
 

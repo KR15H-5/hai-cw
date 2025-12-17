@@ -1,6 +1,7 @@
 from datetime import datetime
 import random
 
+# Session class is a class that defines the current conversation between the user and the chatbot and assigns it a session ID.
 class Session:
     
     def __init__(self, user_id):
