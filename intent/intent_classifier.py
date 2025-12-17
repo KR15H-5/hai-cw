@@ -7,12 +7,14 @@ from config import INTENT_MODEL_FILE, INTENT_CONFIDENCE_THRESHOLD
 from utils.text_processor import TextProcessor
 
 class IntentClassifier:
+    # Set up the ML intent classifier and load or train the model
     def __init__(self):
         self.text_processor = TextProcessor()
         self.vectorizer = None
         self.classifier = None
         self.load_or_train()
     
+    # Try to load an existing model, otherwise train a new one
     def load_or_train(self):
         if not self.load_model():
             from .intent_trainer import IntentTrainer
@@ -20,6 +22,7 @@ class IntentClassifier:
             self.vectorizer, self.classifier = trainer.train()
             self.save_model()
     
+    # Return the predicted intent label and confidence for some text
     def classify(self, text):
         if not text or not text.strip():
             return 'unknown', 0.0
@@ -42,6 +45,7 @@ class IntentClassifier:
             print(f"Classification error: {e}")
             return 'unknown', 0.0
     
+    # Save the trained model to disk
     def save_model(self):
         with open(INTENT_MODEL_FILE, 'wb') as f:
             pickle.dump({
@@ -49,8 +53,8 @@ class IntentClassifier:
                 'classifier': self.classifier
             }, f)
         print(f"Model saved to {INTENT_MODEL_FILE}")
-
     
+    # Load a previously trained model from disk
     def load_model(self):
         with open(INTENT_MODEL_FILE, 'rb') as f:
             data = pickle.load(f)

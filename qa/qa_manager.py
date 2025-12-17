@@ -6,16 +6,19 @@ from .qa_retriever import QARetriever
 from .qa_knowledge import QAKnowledge
 
 class QAManager:
+    # Set up general QA knowledge and retriever, using the DB if needed
     def __init__(self, db_manager):
         self.db = db_manager
         self.knowledge = QAKnowledge()
         self.general_qa = self.knowledge.get_general_qa()
         self.retriever = QARetriever(self.general_qa)
     
+    # Try to answer a general question about the cinema
     def find_answer(self, query):
         answer, score = self.retriever.retrieve(query)
         return answer
     
+    # Answer a more specific question about a particular movie
     def get_movie_answer(self, query, movie):
         query_lower = query.lower()
         patterns = self.knowledge.get_movie_specific_patterns()

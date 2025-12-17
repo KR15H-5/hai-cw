@@ -1,6 +1,7 @@
 import subprocess
 import shutil
 
+# Create QR code text lines for the given data or return a simple fallback
 def generate_qr_code(data):
 
     if not shutil.which('qrencode'):
@@ -25,10 +26,12 @@ def generate_qr_code(data):
         
 
 
+# Build a formatted ticket string with booking and QR code details
 def generate_ticket(ref, customer, movie, date, time, seats, tickets, total):
 
     WIDTH = 46
 
+    # Helper to wrap a line of text inside a box border
     def box(text=""):
         text = text[:WIDTH]            
         text = text.ljust(WIDTH)       

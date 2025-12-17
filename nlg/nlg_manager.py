@@ -10,10 +10,11 @@ from utils.ticket_generator import generate_ticket
 
 class NLGManager:
 
-    
+    # Create an NLG manager with a shared response generator
     def __init__(self):
         self.generator = ResponseGenerator()
     
+    # Build the initial welcome message, with or without a stored name
     def welcome_message(self, name=None):
         greeting = Helper.get_greeting()
         welcome = self.generator.welcome(greeting)
@@ -26,6 +27,7 @@ class NLGManager:
             ask_name = self.generator.ask_name()
             return f"{welcome}\n{ask_name}"
     
+    # Return a readable list of movies and their key details
     def movie_list_response(self, movies):
         output = "Currently showing:\n\n"
         for i, (key, movie) in enumerate(movies.items(), 1):
@@ -35,6 +37,7 @@ class NLGManager:
         output += "\nWhat would you like to know more about?"
         return output
     
+    # Build a detailed description message for a single movie
     def movie_info_response(self, movie):
         intro = self.generator.movie_info_intro(movie['title'])
         
@@ -52,6 +55,7 @@ class NLGManager:
         
         return details
     
+    # Intro text when starting a booking flow for a movie
     def booking_start_response(self, movie):
         start_msg = self.generator.booking_start(movie['title'])
         ask_time = self.generator.ask_time()
@@ -62,10 +66,12 @@ class NLGManager:
         
         return output
     
+    # Explain that a showtime has been set and ask for ticket count
     def time_selected_response(self, time):
         ask_tickets = self.generator.ask_tickets()
         return f"Perfect! {time} showing selected.\n\n{ask_tickets} (1-10)"
     
+    # Show the seat map and remind the user how many tickets they picked
     def tickets_selected_response(self, num, seat_map):
         ask_seats = self.generator.ask_seats(num)
         
@@ -76,6 +82,7 @@ class NLGManager:
         
         return output
     
+    # Build a multi-line booking summary ready for confirmation
     def booking_summary(self, movie, time, tickets, seats, total):
         seats_str = Helper.format_seat_list(seats)
         prompt = self.generator.confirmation_prompt()
@@ -95,6 +102,7 @@ class NLGManager:
         
         return summary
     
+    # Create the final ASCII ticket plus a short confirmation note
     def confirmation_message(self, ref, customer, movie, showtime, seats, num_tickets, total):
         from datetime import datetime, timedelta
         
@@ -114,11 +122,13 @@ class NLGManager:
         
         return ascii_ticket + "\nConfirmation email sent!"
     
+    # Message used when a booking has been cancelled
     def cancellation_message(self):
         cancel_msg = self.generator.cancel()
         how_help = self.generator.how_can_help()
         return f"{cancel_msg}\n\n{how_help}"
     
+    # Explain what the user can do, tailored to booking stage if needed
     def help_message(self, in_booking=False, stage=None):
         if in_booking and stage:
             stage_help = {
@@ -144,6 +154,7 @@ class NLGManager:
 
 You can also type naturally! Just tell me what you want."""
     
+    # Format a list of previous bookings for display
     def bookings_list_response(self, bookings, name):
         if not bookings:
             return f"You don't have any bookings yet, {name}.\n\nWould you like to book a movie?"
@@ -162,11 +173,13 @@ You can also type naturally! Just tell me what you want."""
         
         return output
     
+    # Return either a custom error message or a generic one
     def error_message(self, custom_message=None):
         if custom_message:
             return f"{custom_message}"
         return self.generator.error()
     
+    # Prefix a validation error with a warning symbol
     def validation_error(self, message):
         return f"⚠️  {message}"
 

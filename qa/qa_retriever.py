@@ -7,6 +7,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from config import SIMILARITY_THRESHOLD
 
 class QARetriever:
+    # Prepare question vectors for simple similarity search
     def __init__(self, qa_pairs):
         self.qa_pairs = qa_pairs
         self.questions = list(qa_pairs.keys())
@@ -18,6 +19,7 @@ class QARetriever:
             self.vectorizer = None
             self.question_vectors = None
     
+    # Find the best matching prewritten answer for a query
     def retrieve(self, query):
         if not query or not query.strip() or not self.vectorizer:
             return None, 0.0

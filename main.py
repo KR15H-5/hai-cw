@@ -2,6 +2,7 @@
 
 from core import MovieBot
 
+# Print the decorative banner at the start of the program
 def print_banner():
     banner = """
 ╔════════════════════════════════════════════════════════╗
@@ -14,6 +15,7 @@ def print_banner():
 """
     print(banner)
 
+# Run the main interactive chat loop for the SavoyBot assistant
 def main():
     print_banner()
     

@@ -1,5 +1,6 @@
 class QAKnowledge:
     
+    # Return a mapping of common questions to canned answers
     @staticmethod
     def get_general_qa():
         return {
@@ -92,6 +93,7 @@ class QAKnowledge:
             "gift card": "Yes! Gift cards are available at the box office in denominations from £10 to £100.",
         }
     
+    # Sentence patterns used to build movie‑specific answers
     @staticmethod
     def get_movie_specific_patterns():
         return {

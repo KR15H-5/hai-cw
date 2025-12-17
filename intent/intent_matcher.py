@@ -6,20 +6,18 @@ from .intent_classifier import IntentClassifier
 
 class IntentMatcher:
     
-    
+    # Create a matcher that wraps the ML classifier
     def __init__(self):
         self.classifier = IntentClassifier()
     
+    # Run the raw classifier on text and return its intent prediction
     def match(self, text):
-        
-   
         ml_intent, confidence = self.classifier.classify(text)
         return ml_intent, confidence
     
+    # Adjust the intent based on conversation context rules
     def get_intent_with_context(self, text, context):
-        
         intent, confidence = self.match(text)
-        
         
         if context.get('awaiting_confirmation'):
             text_lower = text.lower().strip()

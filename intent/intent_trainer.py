@@ -10,10 +10,12 @@ from config import DATA_DIR
 
 class IntentTrainer:
     
+    # Set up the trainer and load intent examples
     def __init__(self):
         self.text_processor = TextProcessor()
         self.intent_data = self._load_training_data()
     
+    # Load training data from JSON file or fall back to defaults
     def load_training_data(self):
         training_file = os.path.join(DATA_DIR, 'training_data.json')
         
@@ -26,6 +28,7 @@ class IntentTrainer:
         except json.JSONDecodeError as e:
             return self._get_fallback_data()
     
+    # Simple built‑in backup data for when no file is available
     def get_fallback_data(self):
         return {
             'greeting': ['hello', 'hi', 'hey'],
@@ -33,6 +36,7 @@ class IntentTrainer:
             'help': ['help']
         }
     
+    # Train a vectorizer and classifier on the intent examples
     def train(self):
 
         X = []

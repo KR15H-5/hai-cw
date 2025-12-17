@@ -8,6 +8,7 @@ from config import ROWS, SEATS_PER_ROW, MIN_TICKETS, MAX_TICKETS
 
 class Validator:
     
+    # Check that a row/seat combination is within allowed bounds
     @staticmethod
     def validate_seat(row, seat_num):
         if row not in ROWS:
@@ -18,6 +19,7 @@ class Validator:
         
         return True, None
     
+    # Check that the ticket count is within allowed limits
     @staticmethod
     def validate_ticket_count(num):
         if num < MIN_TICKETS:
@@ -28,6 +30,7 @@ class Validator:
         
         return True, None
     
+    # Try to match a user-entered time against available showtimes
     @staticmethod
     def validate_time(time, available_times):
         time_clean = time.replace(' ', '').replace(';', ':').lower()
@@ -52,11 +55,13 @@ class Validator:
         
         return False, None
     
+    # Basic email address validation using a regex
     @staticmethod
     def validate_email(email):
         pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
         return bool(re.match(pattern, email))
     
+    # Basic UK phone number validation using a regex
     @staticmethod
     def validate_phone(phone):
         pattern = r'^(\+44|0)[0-9]{10}$'

@@ -8,23 +8,27 @@ from utils.validators import Validator
 from utils.helpers import Helper
 
 class BookingHandler:
+    # Set up helpers for working with bookings and user input
     def __init__(self, db_manager):
         self.db = db_manager
         self.text_processor = TextProcessor()
         self.validator = Validator()
     
+    # Start a booking by checking that the movie exists
     def start(self, movie_key):
         movie = self.db.get_movie(movie_key)
         if not movie:
             return None, "Sorry, that movie isn't available."
         return movie, None
     
+    # Check whether the requested showtime is valid for the movie
     def validate_time(self, movie, time_input):
         is_valid, result = self.validator.validate_time(time_input, movie['times'])
         if is_valid:
             return result, None
         return None, f"That time isn't available. Choose from: {', '.join(movie['times'])}"
     
+    # Validate and normalise the number of tickets requested
     def validate_tickets(self, num_input):
         num = self.text_processor.extract_number(num_input)
         
@@ -37,6 +41,7 @@ class BookingHandler:
         
         return num, None
     
+    # Build a simple ASCII seating chart showing taken and free seats
     def show_seat_map(self, movie_key, showtime):
         taken = self.db.get_taken_seats(movie_key, showtime)
         
@@ -55,6 +60,7 @@ class BookingHandler:
         output += "\nO = Available  X = Taken"
         return output
     
+    # Validate each selected seat against rules and taken seats
     def validate_seats(self, seat_input, movie_key, showtime, num_tickets):
         seats = self.text_processor.parse_seats(seat_input)
         
@@ -93,6 +99,7 @@ class BookingHandler:
         
         return selected, None
     
+    # Create and store a booking record, returning its reference
     def confirm(self, user_id, user_name, movie_key, time, tickets, seats, total):
         ref = Helper.generate_reference()
         

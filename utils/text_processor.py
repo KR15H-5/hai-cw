@@ -19,6 +19,7 @@ download_nltk_data()
 
 class TextProcessor:
     
+    # Prepare stemmer and stopwords for later text processing
     def __init__(self):
         self.stemmer = PorterStemmer()
         try:
@@ -27,11 +28,13 @@ class TextProcessor:
             nltk.download('stopwords', quiet=True)
             self.stop_words = set(stopwords.words('english'))
     
+    # Lowercase and strip out non‑alphanumeric characters
     def clean_text(self, text):
         text = text.lower().strip()
         text = re.sub(r'[^a-z0-9\s]', '', text)
         return text
     
+    # Tokenize text into word tokens, falling back to a simple split
     def tokenize(self, text):
         text = self.clean_text(text)
         try:
@@ -39,12 +42,15 @@ class TextProcessor:
         except LookupError:
             return text.split()
     
+    # Drop common stopwords from a token list
     def remove_stopwords(self, tokens):
         return [token for token in tokens if token not in self.stop_words]
     
+    # Apply stemming to each token
     def stem_tokens(self, tokens):
         return [self.stemmer.stem(token) for token in tokens]
     
+    # Turn a piece of text into a space‑joined string of stems
     def stem_text(self, text, remove_stops=False):
         tokens = self.tokenize(text)
         if remove_stops:
@@ -52,6 +58,7 @@ class TextProcessor:
         stemmed = self.stem_tokens(tokens)
         return ' '.join(stemmed)
     
+    # Try to pull a likely name out of a short user message
     def extract_name(self, text):
         text_lower = text.lower()
         name = ""
@@ -79,12 +86,12 @@ class TextProcessor:
         name = re.sub(r"[^a-zA-Z]", "", name)
         return name.capitalize() if name else None
     
+    # Pull out a small integer number from text, either digits or words
     def extract_number(self, text):
         for word in text.split():
             if word.isdigit():
                 return int(word)
         
-  
         word_to_num = {
             'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5,
             'six': 6, 'seven': 7, 'eight': 8, 'nine': 9, 'ten': 10
@@ -97,6 +104,7 @@ class TextProcessor:
         
         return None
     
+    # Parse seat codes like A1, B5 into (row, number) tuples
     def parse_seats(self, text):
         pattern = r'([A-E])(\d+)'
         matches = re.findall(pattern, text.upper())
